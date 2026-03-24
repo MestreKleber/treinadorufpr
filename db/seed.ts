@@ -13,7 +13,7 @@ type SeedQuestion = {
 const seedQuestions: SeedQuestion[] = [
   {
     subject: "Matematica",
-    topic: "Funcoes",
+    topic: "Funções",
     statement: "Se f(x)=2x+3, qual o valor de f(7)?",
     source: "UFPR - adaptada",
     difficulty: 1,
@@ -41,22 +41,22 @@ const seedQuestions: SeedQuestion[] = [
   },
   {
     subject: "Portugues",
-    topic: "Interpretacao de texto",
+    topic: "Interpretação de texto",
     statement: "Em um texto argumentativo, a tese corresponde a:",
     source: "UFPR - adaptada",
     difficulty: 2,
     alternatives: [
-      { label: "A", text: "Conclusao secundaria", isCorrect: false },
+      { label: "A", text: "Conclusão secundária", isCorrect: false },
       { label: "B", text: "Ideia principal defendida", isCorrect: true },
       { label: "C", text: "Exemplo ilustrativo", isCorrect: false },
-      { label: "D", text: "Titulo do texto", isCorrect: false },
-      { label: "E", text: "Referencias bibliograficas", isCorrect: false },
+      { label: "D", text: "Título do texto", isCorrect: false },
+      { label: "E", text: "Referências bibliográficas", isCorrect: false },
     ],
   },
   {
     subject: "Portugues",
-    topic: "Pontuacao",
-    statement: "Assinale a frase com uso correto da virgula:",
+    topic: "Pontuação",
+    statement: "Assinale a frase com uso correto da vírgula:",
     source: "UFPR - adaptada",
     difficulty: 2,
     alternatives: [
@@ -97,8 +97,8 @@ const seedQuestions: SeedQuestion[] = [
   },
   {
     subject: "Fisica",
-    topic: "Cinematica",
-    statement: "Um carro percorre 120 km em 2 horas. Sua velocidade media e:",
+    topic: "Cinemática",
+    statement: "Um carro percorre 120 km em 2 horas. Sua velocidade média é:",
     source: "UFPR - adaptada",
     difficulty: 1,
     alternatives: [
@@ -111,36 +111,36 @@ const seedQuestions: SeedQuestion[] = [
   },
   {
     subject: "Quimica",
-    topic: "Tabela periodica",
-    statement: "O elemento de simbolo Na e:",
+    topic: "Tabela periódica",
+    statement: "O elemento de símbolo Na é:",
     source: "UFPR - adaptada",
     difficulty: 1,
     alternatives: [
-      { label: "A", text: "Nitrogenio", isCorrect: false },
-      { label: "B", text: "Sodio", isCorrect: true },
+      { label: "A", text: "Nitrogênio", isCorrect: false },
+      { label: "B", text: "Sódio", isCorrect: true },
       { label: "C", text: "Neon", isCorrect: false },
-      { label: "D", text: "Niobio", isCorrect: false },
-      { label: "E", text: "Niquel", isCorrect: false },
+      { label: "D", text: "Nióbio", isCorrect: false },
+      { label: "E", text: "Níquel", isCorrect: false },
     ],
   },
   {
     subject: "Biologia",
     topic: "Citologia",
-    statement: "A organela responsavel pela respiracao celular e:",
+    statement: "A organela responsável pela respiração celular é:",
     source: "UFPR - adaptada",
     difficulty: 1,
     alternatives: [
       { label: "A", text: "Lisossomo", isCorrect: false },
       { label: "B", text: "Ribossomo", isCorrect: false },
-      { label: "C", text: "Mitocondria", isCorrect: true },
+      { label: "C", text: "Mitocôndria", isCorrect: true },
       { label: "D", text: "Complexo de Golgi", isCorrect: false },
-      { label: "E", text: "Nucleo", isCorrect: false },
+      { label: "E", text: "Núcleo", isCorrect: false },
     ],
   },
   {
     subject: "Historia",
-    topic: "Brasil Republica",
-    statement: "A Proclamacao da Republica no Brasil ocorreu em:",
+    topic: "Brasil República",
+    statement: "A Proclamação da República no Brasil ocorreu em:",
     source: "UFPR - adaptada",
     difficulty: 1,
     alternatives: [
@@ -156,7 +156,7 @@ const seedQuestions: SeedQuestion[] = [
 async function main() {
   const existing = await db.select().from(questions).limit(1);
   if (existing.length > 0) {
-    console.log("Seed ja executado. Pulando insercao.");
+    console.log("Seed já executado. Pulando inserção.");
     return;
   }
 
@@ -184,7 +184,7 @@ async function main() {
     );
   }
 
-  console.log(`Seed concluido com ${seedQuestions.length} questoes.`);
+  console.log(`Seed concluído com ${seedQuestions.length} questões.`);
 }
 
 main().catch((error) => {

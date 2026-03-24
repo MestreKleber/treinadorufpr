@@ -9,7 +9,7 @@ export default function Home() {
         <p className="text-sm font-semibold uppercase tracking-wider text-orange-700">Vestibular UFPR</p>
         <h1 className="mt-3 text-4xl font-semibold tracking-tight text-zinc-900">Painel de Estudos ADS</h1>
         <p className="mt-3 max-w-2xl text-zinc-700">
-          Monte simulados com sorteio por materia, acompanhe seu desempenho e gere um plano semanal
+          Monte simulados com sorteio por matéria, acompanhe seu desempenho e gere um plano semanal
           personalizado com IA em streaming.
         </p>
       </section>
@@ -20,7 +20,7 @@ export default function Home() {
             <CardTitle className="flex items-center gap-2 text-lg">
               <ClipboardCheck className="h-5 w-5 text-emerald-700" /> Simulado
             </CardTitle>
-            <CardDescription>Timer, navegacao por questao e envio de tentativas.</CardDescription>
+            <CardDescription>Timer, navegação por questão e envio de tentativas.</CardDescription>
           </CardHeader>
           <CardContent>
             <Link href="/simulado" className="inline-flex items-center gap-2 text-sm font-medium text-emerald-800">
@@ -34,7 +34,7 @@ export default function Home() {
             <CardTitle className="flex items-center gap-2 text-lg">
               <LineChart className="h-5 w-5 text-blue-700" /> Resultado
             </CardTitle>
-            <CardDescription>Percentual por materia e historico de tentativas.</CardDescription>
+            <CardDescription>Percentual por matéria e histórico de tentativas.</CardDescription>
           </CardHeader>
           <CardContent>
             <Link href="/resultado" className="inline-flex items-center gap-2 text-sm font-medium text-blue-800">
@@ -62,7 +62,7 @@ export default function Home() {
             <CardTitle className="flex items-center gap-2 text-lg">
               <Shield className="h-5 w-5 text-amber-700" /> Admin
             </CardTitle>
-            <CardDescription>Cadastro manual de questoes e alternativas A-E.</CardDescription>
+            <CardDescription>Cadastro manual de questões e alternativas A-E.</CardDescription>
           </CardHeader>
           <CardContent>
             <Link href="/admin" className="inline-flex items-center gap-2 text-sm font-medium text-amber-800">

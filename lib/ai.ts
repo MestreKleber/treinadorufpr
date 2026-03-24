@@ -8,9 +8,9 @@ export function buildSchedulePrompt(
   const summary = performance
     .map(
       (item) =>
-        `- ${item.subject}: ${item.percentage.toFixed(1)}% de acerto em ${item.total} questoes`,
+        `- ${item.subject}: ${item.percentage.toFixed(1)}% de acerto em ${item.total} questões`,
     )
     .join("\n");
 
-  return `Voce e um tutor de vestibular UFPR para ADS.\nCrie um plano semanal de estudos em JSON com 7 dias.\nCada dia deve ter os blocos: manha, tarde e noite.\nCada bloco deve incluir: foco, atividades e duracaoMin.\nPriorize as materias com menor percentual e inclua revisao ativa + questoes.\nResponda apenas JSON valido no formato:\n{\n  "semana": [{"dia":"Segunda","manha":{...},"tarde":{...},"noite":{...}}],\n  "orientacoesGerais": ["..."]\n}\n\nDesempenho:\n${summary}`;
+  return `Você é um tutor de vestibular UFPR para ADS.\nCrie um plano semanal de estudos em JSON com 7 dias.\nCada dia deve ter os blocos: manhã, tarde e noite.\nCada bloco deve incluir: foco, atividades e duracaoMin.\nPriorize as matérias com menor percentual e inclua revisão ativa + questões.\nResponda apenas JSON válido no formato:\n{\n  "semana": [{"dia":"Segunda","manha":{...},"tarde":{...},"noite":{...}}],\n  "orientacoesGerais": ["..."]\n}\n\nDesempenho:\n${summary}`;
 }

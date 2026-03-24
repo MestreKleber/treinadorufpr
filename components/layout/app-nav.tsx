@@ -2,7 +2,7 @@ import Link from "next/link";
 import { BookOpen, CalendarClock, ClipboardList, Home, Shield } from "lucide-react";
 
 const links = [
-  { href: "/", label: "Inicio", icon: Home },
+  { href: "/", label: "Início", icon: Home },
   { href: "/simulado", label: "Simulado", icon: ClipboardList },
   { href: "/resultado", label: "Resultado", icon: BookOpen },
   { href: "/cronograma", label: "Cronograma", icon: CalendarClock },

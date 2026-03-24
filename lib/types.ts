@@ -8,6 +8,9 @@ export type QuestionDTO = {
   id: number;
   subject: string;
   topic: string | null;
+  bundleId: string | null;
+  bundleTitle: string | null;
+  bundleContext: string | null;
   statement: string;
   source: string | null;
   difficulty: number | null;

@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# UFPR ADS Estudos
 
-## Getting Started
+Aplicacao web de estudos para vestibular UFPR (ADS), com:
 
-First, run the development server:
+- Next.js 15 (App Router)
+- SQLite + better-sqlite3
+- Drizzle ORM
+- shadcn/ui + Tailwind
+- Vercel AI SDK + OpenAI
+
+## Executar projeto
 
 ```bash
+npm install
+npm run db:migrate
+npm run db:seed
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Cadastro em lote sem trabalho manual
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Voce pode importar varias provas PDF e deixar a IA:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- separar questoes automaticamente
+- classificar disciplina e topico
+- estimar dificuldade (1-5)
+- tratar enunciados compartilhados (ex.: "responda as questoes 1 e 2")
+- gerar imagens por pagina para questoes que dependem de grafico/figura
 
-## Learn More
+### 1) Coloque os PDFs
 
-To learn more about Next.js, take a look at the following resources:
+Adicione os arquivos em `data/provas/`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 2) Configure a chave da OpenAI
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+No arquivo `.env`:
 
-## Deploy on Vercel
+```env
+OPENAI_API_KEY=...
+DATABASE_URL=./db.sqlite
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 3) Rode a ingestao
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run ingest:pdf
+```
+
+Isso vai:
+
+- processar todos os PDFs da pasta `data/provas`
+- criar JSONs em `data/processed/<nome-da-prova>/`
+- gerar relatorio em `data/processed/ingest-summary.json`
+- importar automaticamente no banco
+
+### 4) Modo teste (sem gravar no banco)
+
+```bash
+npm run ingest:pdf:dry
+```
+
+### Flags uteis
+
+```bash
+npm run ingest:pdf -- --input data/provas --chunk 6 --source-prefix UFPR
+npm run ingest:pdf -- --no-images
+```
+
+- `--chunk`: quantidade de paginas por chamada da IA
+- `--no-images`: nao renderiza imagens de paginas
+
+## Importacao em lote pelo Admin (JSON)
+
+Na pagina Admin voce pode colar JSON ou subir arquivo `.json` e importar centenas de questoes de uma vez.
+
+Endpoint: `POST /api/admin/questions/bulk`
+
+Formato:
+
+```json
+[
+	{
+		"subject": "Matematica",
+		"topic": "Funcoes",
+		"statement": "Se f(x)=2x+3, qual o valor de f(7)?",
+		"imageUrl": "/questoes/importadas/prova-x/page-001.png",
+		"source": "UFPR 2023",
+		"difficulty": 2,
+		"alternatives": [
+			{ "label": "A", "text": "14", "isCorrect": false },
+			{ "label": "B", "text": "17", "isCorrect": true },
+			{ "label": "C", "text": "10", "isCorrect": false },
+			{ "label": "D", "text": "21", "isCorrect": false },
+			{ "label": "E", "text": "7", "isCorrect": false }
+		]
+	}
+]
+```

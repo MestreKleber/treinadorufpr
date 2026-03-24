@@ -10,11 +10,21 @@ const alternativeSchema = z.object({
   isCorrect: z.boolean(),
 });
 
+const imageUrlSchema = z
+  .string()
+  .trim()
+  .refine((value) => value === "" || value.startsWith("/") || /^https?:\/\//.test(value), {
+    message: "imageUrl deve ser URL absoluta ou caminho relativo iniciando com /",
+  });
+
 const questionSchema = z.object({
   subject: z.string().min(1),
   topic: z.string().optional(),
   statement: z.string().min(10),
-  imageUrl: z.string().url().optional().or(z.literal("")),
+  bundleId: z.string().optional(),
+  bundleTitle: z.string().optional(),
+  bundleContext: z.string().optional(),
+  imageUrl: imageUrlSchema.optional(),
   source: z.string().optional(),
   difficulty: z.number().int().min(1).max(5),
   alternatives: z.array(alternativeSchema).length(5),
@@ -26,6 +36,7 @@ export async function GET() {
       id: questions.id,
       subject: questions.subject,
       topic: questions.topic,
+      bundleId: questions.bundleId,
       statement: questions.statement,
       source: questions.source,
       difficulty: questions.difficulty,
@@ -54,6 +65,9 @@ export async function POST(request: NextRequest) {
         subject: data.subject,
         topic: data.topic,
         statement: data.statement,
+        bundleId: data.bundleId?.trim() || null,
+        bundleTitle: data.bundleTitle?.trim() || null,
+        bundleContext: data.bundleContext?.trim() || null,
         imageUrl: data.imageUrl || null,
         source: data.source,
         difficulty: data.difficulty,
@@ -77,7 +91,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: error.issues }, { status: 400 });
     }
 
-    return NextResponse.json({ error: "Falha ao cadastrar questao." }, { status: 500 });
+    return NextResponse.json({ error: "Falha ao cadastrar questão." }, { status: 500 });
   }
 }
 
@@ -86,7 +100,7 @@ export async function PUT(request: NextRequest) {
     const idRaw = request.nextUrl.searchParams.get("id");
     const id = Number(idRaw);
     if (!Number.isInteger(id) || id <= 0) {
-      return NextResponse.json({ error: "ID invalido." }, { status: 400 });
+      return NextResponse.json({ error: "ID inválido." }, { status: 400 });
     }
 
     const body = await request.json();
@@ -106,6 +120,9 @@ export async function PUT(request: NextRequest) {
         subject: data.subject,
         topic: data.topic,
         statement: data.statement,
+        bundleId: data.bundleId?.trim() || null,
+        bundleTitle: data.bundleTitle?.trim() || null,
+        bundleContext: data.bundleContext?.trim() || null,
         imageUrl: data.imageUrl || null,
         source: data.source,
         difficulty: data.difficulty,
@@ -129,7 +146,7 @@ export async function PUT(request: NextRequest) {
       return NextResponse.json({ error: error.issues }, { status: 400 });
     }
 
-    return NextResponse.json({ error: "Falha ao atualizar questao." }, { status: 500 });
+    return NextResponse.json({ error: "Falha ao atualizar questão." }, { status: 500 });
   }
 }
 
@@ -137,7 +154,7 @@ export async function DELETE(request: NextRequest) {
   const idRaw = request.nextUrl.searchParams.get("id");
   const id = Number(idRaw);
   if (!Number.isInteger(id) || id <= 0) {
-    return NextResponse.json({ error: "ID invalido." }, { status: 400 });
+    return NextResponse.json({ error: "ID inválido." }, { status: 400 });
   }
 
   await db.delete(alternatives).where(eq(alternatives.questionId, id));

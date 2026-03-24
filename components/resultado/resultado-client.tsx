@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { BarChart3, History, RefreshCcw } from "lucide-react";
@@ -7,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { formatSubjectLabel } from "@/lib/pt";
 
 type ResultResponse = {
   current: {
@@ -17,7 +19,13 @@ type ResultResponse = {
     bySubject: Array<{ subject: string; total: number; correct: number; percentage: number }>;
   };
   history: Array<{ runAt: number; total: number; correct: number; percentage: number }>;
-  details: Array<{ questionId: number; subject: string; statement: string; isCorrect: boolean | null }>;
+  details: Array<{
+    questionId: number;
+    subject: string;
+    statement: string;
+    imageUrl: string | null;
+    isCorrect: boolean | null;
+  }>;
 };
 
 export function ResultadoClient() {
@@ -68,7 +76,7 @@ export function ResultadoClient() {
             Resultado do Simulado
           </CardTitle>
           <CardDescription>
-            Visualize seu percentual de acerto por materia e acompanhe o historico de tentativas.
+            Visualize seu percentual de acerto por matéria e acompanhe o histórico de tentativas.
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -106,13 +114,13 @@ export function ResultadoClient() {
 
           <Card>
             <CardHeader>
-              <CardTitle>Desempenho por materia</CardTitle>
+              <CardTitle>Desempenho por matéria</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               {data.current.bySubject.map((item) => (
                 <div key={item.subject} className="space-y-2">
                   <div className="flex items-center justify-between text-sm">
-                    <span className="font-medium">{item.subject}</span>
+                    <span className="font-medium">{formatSubjectLabel(item.subject)}</span>
                     <span>
                       {item.correct}/{item.total} ({item.percentage.toFixed(1)}%)
                     </span>
@@ -127,7 +135,7 @@ export function ResultadoClient() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <History className="h-4 w-4" />
-                Historico de tentativas
+                Histórico de tentativas
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -151,6 +159,43 @@ export function ResultadoClient() {
                   ))}
                 </TableBody>
               </Table>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Revisão das questões</CardTitle>
+              <CardDescription>
+                Confira cada questão com indicação de acerto e imagem quando disponível.
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              {data.details.map((item) => (
+                <div key={item.questionId} className="rounded-lg border bg-white p-4">
+                  <p className="mb-2 text-sm font-semibold text-zinc-800">{formatSubjectLabel(item.subject)}</p>
+                  <p className="text-sm text-zinc-900">{item.statement}</p>
+
+                  {item.imageUrl ? (
+                    <div className="mt-3 overflow-hidden rounded-md border bg-zinc-50 p-2">
+                      <Image
+                        src={item.imageUrl}
+                        alt="Imagem da questão"
+                        width={960}
+                        height={540}
+                        className="h-auto w-full rounded object-contain"
+                      />
+                    </div>
+                  ) : null}
+
+                  <p
+                    className={`mt-3 text-sm font-medium ${
+                      item.isCorrect ? "text-emerald-700" : "text-rose-700"
+                    }`}
+                  >
+                    {item.isCorrect ? "Acertou" : "Errou"}
+                  </p>
+                </div>
+              ))}
             </CardContent>
           </Card>
         </>

@@ -109,7 +109,7 @@ export function CronogramaClient() {
             Cronograma Semanal com IA
           </CardTitle>
           <CardDescription>
-            Envie seu desempenho por materia para gerar plano semanal em streaming.
+            Envie seu desempenho por matéria para gerar plano semanal em streaming.
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-3">
@@ -154,7 +154,7 @@ export function CronogramaClient() {
                     <div key={period} className="rounded-lg border bg-zinc-50 p-3">
                       <p className="font-semibold capitalize">{period}</p>
                       <p className="mt-1">Foco: {block.foco}</p>
-                      <p>Duracao: {block.duracaoMin} min</p>
+                      <p>Duração: {block.duracaoMin} min</p>
                       <ul className="mt-1 list-disc pl-4">
                         {block.atividades.map((item) => (
                           <li key={item}>{item}</li>

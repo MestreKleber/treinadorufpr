@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Timer, Play, ArrowLeft, ArrowRight, Send } from "lucide-react";
@@ -9,6 +10,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Progress } from "@/components/ui/progress";
+import { formatSubjectLabel } from "@/lib/pt";
 import type { QuestionDTO } from "@/lib/types";
 
 type SimuladoResponse = {
@@ -178,12 +180,12 @@ export function SimuladoClient() {
           <CardHeader>
             <CardTitle className="text-2xl">Simulado UFPR ADS</CardTitle>
             <CardDescription>
-              Escolha materias, quantidade por materia e tempo total. O sorteio eh automatico.
+              Escolha matérias, quantidade por matéria e tempo total. O sorteio é automático.
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-6">
             <div className="space-y-3">
-              <Label>Materias</Label>
+              <Label>Matérias</Label>
               <div className="flex flex-wrap gap-2">
                 {subjects.map((subject) => {
                   const selected = selectedSubjects.includes(subject);
@@ -198,7 +200,7 @@ export function SimuladoClient() {
                           : "border-zinc-300 bg-white hover:bg-zinc-100"
                       }`}
                     >
-                      {subject}
+                      {formatSubjectLabel(subject)}
                     </button>
                   );
                 })}
@@ -207,7 +209,7 @@ export function SimuladoClient() {
 
             <div className="grid gap-4 md:grid-cols-2">
               <div className="space-y-2">
-                <Label htmlFor="perSubject">Questoes por materia</Label>
+                <Label htmlFor="perSubject">Questões por matéria</Label>
                 <Input
                   id="perSubject"
                   type="number"
@@ -248,7 +250,7 @@ export function SimuladoClient() {
           <CardContent className="pt-4">
             <div className="mb-2 flex items-center justify-between text-sm text-muted-foreground">
               <span>
-                Questao {currentIndex + 1} de {questions.length}
+                Questão {currentIndex + 1} de {questions.length}
               </span>
               <span>{Math.round(progressValue)}% respondido</span>
             </div>
@@ -267,9 +269,16 @@ export function SimuladoClient() {
       <Card>
         <CardHeader>
           <div className="flex items-center gap-2">
-            <Badge variant="secondary">{currentQuestion.subject}</Badge>
+            <Badge variant="secondary">{formatSubjectLabel(currentQuestion.subject)}</Badge>
             {currentQuestion.topic ? <Badge variant="outline">{currentQuestion.topic}</Badge> : null}
+            {currentQuestion.bundleId ? <Badge variant="outline">Bundle: {currentQuestion.bundleId}</Badge> : null}
           </div>
+          {currentQuestion.bundleContext ? (
+            <div className="rounded-lg border border-blue-200 bg-blue-50 p-3 text-sm text-blue-900">
+              <p className="font-semibold">{currentQuestion.bundleTitle || "Texto-base"}</p>
+              <p className="mt-1 whitespace-pre-wrap">{currentQuestion.bundleContext}</p>
+            </div>
+          ) : null}
           <CardTitle className="text-xl leading-7">{currentQuestion.statement}</CardTitle>
           {currentQuestion.source ? (
             <CardDescription>Fonte: {currentQuestion.source}</CardDescription>
@@ -277,6 +286,18 @@ export function SimuladoClient() {
         </CardHeader>
 
         <CardContent className="space-y-2">
+          {currentQuestion.imageUrl ? (
+            <div className="overflow-hidden rounded-lg border bg-white p-2">
+              <Image
+                src={currentQuestion.imageUrl}
+                alt="Imagem da questão"
+                width={960}
+                height={540}
+                className="h-auto w-full rounded-md object-contain"
+              />
+            </div>
+          ) : null}
+
           {currentQuestion.alternatives.map((alt) => {
             const selected = answers[currentQuestion.id]?.selectedAlternativeId === alt.id;
             return (
@@ -316,7 +337,7 @@ export function SimuladoClient() {
             onClick={() => goToQuestion(Math.min(questions.length - 1, currentIndex + 1))}
             disabled={currentIndex >= questions.length - 1}
           >
-            Proxima
+            Próxima
             <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
 

@@ -71,6 +71,7 @@ export async function getDetailedRunAnswers(runAtMs: number) {
       questionId: questions.id,
       subject: questions.subject,
       statement: questions.statement,
+      imageUrl: questions.imageUrl,
       isCorrect: attempts.isCorrect,
       topic: questions.topic,
       source: questions.source,
