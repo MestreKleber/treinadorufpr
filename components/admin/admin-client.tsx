@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { BarChart3, FileUp, ImageUp, PlusCircle, Trash2 } from "lucide-react";
+import { BarChart3, FileUp, ImageUp, PlusCircle, Trash2, Upload } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -79,6 +79,11 @@ export function AdminClient() {
   const [uploadingImage, setUploadingImage] = useState(false);
   const [bulkJson, setBulkJson] = useState("[]");
   const [importingBulk, setImportingBulk] = useState(false);
+  const [pdfFile, setPdfFile] = useState<File | null>(null);
+  const [pdfSourcePrefix, setPdfSourcePrefix] = useState("UFPR");
+  const [pdfChunkSize, setPdfChunkSize] = useState(6);
+  const [pdfRenderImages, setPdfRenderImages] = useState(true);
+  const [importingPdf, setImportingPdf] = useState(false);
   const [report, setReport] = useState<ReportResponse | null>(null);
   const [loadingReport, setLoadingReport] = useState(false);
 
@@ -211,6 +216,47 @@ export function AdminClient() {
     }
   }
 
+  async function importPdf() {
+    if (!pdfFile) return;
+
+    setImportingPdf(true);
+    try {
+      const formData = new FormData();
+      formData.append("file", pdfFile);
+      formData.append("sourcePrefix", pdfSourcePrefix);
+      formData.append("chunkSize", String(pdfChunkSize));
+      formData.append("renderImages", pdfRenderImages ? "true" : "false");
+
+      const res = await fetch("/api/admin/upload-pdf", {
+        method: "POST",
+        body: formData,
+      });
+
+      const payload = (await res.json()) as {
+        error?: string;
+        details?: string;
+        extracted?: number;
+        imported?: number;
+      };
+
+      if (!res.ok) {
+        throw new Error(payload.error ?? payload.details ?? "Falha na importação do PDF");
+      }
+
+      alert(
+        `PDF processado com sucesso. Questões extraídas: ${payload.extracted ?? 0}. Questões importadas: ${payload.imported ?? 0}.`,
+      );
+      setPdfFile(null);
+      await loadQuestions();
+      await loadReport();
+    } catch (error) {
+      console.error(error);
+      alert("Não foi possível processar o PDF. Verifique o arquivo e tente novamente.");
+    } finally {
+      setImportingPdf(false);
+    }
+  }
+
   return (
     <main className="mx-auto w-full max-w-6xl space-y-4 px-4 py-10">
       <Card>
@@ -218,6 +264,61 @@ export function AdminClient() {
           <CardTitle className="text-2xl">Admin de Questões</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
+          <div className="space-y-3 rounded-lg border bg-zinc-50 p-4">
+            <p className="text-base font-semibold">Upload de prova (PDF)</p>
+            <p className="text-sm text-zinc-700">
+              Envie o PDF completo da prova. A IA extrai questões, classifica disciplina/conteúdo/dificuldade,
+              identifica bundles de enunciado compartilhado e importa no banco automaticamente.
+            </p>
+
+            <div className="grid gap-4 md:grid-cols-3">
+              <div className="space-y-2 md:col-span-2">
+                <Label htmlFor="pdfUpload">Arquivo PDF</Label>
+                <Input
+                  id="pdfUpload"
+                  type="file"
+                  accept="application/pdf"
+                  onChange={(e) => setPdfFile(e.target.files?.[0] ?? null)}
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="pdfSourcePrefix">Prefixo da fonte</Label>
+                <Input
+                  id="pdfSourcePrefix"
+                  value={pdfSourcePrefix}
+                  onChange={(e) => setPdfSourcePrefix(e.target.value)}
+                  placeholder="UFPR"
+                />
+              </div>
+            </div>
+
+            <div className="grid gap-4 md:grid-cols-3 md:items-end">
+              <div className="space-y-2">
+                <Label htmlFor="pdfChunkSize">Páginas por chunk IA</Label>
+                <Input
+                  id="pdfChunkSize"
+                  type="number"
+                  min={1}
+                  max={12}
+                  value={pdfChunkSize}
+                  onChange={(e) => setPdfChunkSize(Number(e.target.value))}
+                />
+              </div>
+              <label className="inline-flex items-center gap-2 text-sm">
+                <input
+                  type="checkbox"
+                  checked={pdfRenderImages}
+                  onChange={(e) => setPdfRenderImages(e.target.checked)}
+                />
+                Gerar imagens das páginas (gráficos/figuras)
+              </label>
+              <Button type="button" onClick={importPdf} disabled={!pdfFile || importingPdf}>
+                <Upload className="mr-2 h-4 w-4" />
+                {importingPdf ? "Processando PDF..." : "Enviar PDF e importar"}
+              </Button>
+            </div>
+          </div>
+
           <div className="space-y-3 rounded-lg border bg-zinc-50 p-4">
             <p className="text-base font-semibold">Importação em lote (JSON)</p>
             <p className="text-sm text-zinc-700">
