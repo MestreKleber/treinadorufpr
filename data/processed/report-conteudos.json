@@ -1,151 +1,407 @@
 {
-  "totalQuestions": 15,
-  "totalBundles": 13,
+  "totalQuestions": 78,
+  "totalBundles": 43,
   "bySubject": [
     {
-      "subject": "MATEMÁTICA",
-      "count": 6,
-      "percentage": 40,
+      "subject": "FÍSICA",
+      "count": 9,
+      "percentage": 11.54,
       "topics": []
     },
     {
-      "subject": "Filosofia",
+      "subject": "Geografia",
+      "count": 9,
+      "percentage": 11.54,
+      "topics": [
+        {
+          "topic": "Cabeça d'água",
+          "count": 1,
+          "percentageWithinSubject": 11.11,
+          "percentageGlobal": 1.28
+        },
+        {
+          "topic": "Declaração Balfour",
+          "count": 1,
+          "percentageWithinSubject": 11.11,
+          "percentageGlobal": 1.28
+        },
+        {
+          "topic": "Relevo Cárstico",
+          "count": 1,
+          "percentageWithinSubject": 11.11,
+          "percentageGlobal": 1.28
+        },
+        {
+          "topic": "Desmatamento no Matopiba",
+          "count": 1,
+          "percentageWithinSubject": 11.11,
+          "percentageGlobal": 1.28
+        },
+        {
+          "topic": "Fluxos Migratórios",
+          "count": 1,
+          "percentageWithinSubject": 11.11,
+          "percentageGlobal": 1.28
+        },
+        {
+          "topic": "Soberania de Dados",
+          "count": 1,
+          "percentageWithinSubject": 11.11,
+          "percentageGlobal": 1.28
+        },
+        {
+          "topic": "Elementos Cartográficos",
+          "count": 1,
+          "percentageWithinSubject": 11.11,
+          "percentageGlobal": 1.28
+        },
+        {
+          "topic": "Cartografia",
+          "count": 1,
+          "percentageWithinSubject": 11.11,
+          "percentageGlobal": 1.28
+        },
+        {
+          "topic": "Mudanças Climáticas",
+          "count": 1,
+          "percentageWithinSubject": 11.11,
+          "percentageGlobal": 1.28
+        }
+      ]
+    },
+    {
+      "subject": "História",
+      "count": 9,
+      "percentage": 11.54,
+      "topics": [
+        {
+          "topic": "Historiografia",
+          "count": 1,
+          "percentageWithinSubject": 11.11,
+          "percentageGlobal": 1.28
+        },
+        {
+          "topic": "Expansão Islâmica",
+          "count": 1,
+          "percentageWithinSubject": 11.11,
+          "percentageGlobal": 1.28
+        },
+        {
+          "topic": "História Moderna",
+          "count": 1,
+          "percentageWithinSubject": 11.11,
+          "percentageGlobal": 1.28
+        },
+        {
+          "topic": "Brasil Colonial",
+          "count": 1,
+          "percentageWithinSubject": 11.11,
+          "percentageGlobal": 1.28
+        },
+        {
+          "topic": "História do Brasil",
+          "count": 1,
+          "percentageWithinSubject": 11.11,
+          "percentageGlobal": 1.28
+        },
+        {
+          "topic": "Partidos Políticos",
+          "count": 1,
+          "percentageWithinSubject": 11.11,
+          "percentageGlobal": 1.28
+        },
+        {
+          "topic": "Racismo",
+          "count": 1,
+          "percentageWithinSubject": 11.11,
+          "percentageGlobal": 1.28
+        },
+        {
+          "topic": "Extrema Direita",
+          "count": 1,
+          "percentageWithinSubject": 11.11,
+          "percentageGlobal": 1.28
+        },
+        {
+          "topic": "Imperialismo",
+          "count": 1,
+          "percentageWithinSubject": 11.11,
+          "percentageGlobal": 1.28
+        }
+      ]
+    },
+    {
+      "subject": "MATEMÁTICA",
+      "count": 8,
+      "percentage": 10.26,
+      "topics": []
+    },
+    {
+      "subject": "LITERATURA BRASILEIRA",
+      "count": 8,
+      "percentage": 10.26,
+      "topics": []
+    },
+    {
+      "subject": "QUÍMICA",
+      "count": 7,
+      "percentage": 8.97,
+      "topics": []
+    },
+    {
+      "subject": "Língua Estrangeira",
+      "count": 7,
+      "percentage": 8.97,
+      "topics": [
+        {
+          "topic": "Compreensão de Texto",
+          "count": 4,
+          "percentageWithinSubject": 57.14,
+          "percentageGlobal": 5.13
+        },
+        {
+          "topic": "Interpretação de Texto",
+          "count": 3,
+          "percentageWithinSubject": 42.86,
+          "percentageGlobal": 3.85
+        }
+      ]
+    },
+    {
+      "subject": "Biologia",
+      "count": 6,
+      "percentage": 7.69,
+      "topics": [
+        {
+          "topic": "Medicamentos e Efeitos",
+          "count": 1,
+          "percentageWithinSubject": 16.67,
+          "percentageGlobal": 1.28
+        },
+        {
+          "topic": "Espécies Exóticas Invasoras",
+          "count": 1,
+          "percentageWithinSubject": 16.67,
+          "percentageGlobal": 1.28
+        },
+        {
+          "topic": "Histopatologia Pulmonar",
+          "count": 1,
+          "percentageWithinSubject": 16.67,
+          "percentageGlobal": 1.28
+        },
+        {
+          "topic": "Edição Gênica",
+          "count": 1,
+          "percentageWithinSubject": 16.67,
+          "percentageGlobal": 1.28
+        },
+        {
+          "topic": "Hipercolesterolemia Familiar",
+          "count": 1,
+          "percentageWithinSubject": 16.67,
+          "percentageGlobal": 1.28
+        },
+        {
+          "topic": "Extinção de Anfíbios",
+          "count": 1,
+          "percentageWithinSubject": 16.67,
+          "percentageGlobal": 1.28
+        }
+      ]
+    },
+    {
+      "subject": "Espanhol",
+      "count": 6,
+      "percentage": 7.69,
+      "topics": [
+        {
+          "topic": "Interpretação de Texto",
+          "count": 6,
+          "percentageWithinSubject": 100,
+          "percentageGlobal": 7.69
+        }
+      ]
+    },
+    {
+      "subject": "Italiano",
+      "count": 5,
+      "percentage": 6.41,
+      "topics": [
+        {
+          "topic": "Compreensão de Texto",
+          "count": 5,
+          "percentageWithinSubject": 100,
+          "percentageGlobal": 6.41
+        }
+      ]
+    },
+    {
+      "subject": "Inglês",
       "count": 4,
-      "percentage": 26.67,
+      "percentage": 5.13,
       "topics": [
         {
-          "topic": "Crítica à Modernidade",
-          "count": 1,
-          "percentageWithinSubject": 25,
-          "percentageGlobal": 6.67
-        },
-        {
-          "topic": "Crítica à Superstição",
-          "count": 1,
-          "percentageWithinSubject": 25,
-          "percentageGlobal": 6.67
-        },
-        {
-          "topic": "Justiça em Platão",
-          "count": 1,
-          "percentageWithinSubject": 25,
-          "percentageGlobal": 6.67
-        },
-        {
-          "topic": "Método Científico",
-          "count": 1,
-          "percentageWithinSubject": 25,
-          "percentageGlobal": 6.67
-        }
-      ]
-    },
-    {
-      "subject": "Sociologia",
-      "count": 3,
-      "percentage": 20,
-      "topics": [
-        {
-          "topic": "Cultura e Classes Sociais",
-          "count": 1,
-          "percentageWithinSubject": 33.33,
-          "percentageGlobal": 6.67
-        },
-        {
-          "topic": "Crise Ambiental",
-          "count": 1,
-          "percentageWithinSubject": 33.33,
-          "percentageGlobal": 6.67
-        },
-        {
-          "topic": "Abordagem Policial",
-          "count": 1,
-          "percentageWithinSubject": 33.33,
-          "percentageGlobal": 6.67
-        }
-      ]
-    },
-    {
-      "subject": "Literatura",
-      "count": 2,
-      "percentage": 13.33,
-      "topics": [
-        {
-          "topic": "Poesia do Arcadismo",
-          "count": 1,
-          "percentageWithinSubject": 50,
-          "percentageGlobal": 6.67
-        },
-        {
-          "topic": "Literatura Brasileira",
-          "count": 1,
-          "percentageWithinSubject": 50,
-          "percentageGlobal": 6.67
+          "topic": "Compreensão de Texto",
+          "count": 4,
+          "percentageWithinSubject": 100,
+          "percentageGlobal": 5.13
         }
       ]
     }
   ],
   "byTopic": [
     {
-      "topic": "Poesia do Arcadismo",
-      "count": 1,
-      "percentage": 6.67
+      "topic": "Compreensão de Texto",
+      "count": 13,
+      "percentage": 16.67
     },
     {
-      "topic": "Literatura Brasileira",
-      "count": 1,
-      "percentage": 6.67
+      "topic": "Interpretação de Texto",
+      "count": 9,
+      "percentage": 11.54
     },
     {
-      "topic": "Crítica à Modernidade",
+      "topic": "Medicamentos e Efeitos",
       "count": 1,
-      "percentage": 6.67
+      "percentage": 1.28
     },
     {
-      "topic": "Crítica à Superstição",
+      "topic": "Espécies Exóticas Invasoras",
       "count": 1,
-      "percentage": 6.67
+      "percentage": 1.28
     },
     {
-      "topic": "Cultura e Classes Sociais",
+      "topic": "Histopatologia Pulmonar",
       "count": 1,
-      "percentage": 6.67
+      "percentage": 1.28
     },
     {
-      "topic": "Justiça em Platão",
+      "topic": "Edição Gênica",
       "count": 1,
-      "percentage": 6.67
+      "percentage": 1.28
     },
     {
-      "topic": "Método Científico",
+      "topic": "Hipercolesterolemia Familiar",
       "count": 1,
-      "percentage": 6.67
+      "percentage": 1.28
     },
     {
-      "topic": "Crise Ambiental",
+      "topic": "Extinção de Anfíbios",
       "count": 1,
-      "percentage": 6.67
+      "percentage": 1.28
     },
     {
-      "topic": "Abordagem Policial",
+      "topic": "Cabeça d'água",
       "count": 1,
-      "percentage": 6.67
+      "percentage": 1.28
+    },
+    {
+      "topic": "Declaração Balfour",
+      "count": 1,
+      "percentage": 1.28
+    },
+    {
+      "topic": "Relevo Cárstico",
+      "count": 1,
+      "percentage": 1.28
+    },
+    {
+      "topic": "Desmatamento no Matopiba",
+      "count": 1,
+      "percentage": 1.28
+    },
+    {
+      "topic": "Fluxos Migratórios",
+      "count": 1,
+      "percentage": 1.28
+    },
+    {
+      "topic": "Soberania de Dados",
+      "count": 1,
+      "percentage": 1.28
+    },
+    {
+      "topic": "Elementos Cartográficos",
+      "count": 1,
+      "percentage": 1.28
+    },
+    {
+      "topic": "Cartografia",
+      "count": 1,
+      "percentage": 1.28
+    },
+    {
+      "topic": "Mudanças Climáticas",
+      "count": 1,
+      "percentage": 1.28
+    },
+    {
+      "topic": "Historiografia",
+      "count": 1,
+      "percentage": 1.28
+    },
+    {
+      "topic": "Expansão Islâmica",
+      "count": 1,
+      "percentage": 1.28
+    },
+    {
+      "topic": "História Moderna",
+      "count": 1,
+      "percentage": 1.28
+    },
+    {
+      "topic": "Brasil Colonial",
+      "count": 1,
+      "percentage": 1.28
+    },
+    {
+      "topic": "História do Brasil",
+      "count": 1,
+      "percentage": 1.28
+    },
+    {
+      "topic": "Partidos Políticos",
+      "count": 1,
+      "percentage": 1.28
+    },
+    {
+      "topic": "Racismo",
+      "count": 1,
+      "percentage": 1.28
+    },
+    {
+      "topic": "Extrema Direita",
+      "count": 1,
+      "percentage": 1.28
+    },
+    {
+      "topic": "Imperialismo",
+      "count": 1,
+      "percentage": 1.28
     }
   ],
   "byDifficulty": [
     {
+      "difficulty": 1,
+      "count": 1,
+      "percentage": 1.28
+    },
+    {
       "difficulty": 2,
-      "count": 4,
-      "percentage": 26.67
+      "count": 22,
+      "percentage": 28.21
     },
     {
       "difficulty": 3,
-      "count": 6,
-      "percentage": 40
+      "count": 46,
+      "percentage": 58.97
     },
     {
       "difficulty": 4,
-      "count": 5,
-      "percentage": 33.33
+      "count": 9,
+      "percentage": 11.54
     }
   ]
 }

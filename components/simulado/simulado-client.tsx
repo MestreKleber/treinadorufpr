@@ -74,6 +74,11 @@ export function SimuladoClient() {
   }, [remainingSec]);
 
   const currentQuestion = questions[currentIndex];
+  const missingImageWarning =
+    !currentQuestion?.imageUrl &&
+    /figura|gr[aá]fico|imagem|tabela|mapa|ao lado/i.test(
+      `${currentQuestion?.statement ?? ""}\n${currentQuestion?.bundleContext ?? ""}`,
+    );
 
   const progressValue = useMemo(() => {
     if (questions.length === 0) return 0;
@@ -286,6 +291,12 @@ export function SimuladoClient() {
         </CardHeader>
 
         <CardContent className="space-y-2">
+          {missingImageWarning ? (
+            <div className="rounded-lg border border-amber-300 bg-amber-50 p-3 text-sm text-amber-900">
+              Esta questão parece depender de figura/gráfico, mas a imagem não foi gerada na importação deste PDF.
+            </div>
+          ) : null}
+
           {currentQuestion.imageUrl ? (
             <div className="overflow-hidden rounded-lg border bg-white p-2">
               <Image

@@ -55,7 +55,15 @@ type ReportResponse = {
   }>;
   byTopicGlobal: Array<{ topic: string; count: number; percentage: number }>;
   byDifficulty: Array<{ difficulty: number; count: number; percentage: number }>;
+  availableSources?: string[];
+  availableYears?: string[];
+  appliedFilters?: {
+    source: string | null;
+    year: string | null;
+  };
 };
+
+type ReportMode = "geral" | "por-prova";
 
 const defaultAlternatives: AlternativeForm[] = [
   { label: "A", text: "", isCorrect: false },
@@ -84,6 +92,9 @@ export function AdminClient() {
   const [pdfChunkSize, setPdfChunkSize] = useState(6);
   const [pdfRenderImages, setPdfRenderImages] = useState(true);
   const [importingPdf, setImportingPdf] = useState(false);
+  const [reportMode, setReportMode] = useState<ReportMode>("geral");
+  const [reportYear, setReportYear] = useState("all");
+  const [reportSource, setReportSource] = useState("all");
   const [report, setReport] = useState<ReportResponse | null>(null);
   const [loadingReport, setLoadingReport] = useState(false);
 
@@ -96,7 +107,21 @@ export function AdminClient() {
   async function loadReport() {
     setLoadingReport(true);
     try {
-      const res = await fetch("/api/admin/reports/content-distribution");
+      const params = new URLSearchParams();
+      if (reportMode === "por-prova") {
+        if (reportYear !== "all") {
+          params.set("year", reportYear);
+        }
+        if (reportSource !== "all") {
+          params.set("source", reportSource);
+        }
+      }
+
+      const url = params.size > 0
+        ? `/api/admin/reports/content-distribution?${params.toString()}`
+        : "/api/admin/reports/content-distribution";
+
+      const res = await fetch(url);
       const data = (await res.json()) as ReportResponse;
       setReport(data);
     } finally {
@@ -106,8 +131,12 @@ export function AdminClient() {
 
   useEffect(() => {
     void loadQuestions();
-    void loadReport();
   }, []);
+
+  useEffect(() => {
+    void loadReport();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [reportMode, reportYear, reportSource]);
 
   function setAlternativeText(index: number, value: string) {
     setAlternatives((prev) => prev.map((item, i) => (i === index ? { ...item, text: value } : item)));
@@ -257,6 +286,11 @@ export function AdminClient() {
       setImportingPdf(false);
     }
   }
+
+  const filteredSources = (report?.availableSources ?? []).filter((item) => {
+    if (reportYear === "all") return true;
+    return item.includes(reportYear);
+  });
 
   return (
     <main className="mx-auto w-full max-w-6xl space-y-4 px-4 py-10">
@@ -455,15 +489,73 @@ export function AdminClient() {
 
       <Card>
         <CardHeader className="flex flex-row items-center justify-between">
-          <CardTitle className="inline-flex items-center gap-2">
-            <BarChart3 className="h-5 w-5" />
-            Relatório de conteúdo
-          </CardTitle>
+          <div className="space-y-2">
+            <CardTitle className="inline-flex items-center gap-2">
+              <BarChart3 className="h-5 w-5" />
+              Relatório de conteúdo
+            </CardTitle>
+            <div className="inline-flex rounded-lg border p-1">
+              <button
+                type="button"
+                className={`rounded-md px-3 py-1 text-sm ${reportMode === "geral" ? "bg-zinc-900 text-white" : "text-zinc-700"}`}
+                onClick={() => setReportMode("geral")}
+              >
+                Geral
+              </button>
+              <button
+                type="button"
+                className={`rounded-md px-3 py-1 text-sm ${reportMode === "por-prova" ? "bg-zinc-900 text-white" : "text-zinc-700"}`}
+                onClick={() => setReportMode("por-prova")}
+              >
+                Por prova/ano
+              </button>
+            </div>
+          </div>
           <Button variant="outline" size="sm" onClick={() => void loadReport()} disabled={loadingReport}>
             {loadingReport ? "Atualizando..." : "Atualizar"}
           </Button>
         </CardHeader>
         <CardContent className="space-y-4">
+          {reportMode === "por-prova" ? (
+            <div className="grid gap-3 rounded-lg border bg-zinc-50 p-3 md:grid-cols-2">
+              <div className="space-y-1">
+                <Label htmlFor="reportYear">Ano</Label>
+                <select
+                  id="reportYear"
+                  value={reportYear}
+                  onChange={(e) => {
+                    setReportYear(e.target.value);
+                    setReportSource("all");
+                  }}
+                  className="h-10 w-full rounded-md border border-zinc-300 bg-white px-3 text-sm"
+                >
+                  <option value="all">Todos</option>
+                  {(report?.availableYears ?? []).map((year) => (
+                    <option key={year} value={year}>
+                      {year}
+                    </option>
+                  ))}
+                </select>
+              </div>
+              <div className="space-y-1">
+                <Label htmlFor="reportSource">Prova/Fonte</Label>
+                <select
+                  id="reportSource"
+                  value={reportSource}
+                  onChange={(e) => setReportSource(e.target.value)}
+                  className="h-10 w-full rounded-md border border-zinc-300 bg-white px-3 text-sm"
+                >
+                  <option value="all">Todas do filtro</option>
+                  {filteredSources.map((item) => (
+                    <option key={item} value={item}>
+                      {item}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            </div>
+          ) : null}
+
           {report ? (
             <>
               <div className="grid gap-3 md:grid-cols-3">
@@ -490,7 +582,7 @@ export function AdminClient() {
                         {formatSubjectLabel(item.subject)}: {item.count} questões ({item.percentage.toFixed(2)}%)
                       </p>
                       <p className="text-xs text-zinc-600">
-                        Principais conteúdos: {item.topics.slice(0, 3).map((topic) => `${topic.topic} (${topic.percentageWithinSubject.toFixed(2)}%)`).join(", ") || "-"}
+                        Principais conteúdos: {item.topics.slice(0, 5).map((topic) => `${topic.topic} (${topic.percentageWithinSubject.toFixed(2)}%)`).join(", ") || "-"}
                       </p>
                     </div>
                   ))}
