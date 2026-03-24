@@ -1,9 +1,11 @@
 [
   {
     "subject": "MATEMÁTICA",
+    "topic": "Descontos e Preços",
     "statement": "O preço de um livro está com 15% de desconto em uma promoção. Nessa promoção, esse livro custa R$ 51,00. Assinale a alternativa que corresponde ao valor desse livro sem o desconto.",
-    "bundleId": "matematica_1",
-    "bundleTitle": "Matemática - Questões 1 a 5",
+    "bundleId": "1",
+    "bundleTitle": "Questões 1 e 2",
+    "bundleContext": "Responda as questões 1 e 2",
     "source": "UFPR certoufpr2026",
     "difficulty": 2,
     "page": 1,
@@ -37,9 +39,11 @@
   },
   {
     "subject": "MATEMÁTICA",
+    "topic": "Geometria",
     "statement": "Na figura ao lado, a área do quadrado ABEF é igual a 9 cm², e o comprimento do segmento DF é igual a 5 cm. Assinale a alternativa que corresponde à área, em cm², do retângulo ABCD.",
-    "bundleId": "matematica_1",
-    "bundleTitle": "Matemática - Questões 1 a 5",
+    "bundleId": "1",
+    "bundleTitle": "Questões 1 e 2",
+    "bundleContext": "Responda as questões 1 e 2",
     "source": "UFPR certoufpr2026",
     "difficulty": 2,
     "page": 1,
@@ -73,9 +77,11 @@
   },
   {
     "subject": "MATEMÁTICA",
+    "topic": "Equações",
     "statement": "As retas paralelas 𝒓1 e 𝒓2 no plano 𝒙𝒚 são dadas pelas equações 𝒚 = 2𝒎 – 3 𝒙 + 4 e 𝒚 = 5𝒎 + 1 𝒙 – 2, respectivamente. Assinale a alternativa que corresponde ao valor de 𝒎.",
-    "bundleId": "matematica_1",
-    "bundleTitle": "Matemática - Questões 1 a 5",
+    "bundleId": "2",
+    "bundleTitle": "Questões 3 e 4",
+    "bundleContext": "Responda as questões 3 e 4",
     "source": "UFPR certoufpr2026",
     "difficulty": 3,
     "page": 1,
@@ -109,9 +115,11 @@
   },
   {
     "subject": "MATEMÁTICA",
+    "topic": "Trigonometria",
     "statement": "O pentágono da figura ao lado tem ângulos retos A, B e C. Conhecendo as medidas dos lados AE = 15, AB = 12, BC = 7 e CD = 5, assinale a alternativa que corresponde ao valor da tangente do ângulo 𝜽 = E.",
-    "bundleId": "matematica_1",
-    "bundleTitle": "Matemática - Questões 1 a 5",
+    "bundleId": "2",
+    "bundleTitle": "Questões 3 e 4",
+    "bundleContext": "Responda as questões 3 e 4",
     "source": "UFPR certoufpr2026",
     "difficulty": 3,
     "page": 1,
@@ -145,11 +153,13 @@
   },
   {
     "subject": "MATEMÁTICA",
-    "statement": "Considere o paralelogramo ABCD ilustrado na figura ao lado. Sejam M o ponto médio do lado CD e N o ponto comum aos segmentos AC e BM. Sabendo que a medida do segmento AN é igual a 4/3, assinale a alternativa que corresponde à medida da diagonal AC.",
-    "bundleId": "matematica_1",
-    "bundleTitle": "Matemática - Questões 1 a 5",
+    "topic": "Geometria",
+    "statement": "Considere o paralelogramo ABCD ilustrado na figura ao lado. Sejam M o ponto médio do lado CD e N o ponto comum aos segmentos AC e BM. Sabendo que a medida do segmento AN é igual a 4√3, assinale a alternativa que corresponde à medida da diagonal AC.",
+    "bundleId": "3",
+    "bundleTitle": "Questões 5 e 6",
+    "bundleContext": "Responda as questões 5 e 6",
     "source": "UFPR certoufpr2026",
-    "difficulty": 2,
+    "difficulty": 3,
     "page": 1,
     "alternatives": [
       {
@@ -181,9 +191,49 @@
   },
   {
     "subject": "MATEMÁTICA",
+    "topic": "Combinatória",
+    "statement": "A equipe técnica de um time de futebol analisou a possibilidade de a final do campeonato ir para a disputa por pênaltis. Caso isso ocorra, a equipe precisará escolher 5 jogadores diferentes, dentre os 11 que estarão em campo, e também a ordem entre eles para a cobrança dos 5 primeiros pênaltis. A decisão tomada foi a seguinte: o principal atacante do time começará as cobranças, e o goleiro deverá ser um dos 5 cobradores. Além disso, nenhum dos 3 zagueiros em campo participará dessas primeiras cobranças. A partir dessas informações, assinale a alternativa que apresenta corretamente o número de configurações possíveis para essa escolha.",
+    "bundleId": "3",
+    "bundleTitle": "Questões 5 e 6",
+    "bundleContext": "Responda as questões 5 e 6",
+    "source": "UFPR certoufpr2026",
+    "difficulty": 4,
+    "page": 1,
+    "alternatives": [
+      {
+        "label": "A",
+        "text": "280",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "340",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "480",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "625",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "864",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "subject": "MATEMÁTICA",
+    "topic": "Progressões Aritméticas",
     "statement": "O caminho poligonal do ponto A ao ponto B, descrito na figura ao lado, tem medida igual a 84/5 unidades de comprimento. As medidas dos consecutivos segmentos desse caminho poligonal formam uma progressão aritmética. Assinale a alternativa que corresponde à soma das medidas dos segmentos PQ e QR.",
-    "bundleId": "matematica_2",
-    "bundleTitle": "Matemática - Questões 6 a 10",
+    "bundleId": "4",
+    "bundleTitle": "Questões 7 e 8",
+    "bundleContext": "Responda as questões 7 e 8",
     "source": "UFPR certoufpr2026",
     "difficulty": 3,
     "page": 2,
@@ -217,11 +267,13 @@
   },
   {
     "subject": "MATEMÁTICA",
+    "topic": "Funções Quadráticas",
     "statement": "A função quadrática 𝒇𝒙 satisfaz a igualdade 𝒇(2𝒙 + 1) = 4𝒙² + 10𝒙 + 9, para todo 𝒙 ∈ 𝑹. Assinale a alternativa que corresponde ao vértice da parábola dada pelo gráfico de 𝒇𝒙.",
-    "bundleId": "matematica_2",
-    "bundleTitle": "Matemática - Questões 6 a 10",
+    "bundleId": "4",
+    "bundleTitle": "Questões 7 e 8",
+    "bundleContext": "Responda as questões 7 e 8",
     "source": "UFPR certoufpr2026",
-    "difficulty": 3,
+    "difficulty": 4,
     "page": 2,
     "alternatives": [
       {
@@ -253,9 +305,11 @@
   },
   {
     "subject": "MATEMÁTICA",
+    "topic": "Logaritmos",
     "statement": "Os números reais 𝒙 e 𝒚 satisfazem as equações: log₃(3𝒚 – 1) = 2 + log₃𝑥 e 2 log₂𝑦 = 2 + log₂𝑥. Assinale a alternativa que corresponde ao valor da razão 𝒚/𝒙.",
-    "bundleId": "matematica_2",
-    "bundleTitle": "Matemática - Questões 6 a 10",
+    "bundleId": "5",
+    "bundleTitle": "Questões 9",
+    "bundleContext": "Responda a questão 9",
     "source": "UFPR certoufpr2026",
     "difficulty": 3,
     "page": 2,
@@ -289,9 +343,11 @@
   },
   {
     "subject": "FÍSICA",
+    "topic": "Deslocamento",
     "statement": "O valor do deslocamento 𝜟𝒙 efetuado pelo objeto A, entre os instantes 𝒕₁ = 0 s e 𝒕₂ = 35 s, é:",
-    "bundleId": "fisica_1",
-    "bundleTitle": "Física - Questões 10 a 12",
+    "bundleId": "6",
+    "bundleTitle": "Questões 10 a 12",
+    "bundleContext": "Responda as questões 10 a 12",
     "source": "UFPR certoufpr2026",
     "difficulty": 2,
     "page": 3,
@@ -325,11 +381,13 @@
   },
   {
     "subject": "FÍSICA",
+    "topic": "Energia Cinética",
     "statement": "O valor da energia cinética 𝑲B do objeto B (de massa constante 𝒎 = 5,0 g), no instante 𝒕 = 15 s, é:",
-    "bundleId": "fisica_1",
-    "bundleTitle": "Física - Questões 10 a 12",
+    "bundleId": "6",
+    "bundleTitle": "Questões 10 a 12",
+    "bundleContext": "Responda as questões 10 a 12",
     "source": "UFPR certoufpr2026",
-    "difficulty": 2,
+    "difficulty": 3,
     "page": 3,
     "alternatives": [
       {
@@ -361,9 +419,11 @@
   },
   {
     "subject": "FÍSICA",
+    "topic": "Distância",
     "statement": "O valor da distância 𝒅 entre os dois objetos no instante 𝒕 = 30 s é:",
-    "bundleId": "fisica_1",
-    "bundleTitle": "Física - Questões 10 a 12",
+    "bundleId": "7",
+    "bundleTitle": "Questões 13 a 15",
+    "bundleContext": "Responda as questões 13 a 15",
     "source": "UFPR certoufpr2026",
     "difficulty": 2,
     "page": 3,
@@ -397,12 +457,14 @@
   },
   {
     "subject": "FÍSICA",
+    "topic": "Comprimento de Tubo Sonoro",
     "statement": "Num tubo sonoro aberto de comprimento 𝑳, a frequência do terceiro harmônico produzido por ele vale 𝒇₃ = 5,1 kHz. Sabe-se que a velocidade do som no local vale 𝒗ₛ = 340 m/s. O valor do comprimento 𝑳 do tubo é:",
-    "bundleId": "fisica_2",
-    "bundleTitle": "Física - Questões 13 a 15",
+    "bundleId": "8",
+    "bundleTitle": "Questões 16 a 18",
+    "bundleContext": "Responda as questões 16 a 18",
     "source": "UFPR certoufpr2026",
     "difficulty": 3,
-    "page": 4,
+    "page": 3,
     "alternatives": [
       {
         "label": "A",
@@ -433,12 +495,14 @@
   },
   {
     "subject": "FÍSICA",
+    "topic": "Capacitores",
     "statement": "Dispõem-se de dois capacitores, de capacitâncias 𝑪₁ e 𝑪₂, respectivamente. O primeiro é submetido a uma tensão 𝚫𝑽₁ e o segundo, a uma tensão 𝚫𝑽₂. Sabendo que 𝑪₁ = 3𝑪₂ e 𝚫𝑽₁ = 2𝚫𝑽₂, determine a razão 𝑼₂/𝑼₁ entre as energias 𝑼₂ e 𝑼₁ armazenadas por cada capacitor.",
-    "bundleId": "fisica_2",
-    "bundleTitle": "Física - Questões 13 a 15",
+    "bundleId": "8",
+    "bundleTitle": "Questões 16 a 18",
+    "bundleContext": "Responda as questões 16 a 18",
     "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 4,
+    "difficulty": 4,
+    "page": 3,
     "alternatives": [
       {
         "label": "A",
@@ -469,81 +533,11 @@
   },
   {
     "subject": "FÍSICA",
-    "statement": "A ordem de grandeza do número de dias de um ano é:",
-    "bundleId": "fisica_3",
-    "bundleTitle": "Física - Questões 15 a 18",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 1,
-    "page": 4,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "10–1",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "100",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "101",
-        "isCorrect": true
-      },
-      {
-        "label": "D",
-        "text": "102",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "104",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "FÍSICA",
-    "statement": "O módulo da força elétrica entre duas cargas pontuais estáticas 𝒒 e 𝑸₁, separadas por uma distância 𝒅₁, vale 𝑭₁. Substituindo 𝑸₁ por uma carga pontual 𝑸₂ = 4𝑸₁, e colocando-a a uma distância 𝒅₂ = 2𝒅₁ de 𝒒, o módulo da força passa a valer 𝑭₂. O valor da razão 𝑭₁/𝑭₂ é:",
-    "bundleId": "fisica_4",
-    "bundleTitle": "Física - Questões 19 a 21",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 4,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "1/2 = 1/4",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "1/2 = 1/2",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "1/2 = 1",
-        "isCorrect": true
-      },
-      {
-        "label": "D",
-        "text": "1/2 = 2",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "1/2 = 4",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "FÍSICA",
+    "topic": "Potência e Resistência",
     "statement": "Um resistor de resistência 𝑹 dissipa uma potência 𝑷 quando submetido a uma diferença de potencial 𝚫𝑽. Assinale a alternativa que apresenta corretamente o valor da resistência 𝑹 quando 𝑷 = 5,0 W e 𝚫𝑽 = 10 V.",
-    "bundleId": "fisica_4",
-    "bundleTitle": "Física - Questões 19 a 21",
+    "bundleId": "9",
+    "bundleTitle": "Questões 19 a 21",
+    "bundleContext": "Responda as questões 19 a 21",
     "source": "UFPR certoufpr2026",
     "difficulty": 2,
     "page": 4,
@@ -577,11 +571,13 @@
   },
   {
     "subject": "FÍSICA",
+    "topic": "Termodinâmica",
     "statement": "Uma certa quantidade de gás ideal executa um processo termodinâmico partindo de um estado em que a pressão vale 𝑷₁, a temperatura vale 𝑻₁ e o volume vale 𝑽₁, chegando a outro estado em que a pressão vale 𝑷₂, a temperatura vale 𝑻₂ e o volume vale 𝑽₂. Assinale a alternativa que apresenta corretamente o valor da razão 𝑷₂/𝑷₁ quando 𝑻₂ = 5𝑻₁/2 e 𝑽₂ = 3𝑽₁.",
-    "bundleId": "fisica_5",
-    "bundleTitle": "Física - Questões 22 a 25",
+    "bundleId": "9",
+    "bundleTitle": "Questões 19 a 21",
+    "bundleContext": "Responda as questões 19 a 21",
     "source": "UFPR certoufpr2026",
-    "difficulty": 3,
+    "difficulty": 4,
     "page": 4,
     "alternatives": [
       {
@@ -613,156 +609,128 @@
   },
   {
     "subject": "QUÍMICA",
-    "statement": "O radioisótopo sintético iodo-131 é empregado no diagnóstico e tratamento de diversas enfermidades. Para a sua síntese, um isótopo natural de um determinado elemento, representado por A', é bombardeado por nêutrons em um reator nuclear. Quando o núcleo do átomo A' absorve um nêutron, é transformado no isótopo A\", conforme a seguinte equação: A' + n → A\". Na sequência, A\" emite radiação β espontaneamente, produzindo o iodo-131, como mostrado na equação a seguir: A\" → I 53 131 + 𝒍 – A radiação β envolve a conversão de um nêutron do núcleo atômico para um próton, seguida da ejeção de um elétron altamente energético chamado de partícula β. Considerando as informações apresentadas, qual é o átomo representado por A'?",
-    "bundleId": "quimica_1",
-    "bundleTitle": "Química - Questões 19 a 21",
+    "topic": "Radioisótopos",
+    "statement": "O radioisótopo sintético iodo-131 é empregado no diagnóstico e tratamento de diversas enfermidades. Para a sua síntese, um isótopo natural de um determinado elemento, representado por A', é bombardeado por nêutrons em um reator nuclear. Quando o núcleo do átomo A' absorve um nêutron, é transformado no isótopo A'', conforme a seguinte equação: A' + n → A''. Na sequência, A'' emite radiação β espontaneamente, produzindo o iodo-131, como mostrado na equação a seguir: A'' → I₅₃₁ + 𝒍 – A radiação β envolve a conversão de um nêutron do núcleo atômico para um próton, seguida da ejeção de um elétron altamente energético chamado de partícula β. Considerando as informações apresentadas, qual é o átomo representado por A'?",
+    "bundleId": "10",
+    "bundleTitle": "Questões 22 a 25",
+    "bundleContext": "Responda as questões 22 a 25",
     "source": "UFPR certoufpr2026",
     "difficulty": 3,
-    "page": 5,
+    "page": 4,
     "alternatives": [
       {
         "label": "A",
-        "text": "Te 52 130",
+        "text": "Te₅₂₁₃₀",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "Te 52 131",
+        "text": "Te₅₂₁₃₁",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "Xe 54 130",
+        "text": "Xe₅₄₁₃₀",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "Xe 54 131",
+        "text": "Xe₅₄₁₃₁",
         "isCorrect": false
       },
       {
         "label": "E",
-        "text": "Xe 54 132",
+        "text": "Xe₅₄₁₃₂",
         "isCorrect": false
       }
     ]
   },
   {
     "subject": "QUÍMICA",
-    "statement": "Para a desinfeção da água destinada ao consumo doméstico, emprega-se o cloro (Cl2), que elimina um amplo espectro de microrganismos nocivos. Entretanto, o cloro que persiste na água tratada pode prejudicar certas atividades, como a criação de peixes em aquário. O agente redutor tiossulfato (S2O32−) é utilizado quando se quer remover rapidamente o cloro, reduzindo-o a cloreto. As semirreações de redução envolvendo o cloro e o tiossulfato são, respectivamente: Cl2 + 2 e– → 2 Cl– 2 SO42– + 5 H2O + 8 e– → S2O32– + 10 OH– Com base nas duas equações dadas, qual é a equação química que representa a reação de redução do cloro pelo tiossulfato?",
-    "bundleId": "quimica_2",
-    "bundleTitle": "Química - Questões 22 a 25",
+    "topic": "Reações Químicas",
+    "statement": "Para a desinfeção da água destinada ao consumo doméstico, emprega-se o cloro (Cl₂), que elimina um amplo espectro de microrganismos nocivos. Entretanto, o cloro que persiste na água tratada pode prejudicar certas atividades, como a criação de peixes em aquário. O agente redutor tiossulfato (S₂O₃²⁻) é utilizado quando se quer remover rapidamente o cloro, reduzindo-o a cloreto. As semirreações de redução envolvendo o cloro e o tiossulfato são, respectivamente: Cl₂ + 2 e⁻ → 2 Cl⁻ 2 SO₄²⁻ + 5 H₂O + 8 e⁻ → S₂O₃²⁻ + 10 OH⁻ Com base nas duas equações dadas, qual é a equação química que representa a reação de redução do cloro pelo tiossulfato?",
+    "bundleId": "10",
+    "bundleTitle": "Questões 22 a 25",
+    "bundleContext": "Responda as questões 22 a 25",
     "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 5,
+    "difficulty": 4,
+    "page": 4,
     "alternatives": [
       {
         "label": "A",
-        "text": "Cl2 + 2 SO42– + 5 H2O → 2 Cl– + S2O32– + 10 OH–",
+        "text": "Cl₂ + 2 SO₄²⁻ + 5 H₂O → 2 Cl⁻ + S₂O₃²⁻ + 10 OH⁻",
         "isCorrect": false
       },
       {
         "label": "B",
-        "text": "4 Cl2 + 2 SO42– + 5 H2O → 8 Cl– + S2O32– + 10 OH–",
+        "text": "4 Cl₂ + 2 SO₄²⁻ + 5 H₂O → 8 Cl⁻ + S₂O₃²⁻ + 10 OH⁻",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "Cl2 + S2O32– + 10 OH– → 2 Cl– + 2 SO42– + 5 H2O",
+        "text": "Cl₂ + S₂O₃²⁻ + 10 OH⁻ → 2 Cl⁻ + 2 SO₄²⁻ + 5 H₂O",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "Cl2 + 2 S2O32– + 20 OH– → 2 Cl– + 4 SO42– + 10 H2O",
+        "text": "Cl₂ + 2 S₂O₃²⁻ + 20 OH⁻ → 2 Cl⁻ + 4 SO₄²⁻ + 10 H₂O",
         "isCorrect": false
       },
       {
         "label": "E",
-        "text": "4 Cl2 + S2O32– + 10 OH– → 8 Cl– + 2 SO42– + 5 H2O",
+        "text": "4 Cl₂ + S₂O₃²⁻ + 10 OH⁻ → 8 Cl⁻ + 2 SO₄²⁻ + 5 H₂O",
         "isCorrect": true
       }
     ]
   },
   {
     "subject": "QUÍMICA",
-    "statement": "O funcionamento de uma lâmpada comum para iluminação pública antes do advento do LED era baseado em vapor de sódio. Os átomos de sódio, quando bombardeados por elétrons durante a operação da lâmpada, atingem o estado excitado em que o elétron de maior energia é promovido para o orbital atômico vazio de menor energia disponível. Quando os átomos decaem do estado excitado para o estado fundamental, um fóton é emitido, produzindo a cor amarela típica da lâmpada de sódio. Sabendo que o número atômico do sódio é 11, qual é a configuração eletrônica do estado excitado do sódio responsável pela emissão de luz da lâmpada de vapor de sódio?",
-    "bundleId": "quimica_3",
-    "bundleTitle": "Química - Questões 26 a 30",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 5,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "1s2 2s1 2p6 3s2",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "1s2 2s2 2p5 3s2",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "1s2 2s2 2p6 3p1",
-        "isCorrect": true
-      },
-      {
-        "label": "D",
-        "text": "1s2 2s2 2p6 3d1",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "1s2 2s2 2p6 4s1",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "QUÍMICA",
+    "topic": "Estruturas Químicas",
     "statement": "A partir das estruturas mostradas, assinale a alternativa que apresenta as fórmulas moleculares da lactose e do antraceno, respectivamente.",
-    "bundleId": "quimica_4",
-    "bundleTitle": "Química - Questões 26 a 30",
+    "bundleId": "11",
+    "bundleTitle": "Questões 26 a 30",
+    "bundleContext": "Responda as questões 26 a 30",
     "source": "UFPR certoufpr2026",
     "difficulty": 3,
-    "page": 6,
+    "page": 5,
     "alternatives": [
       {
         "label": "A",
-        "text": "C10H22O11 e C14H10",
+        "text": "C₁₀H₂₂O₁₁ e C₁₄H₁₀",
         "isCorrect": false
       },
       {
         "label": "B",
-        "text": "C12H22O11 e C14H14",
+        "text": "C₁₂H₂₂O₁₁ e C₁₄H₁₄",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "C12H22O11 e C14H10",
+        "text": "C₁₂H₂₂O₁₁ e C₁₄H₁₀",
         "isCorrect": true
       },
       {
         "label": "D",
-        "text": "C10H12O11 e C14H10",
+        "text": "C₁₀H₁₂O₁₁ e C₁₄H₁₀",
         "isCorrect": false
       },
       {
         "label": "E",
-        "text": "C12H22O11 e C10H10",
+        "text": "C₁₂H₂₂O₁₁ e C₁₀H₁₀",
         "isCorrect": false
       }
     ]
   },
   {
     "subject": "QUÍMICA",
+    "topic": "Classificação de Compostos",
     "statement": "Considerando as estruturas da lactose e do antraceno, como esses compostos orgânicos são classificados, respectivamente?",
-    "bundleId": "quimica_5",
-    "bundleTitle": "Química - Questões 26 a 30",
+    "bundleId": "11",
+    "bundleTitle": "Questões 26 a 30",
+    "bundleContext": "Responda as questões 26 a 30",
     "source": "UFPR certoufpr2026",
     "difficulty": 2,
-    "page": 6,
+    "page": 5,
     "alternatives": [
       {
         "label": "A",
@@ -793,12 +761,14 @@
   },
   {
     "subject": "QUÍMICA",
-    "statement": "Um dos componentes da resina de pinho, usado na produção da fumaça branca, é o ácido abiético, de fórmula molecular C20H30O2. Considere a combustão completa de 1 mol desse ácido, ou seja, a reação entre ele e o gás oxigênio (O2), produzindo apenas gás carbônico (CO2) e água (H2O). Quantos mols de gás carbônico e água, respectivamente, são produzidos nessa combustão?",
-    "bundleId": "quimica_6",
-    "bundleTitle": "Química - Questões 31 a 35",
+    "topic": "Combustão",
+    "statement": "Um dos componentes da resina de pinho, usado na produção da fumaça branca, é o ácido abiético, de fórmula molecular C₂₀H₃₀O₂. Considere a combustão completa de 1 mol desse ácido, ou seja, a reação entre ele e o gás oxigênio (O₂), produzindo apenas gás carbônico (CO₂) e água (H₂O). Quantos mols de gás carbônico e água, respectivamente, são produzidos nessa combustão?",
+    "bundleId": "12",
+    "bundleTitle": "Questões 31 a 35",
+    "bundleContext": "Responda as questões 31 a 35",
     "source": "UFPR certoufpr2026",
     "difficulty": 3,
-    "page": 6,
+    "page": 5,
     "alternatives": [
       {
         "label": "A",
@@ -829,12 +799,14 @@
   },
   {
     "subject": "QUÍMICA",
-    "statement": "Os sais clorato e perclorato de potássio são utilizados como agentes oxidantes nas reações de combustão. Quais são os estados de oxidação do átomo de cloro nos ânions perclorato (ClO4–) e clorato (ClO3–), respectivamente?",
-    "bundleId": "quimica_7",
-    "bundleTitle": "Química - Questões 36 a 40",
+    "topic": "Estados de Oxidação",
+    "statement": "Os sais clorato e perclorato de potássio são utilizados como agentes oxidantes nas reações de combustão. Quais são os estados de oxidação do átomo de cloro nos ânions perclorato (ClO₄⁻) e clorato (ClO₃⁻), respectivamente?",
+    "bundleId": "12",
+    "bundleTitle": "Questões 31 a 35",
+    "bundleContext": "Responda as questões 31 a 35",
     "source": "UFPR certoufpr2026",
-    "difficulty": 2,
-    "page": 6,
+    "difficulty": 3,
+    "page": 5,
     "alternatives": [
       {
         "label": "A",
@@ -865,10 +837,10 @@
   },
   {
     "subject": "Biologia",
-    "topic": "Medicamentos e Efeitos",
+    "topic": "Medicamentos e Efeitos Metabólicos",
     "statement": "Medicamentos injetáveis que eram utilizados exclusivamente para o tratamento de diabetes tipo II passaram a ser usados para tratamento de obesidade e sobrepeso, sendo popularmente chamados de “canetas emagrecedoras”. Esses medicamentos retardam o esvaziamento gástrico e alteram a secreção de hormônios pancreáticos, resultando em uma redução da glicemia. A esse respeito, considere as figuras a seguir: A figura que melhor representa o efeito da aplicação desses medicamentos em relação à glicemia e às concentrações plasmáticas de glucagon e insulina é a:",
     "bundleId": "medicamentos",
-    "bundleTitle": "Medicamentos e Efeitos",
+    "bundleTitle": "Medicamentos e Efeitos Metabólicos",
     "source": "UFPR certoufpr2026",
     "difficulty": 3,
     "page": 7,
@@ -907,7 +879,7 @@
     "bundleId": "especies_exoticas",
     "bundleTitle": "Espécies Exóticas Invasoras",
     "source": "UFPR certoufpr2026",
-    "difficulty": 3,
+    "difficulty": 2,
     "page": 8,
     "alternatives": [
       {
@@ -1018,7 +990,7 @@
     "bundleId": "hipercolesterolemia",
     "bundleTitle": "Hipercolesterolemia Familiar",
     "source": "UFPR certoufpr2026",
-    "difficulty": 4,
+    "difficulty": 3,
     "page": 9,
     "alternatives": [
       {
@@ -1052,10 +1024,10 @@
     "subject": "Biologia",
     "topic": "Extinção de Anfíbios",
     "statement": "Qual característica dos anfíbios ajuda a explicar por que esse grupo é proporcionalmente mais ameaçado de extinção?",
-    "bundleId": "anfibios",
+    "bundleId": "extincao_anfibios",
     "bundleTitle": "Extinção de Anfíbios",
     "source": "UFPR certoufpr2026",
-    "difficulty": 3,
+    "difficulty": 2,
     "page": 9,
     "alternatives": [
       {
@@ -1087,13 +1059,13 @@
   },
   {
     "subject": "Geografia",
-    "topic": "Cabeça d'água",
+    "topic": "Fenômenos Naturais",
     "statement": "Considerando essas informações, assinale a alternativa que apresenta a principal causa do fenômeno cabeça d’água e o motivo pelo qual seus efeitos podem surpreender as pessoas.",
-    "bundleId": "cabeca_dagua",
-    "bundleTitle": "Cabeça d'água",
+    "bundleId": "fenomenos_naturais",
+    "bundleTitle": "Fenômenos Naturais",
     "source": "UFPR certoufpr2026",
     "difficulty": 3,
-    "page": 10,
+    "page": 9,
     "alternatives": [
       {
         "label": "A",
@@ -1124,10 +1096,10 @@
   },
   {
     "subject": "Geografia",
-    "topic": "Declaração Balfour",
+    "topic": "História do Oriente Médio",
     "statement": "Considerando as informações apresentadas, assinale a alternativa que relaciona corretamente a declaração Balfour à evolução da ocupação judaica na Palestina.",
     "bundleId": "declaracao_balfour",
-    "bundleTitle": "Declaração Balfour",
+    "bundleTitle": "História do Oriente Médio",
     "source": "UFPR certoufpr2026",
     "difficulty": 4,
     "page": 10,
@@ -1166,8 +1138,8 @@
     "bundleId": "relevo_carstico",
     "bundleTitle": "Relevo Cárstico",
     "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 11,
+    "difficulty": 2,
+    "page": 10,
     "alternatives": [
       {
         "label": "A",
@@ -1198,13 +1170,13 @@
   },
   {
     "subject": "Geografia",
-    "topic": "Desmatamento no Matopiba",
-    "statement": "Predominante em cerca de 91% da área do Matopiba, o bioma em questão é chamado de:",
-    "bundleId": "matopiba",
-    "bundleTitle": "Desmatamento no Matopiba",
+    "topic": "Desmatamento no Brasil",
+    "statement": "Nos dois últimos anos, 2023 e 2024, a Amazônia deixou de ser a formação vegetal mais desmatada do país. Em 2024, a região do Matopiba concentrou aproximadamente 75% do desmatamento de um determinado bioma e 42% de toda a perda de vegetação nativa no Brasil. Predominante em cerca de 91% da área do Matopiba, o bioma em questão é chamado de:",
+    "bundleId": "desmatamento_brasil",
+    "bundleTitle": "Desmatamento no Brasil",
     "source": "UFPR certoufpr2026",
     "difficulty": 3,
-    "page": 12,
+    "page": 11,
     "alternatives": [
       {
         "label": "A",
@@ -1235,13 +1207,13 @@
   },
   {
     "subject": "Geografia",
-    "topic": "Fluxos Migratórios",
+    "topic": "Migração e Trabalho",
     "statement": "Considerando as informações apresentadas e os conhecimentos dos fluxos migratórios contemporâneos, assinale a alternativa correta.",
-    "bundleId": "fluxos_migratorios",
-    "bundleTitle": "Fluxos Migratórios",
+    "bundleId": "migracao_trabalho",
+    "bundleTitle": "Migração e Trabalho",
     "source": "UFPR certoufpr2026",
     "difficulty": 4,
-    "page": 12,
+    "page": 11,
     "alternatives": [
       {
         "label": "A",
@@ -1346,11 +1318,10 @@
   },
   {
     "subject": "Geografia",
-    "topic": "Cartografia",
+    "topic": "Geometria e Escalas",
     "statement": "Uma pesquisa mapeou dois sítios arqueológicos A e B no estado do Paraná, nos municípios de Peabiru e Faxinal, respectivamente. Para cada local, as coordenadas UTM (Universal Transversa de Mercator) no fuso 22S são: local A (370.000,00 m E; 7.350.000,00 m S); local B (470.000,00 m E; 7.350.000,00 m S). Com base nessas informações, qual é, respectivamente, a menor distância (D) entre os locais A e B na superfície terrestre e a menor distância (d) entre os locais A e B em um documento cartográfico com escala 1:1.000.000?",
-    "bundleId": "geografia_1",
-    "bundleTitle": "Geografia - Distâncias e Escalas",
-    "bundleContext": "responda as questões 44 e 45",
+    "bundleId": "1",
+    "bundleTitle": "Questões de Geografia",
     "source": "UFPR certoufpr2026",
     "difficulty": 3,
     "page": 13,
@@ -1386,8 +1357,8 @@
     "subject": "Geografia",
     "topic": "Mudanças Climáticas",
     "statement": "A partir da interpretação dessas representações cartográficas, é correto afirmar que:",
-    "bundleId": "geografia_1",
-    "bundleTitle": "Geografia - Mudanças Climáticas",
+    "bundleId": "2",
+    "bundleTitle": "Questões sobre Mudanças Climáticas",
     "bundleContext": "responda as questões 44 e 45",
     "source": "UFPR certoufpr2026",
     "difficulty": 3,
@@ -1422,11 +1393,10 @@
   },
   {
     "subject": "História",
-    "topic": "Historiografia",
+    "topic": "Historiografia e Ideologia",
     "statement": "A escolha de um Arco Triunfal romano para a projeção do símbolo causou curiosidade e até mesmo polêmica. Isso se deve ao fato de que esse tipo de arquitetura representava, na República e no Império Romano:",
-    "bundleId": "historia_1",
-    "bundleTitle": "História - Arcos Triunfais",
-    "bundleContext": "responda as questões 46 e 47",
+    "bundleId": "3",
+    "bundleTitle": "Questões sobre História Antiga",
     "source": "UFPR certoufpr2026",
     "difficulty": 3,
     "page": 14,
@@ -1462,11 +1432,10 @@
     "subject": "História",
     "topic": "Expansão Islâmica",
     "statement": "Com base nesse texto e nos conhecimentos sobre as sociedades africanas durante a expansão islâmica, assinale a alternativa que aponta corretamente uma característica dos estados africanos durante o período da Idade Média.",
-    "bundleId": "historia_1",
-    "bundleTitle": "História - Estados Africanos",
-    "bundleContext": "responda as questões 46 e 47",
+    "bundleId": "4",
+    "bundleTitle": "Questões sobre a Idade Média",
     "source": "UFPR certoufpr2026",
-    "difficulty": 3,
+    "difficulty": 4,
     "page": 14,
     "alternatives": [
       {
@@ -1500,11 +1469,10 @@
     "subject": "História",
     "topic": "História Moderna",
     "statement": "Com base nessa afirmação e nos conhecimentos de História Moderna, é correto afirmar que são consequências dessa crise:",
-    "bundleId": "historia_2",
-    "bundleTitle": "História - Crise Diplomática",
-    "bundleContext": "responda as questões 48 e 49",
+    "bundleId": "5",
+    "bundleTitle": "Questões sobre História Moderna",
     "source": "UFPR certoufpr2026",
-    "difficulty": 3,
+    "difficulty": 4,
     "page": 14,
     "alternatives": [
       {
@@ -1538,9 +1506,8 @@
     "subject": "História",
     "topic": "Brasil Colonial",
     "statement": "Com base nessa reflexão, assinale a alternativa que descreve corretamente uma instância administrativa do Brasil Colonial e sua função.",
-    "bundleId": "historia_2",
-    "bundleTitle": "História - Brasil Colonial",
-    "bundleContext": "responda as questões 48 e 49",
+    "bundleId": "6",
+    "bundleTitle": "Questões sobre o Brasil Colonial",
     "source": "UFPR certoufpr2026",
     "difficulty": 3,
     "page": 14,
@@ -1576,11 +1543,10 @@
     "subject": "História",
     "topic": "História do Brasil",
     "statement": "Os textos representam visões divergentes sobre o passado dos indígenas da Amazônia. Com base nessas informações contrastantes e nos conhecimentos sobre sociedades indígenas no contexto da América Portuguesa, assinale a alternativa que identifica corretamente as perspectivas históricas sobre os povos originários.",
-    "bundleId": "historia_3",
-    "bundleTitle": "História - Povos Indígenas",
-    "bundleContext": "responda as questões 50 e 51",
+    "bundleId": "7",
+    "bundleTitle": "Questões sobre Povos Indígenas",
     "source": "UFPR certoufpr2026",
-    "difficulty": 3,
+    "difficulty": 4,
     "page": 15,
     "alternatives": [
       {
@@ -1612,11 +1578,10 @@
   },
   {
     "subject": "História",
-    "topic": "Partidos Políticos",
-    "statement": "Sobre esses partidos do período imperial brasileiro, era comum se dizer “nada mais parecido com um conservador do que um liberal no poder”. Com base nos conhecimentos sobre o período imperial da História do Brasil, essa expressão:",
-    "bundleId": "historia_4",
-    "bundleTitle": "História - Partidos no Brasil",
-    "bundleContext": "responda as questões 51 e 52",
+    "topic": "História do Brasil",
+    "statement": "Com base nos conhecimentos sobre o período imperial da História do Brasil, essa expressão: “nada mais parecido com um conservador do que um liberal no poder”",
+    "bundleId": "8",
+    "bundleTitle": "Questões sobre o Período Imperial",
     "source": "UFPR certoufpr2026",
     "difficulty": 3,
     "page": 15,
@@ -1649,125 +1614,49 @@
     ]
   },
   {
-    "subject": "História",
-    "topic": "Racismo",
-    "statement": "Com base nos conhecimentos sobre a História da República Velha, assinale a alternativa que aponta a proposta de cunho racista expressa no trecho e que por vezes circulava no Brasil nas primeiras décadas do século XX.",
-    "bundleId": "historia_5",
-    "bundleTitle": "História - Racismo no Brasil",
-    "bundleContext": "responda as questões 52 e 53",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 15,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "A busca pela melhoria biológica por meio de vacinação, conhecida como Higienismo.",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "A proposta de controle sobre qualidades de pureza genética, chamada de Eugenia.",
-        "isCorrect": true
-      },
-      {
-        "label": "C",
-        "text": "A medida de classificação racial e fenotípica obrigatória, chamada de Frenologia.",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "A criação de espaços urbanos de segregação compulsória, referida como Favelização.",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "A proibição de casamentos interraciais, conhecida como Política de Embranquecimento.",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "História",
-    "topic": "Extrema Direita",
-    "statement": "Com base nessa afirmação, assinale a alternativa que corretamente relaciona a ideologia nazista com o nacionalismo contido na ideia de “Espaço Vital”.",
-    "bundleId": "historia_6",
-    "bundleTitle": "História - Ideologia Nazista",
-    "bundleContext": "responda as questões 53 e 54",
+    "subject": "Língua Portuguesa",
+    "topic": "Interpretação de Texto",
+    "statement": "A respeito das expressões em destaque, assinale a alternativa correta quanto às relações sintático-semânticas do texto.",
+    "bundleId": "9",
+    "bundleTitle": "Questões de Interpretação de Texto",
     "source": "UFPR certoufpr2026",
     "difficulty": 3,
     "page": 16,
     "alternatives": [
       {
         "label": "A",
-        "text": "O nazismo defendia um modelo de nacionalismo pan-europeu, unindo todos os grupos étnicos da Europa, como os germânicos e os eslavos.",
+        "text": "A conjunção mas pode ser substituída por embora mantendo sentido original do período.",
         "isCorrect": false
       },
       {
         "label": "B",
-        "text": "O nazismo pregava uma política externa agressiva, mas defendia a soberania individual dos costumes germânicos em seu território, como a tradição romani.",
-        "isCorrect": false
+        "text": "A expressão Na verdade revela o ponto de vista do autor sobre a capacidade cognitiva do ser humano.",
+        "isCorrect": true
       },
       {
         "label": "C",
-        "text": "O nazismo propunha uma forma de isolacionismo patriótico, em que grupos estrangeiros seriam proibidos de entrar no país e as fronteiras deveriam se manter estáticas.",
+        "text": "A sequência já havia compreendido obscuramente pode ser parafraseada por já havia compreendido equivocadamente.",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "O nazismo idealizava um Grande Reich Alemão de orientação cristã e, por isso, arquitetou a perseguição religiosa aos judeus.",
+        "text": "O autor emprega a conjunção embora para informar que as questões estatísticas são irrelevantes nesse caso.",
         "isCorrect": false
       },
       {
         "label": "E",
-        "text": "O nazismo estipulava uma ideologia de expansão territorial voltada para a acomodação de uma suposta superioridade germânica.",
-        "isCorrect": true
-      }
-    ]
-  },
-  {
-    "subject": "História",
-    "topic": "Imperialismo",
-    "statement": "Sobre a política externa dos Estados Unidos na virada do século XIX para o XX, é correto afirmar que uma de suas características era:",
-    "bundleId": "historia_7",
-    "bundleTitle": "História - Política Externa dos EUA",
-    "bundleContext": "responda as questões 54 e 55",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 16,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "a Doutrina Monroe, que estipulava que a América Latina deveria ser supervisionada e administrada, em conjunto, pelos Estados Unidos e pelos países da Europa Ocidental.",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "o argumento do Destino Manifesto, que defendia o financiamento de infraestrutura e o consequente endividamento dos países mais pobres da América Latina.",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "a Diplomacia do Dólar, que postulava o constante aumento das tarifas de exportação de países da América Latina e da Ásia para os Estados Unidos como forma de protecionismo econômico.",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "o Corolário Roosevelt, que argumentava pelo direito de intervenção dos Estados Unidos em países da América Latina que estivessem em crise política ou econômica.",
-        "isCorrect": true
-      },
-      {
-        "label": "E",
-        "text": "a Política da Boa Vizinhança, que previa a concessão de presentes, benesses políticas e afrouxamento tarifário como base para um movimento panamericano.",
+        "text": "A palavra troglodita indica que o autor minimiza a conquista da produção artificial do fogo, uma realização desses homens das cavernas.",
         "isCorrect": false
       }
     ]
   },
   {
     "subject": "LITERATURA BRASILEIRA",
-    "statement": "65 - Sobre as relações de significado estabelecidas no texto, é correto afirmar:",
-    "bundleId": "bundle1",
-    "bundleTitle": "Questões 65 e 66",
-    "bundleContext": "responda as questões 65 e 66",
+    "topic": "Análise de Texto",
+    "statement": "Sobre as relações de significado estabelecidas no texto, é correto afirmar:",
+    "bundleId": "1",
+    "bundleTitle": "Questões sobre Análise de Texto",
+    "bundleContext": "Responda as questões 65 e 66.",
     "source": "UFPR certoufpr2026",
     "difficulty": 3,
     "page": 19,
@@ -1801,10 +1690,11 @@
   },
   {
     "subject": "LITERATURA BRASILEIRA",
-    "statement": "66 - Sobre a linguagem utilizada no texto, assinale a alternativa correta.",
-    "bundleId": "bundle1",
-    "bundleTitle": "Questões 65 e 66",
-    "bundleContext": "responda as questões 65 e 66",
+    "topic": "Análise de Texto",
+    "statement": "Sobre a linguagem utilizada no texto, assinale a alternativa correta.",
+    "bundleId": "1",
+    "bundleTitle": "Questões sobre Análise de Texto",
+    "bundleContext": "Responda as questões 65 e 66.",
     "source": "UFPR certoufpr2026",
     "difficulty": 3,
     "page": 19,
@@ -1838,10 +1728,11 @@
   },
   {
     "subject": "LITERATURA BRASILEIRA",
-    "statement": "67 - Considerando os contos “Rolézim”, “Estação Padre Miguel” e “A história do Periquito e do Macaco”, da coletânea O sol na cabeça, de Geovani Martins, assinale a alternativa correta.",
-    "bundleId": "bundle2",
-    "bundleTitle": "Questões 67 e 68",
-    "bundleContext": "responda as questões 67 e 68",
+    "topic": "Análise de Contos",
+    "statement": "Considerando os contos “Rolézim”, “Estação Padre Miguel” e “A história do Periquito e do Macaco”, da coletânea O sol na cabeça, de Geovani Martins, assinale a alternativa correta.",
+    "bundleId": "2",
+    "bundleTitle": "Questões sobre Análise de Contos",
+    "bundleContext": "Responda as questões 67 e 68.",
     "source": "UFPR certoufpr2026",
     "difficulty": 4,
     "page": 19,
@@ -1875,10 +1766,11 @@
   },
   {
     "subject": "LITERATURA BRASILEIRA",
-    "statement": "68 - Um dos temas centrais do romance A falência, de Júlia Lopes de Almeida, publicado em 1901, é a relação que a personagem Francisco Teodoro tem com a riqueza, como mostra o trecho a seguir: \"A terra suava de farta; não lhe faltava nem o adubo que lhe dá força, nem o ornamento que lhe dá graça...\" Com base no trecho dado e na leitura integral da obra, assinale a alternativa correta.",
-    "bundleId": "bundle2",
-    "bundleTitle": "Questões 67 e 68",
-    "bundleContext": "responda as questões 67 e 68",
+    "topic": "Análise de Romance",
+    "statement": "Com base no trecho dado e na leitura integral da obra, assinale a alternativa correta.",
+    "bundleId": "3",
+    "bundleTitle": "Questões sobre Análise de Romance",
+    "bundleContext": "Responda as questões 68 e 69.",
     "source": "UFPR certoufpr2026",
     "difficulty": 4,
     "page": 19,
@@ -1895,7 +1787,7 @@
       },
       {
         "label": "C",
-        "text": "Associando sua riqueza às conquistas da vida republicana, Francisco Teodoro é um defensor do livre comércio e favorável aos direitos trabalhistas, em especial no trecho “criar para os seus uma felicidade perfeita.”",
+        "text": "Associando sua riqueza às conquistas da vida republicana, Francisco Teodoro é um defensor do livre comércio e favorável aos direitos trabalhistas, em especial no trecho “criar para os seus uma felicidade perfeita”.",
         "isCorrect": false
       },
       {
@@ -1912,17 +1804,18 @@
   },
   {
     "subject": "LITERATURA BRASILEIRA",
-    "statement": "69 - O trecho a seguir integra a parte inicial de Poema Sujo, de Ferreira Gullar. Considerando o fragmento transcrito e a integralidade desse poema de Ferreira Gullar, assinale a alternativa correta.",
-    "bundleId": "bundle3",
-    "bundleTitle": "Questões 69 e 70",
-    "bundleContext": "responda as questões 69 e 70",
+    "topic": "Análise de Poesia",
+    "statement": "Considerando o fragmento transcrito e a integralidade desse poema de Ferreira Gullar, assinale a alternativa correta.",
+    "bundleId": "4",
+    "bundleTitle": "Questões sobre Análise de Poesia",
+    "bundleContext": "Responda as questões 69 e 70.",
     "source": "UFPR certoufpr2026",
     "difficulty": 4,
     "page": 20,
     "alternatives": [
       {
         "label": "A",
-        "text": "No fragmemto, a descrição dos traços físicos do corpo da mulher é feita com exatidão, utilizando linguagem denotativa, diferentemente da descrição idealizada das cidades em todo o poema.",
+        "text": "No fragmento, a descrição dos traços físicos do corpo da mulher é feita com exatidão, utilizando linguagem denotativa, diferentemente da descrição idealizada das cidades em todo o poema.",
         "isCorrect": false
       },
       {
@@ -1949,12 +1842,13 @@
   },
   {
     "subject": "LITERATURA BRASILEIRA",
-    "statement": "70 - Leia, a seguir, o poema “Não sei fazer poemas sobre gatos”, de Ana Martins Marques. Com base no poema e n’O livro das semelhanças, de Ana Martins Marques, assinale a alternativa correta.",
-    "bundleId": "bundle3",
-    "bundleTitle": "Questões 69 e 70",
-    "bundleContext": "responda as questões 69 e 70",
+    "topic": "Análise de Poesia",
+    "statement": "Com base no poema e n’O livro das semelhanças, de Ana Martins Marques, no qual o poema está incluído, assinale a alternativa correta.",
+    "bundleId": "5",
+    "bundleTitle": "Questões sobre Análise de Poesia",
+    "bundleContext": "Responda as questões 70 e 71.",
     "source": "UFPR certoufpr2026",
-    "difficulty": 3,
+    "difficulty": 4,
     "page": 20,
     "alternatives": [
       {
@@ -1980,80 +1874,6 @@
       {
         "label": "E",
         "text": "A presença de termos e expressões comparativas explícitas nos versos do poema aproxima os gatos e as palavras.",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "LITERATURA BRASILEIRA",
-    "statement": "71 - Um dos tópicos mais frequentes na poesia do Arcadismo é aquele conhecido como carpe diem, expressão latina que significa literalmente “colhe o dia”, e que pode ser entendida mais diretamente como “desfruta o presente”. Assinale a alternativa cujo conteúdo, explorado em Liras de Marília de Dirceu, de Tomás Antônio Gonzaga, pertence a esse tema.",
-    "bundleId": "bundle4",
-    "bundleTitle": "Questões 71 e 72",
-    "bundleContext": "responda as questões 71 e 72",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 2,
-    "page": 21,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "“Nem canto letra, que não seja minha” (Primeira parte, Lira I)",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "“As glórias, que vêm tarde, já vêm frias” (Primeira parte, Lira XIV)",
-        "isCorrect": true
-      },
-      {
-        "label": "C",
-        "text": "“Eu não beijo vis tesouros” (Primeira Parte, Lira XVI)",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "“Eu vejo aquela Deusa” (Segunda Parte, Lira XXXVIII)",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "“Tu não verás, Marília, cem cativos” (Terceira parte, Lira III)",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "LITERATURA BRASILEIRA",
-    "statement": "72 - No capítulo final de Noite na taverna, de Álvares de Azevedo, quando todos já dormiam, entra na taverna “uma mulher vestida de negro” que se vinga de um dos rapazes que ali passaram a noite, assassinando-o. Quem é essa mulher?",
-    "bundleId": "bundle4",
-    "bundleTitle": "Questões 71 e 72",
-    "bundleContext": "responda as questões 71 e 72",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 4,
-    "page": 21,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "É a virgem que Solfieri encontra em Roma, a quem ele enterra sob uma lápide de mármore debaixo da própria cama, pois pensa que ela está morta quando, na verdade, apenas sofria de catalepsia, acordando posteriormente.",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "É Ângela, a espanhola por quem Bertram se apaixona; reencontram-se depois de dois anos quando ela mata marido e filho para viver com seu antigo amor, que se recusa a viver com uma assassina.",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "É Giorgia, no passado três vezes vítima de Johann em uma mesma noite: primeiro, ele matou o namorado dela, Artur; depois, tirou-lhe a virgindade; por fim, surpreendido depois do ato, assassinou o irmão da moça.",
-        "isCorrect": true
-      },
-      {
-        "label": "D",
-        "text": "É Laura, quem Gennaro seduz e engravida; desmoralizada, a moça é expulsa de casa pelo pai e, sofrendo um aborto, é ajudada apenas pela madrasta, Nauza, que também é amante de Gennaro.",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "É a condessa Eleonora, cuja beleza faz com que Hermann a drogue com um entorpecente e a sequestre, obrigando-a a viver por três anos com ele antes de devolvê-la a Maffio, seu verdadeiro marido.",
         "isCorrect": false
       }
     ]
@@ -2170,11 +1990,11 @@
     ]
   },
   {
-    "subject": "Espanhol",
+    "subject": "Língua Estrangeira",
     "topic": "Interpretação de Texto",
     "statement": "A partir de la lectura y análisis del texto, es posible afirmar que la intención comunicativa del autor es:",
     "bundleId": "bundle2",
-    "bundleTitle": "Questões de Interpretação de Texto",
+    "bundleTitle": "Questões sobre a IA",
     "bundleContext": "responda as questões 83, 84 e 85",
     "source": "UFPR certoufpr2026",
     "difficulty": 3,
@@ -2208,11 +2028,11 @@
     ]
   },
   {
-    "subject": "Espanhol",
+    "subject": "Língua Estrangeira",
     "topic": "Interpretação de Texto",
     "statement": "De acuerdo con el texto, un desafío en la creación de marcos legales para regular la IA en el mundo está relacionado:",
     "bundleId": "bundle2",
-    "bundleTitle": "Questões de Interpretação de Texto",
+    "bundleTitle": "Questões sobre a IA",
     "source": "UFPR certoufpr2026",
     "difficulty": 3,
     "page": 26,
@@ -2245,11 +2065,11 @@
     ]
   },
   {
-    "subject": "Espanhol",
+    "subject": "Língua Estrangeira",
     "topic": "Interpretação de Texto",
     "statement": "Lea las proposiciones a continuación en relación a las ideas presentadas en el texto: 1. El título del texto apunta los distintos impactos existentes en relación a la implementación de la IA en la sociedad. 2. Hay una preocupación con la dificultad de identificar contenidos falsos que son producidos por esa nueva tecnología. 3. La falta de reglamentación sobre el uso de la IA contribuye a la creación de contenidos adulterados y la aparición de influencers sintéticos. 4. Los sistemas democráticos son potencializados por el uso de la IA en la distribución rápida de contenido global. Señala la alternativa correcta.",
     "bundleId": "bundle2",
-    "bundleTitle": "Questões de Interpretação de Texto",
+    "bundleTitle": "Questões sobre a IA",
     "source": "UFPR certoufpr2026",
     "difficulty": 3,
     "page": 26,
@@ -2282,12 +2102,11 @@
     ]
   },
   {
-    "subject": "Espanhol",
+    "subject": "Língua Estrangeira",
     "topic": "Interpretação de Texto",
     "statement": "Tras la lectura del poema Instantes, es correcto afirmar que el yo poético:",
     "bundleId": "bundle3",
-    "bundleTitle": "Questões de Interpretação de Texto",
-    "bundleContext": "responda as questões 88, 89 e 90",
+    "bundleTitle": "Questões sobre o Poema Instantes",
     "source": "UFPR certoufpr2026",
     "difficulty": 3,
     "page": 27,
@@ -2320,13 +2139,13 @@
     ]
   },
   {
-    "subject": "Espanhol",
+    "subject": "Língua Estrangeira",
     "topic": "Interpretação de Texto",
     "statement": "El tema del texto titulado “Polémica por el poema de Borges que nunca existió” es:",
     "bundleId": "bundle3",
-    "bundleTitle": "Questões de Interpretação de Texto",
+    "bundleTitle": "Questões sobre o Poema Instantes",
     "source": "UFPR certoufpr2026",
-    "difficulty": 3,
+    "difficulty": 2,
     "page": 27,
     "alternatives": [
       {
@@ -2357,14 +2176,14 @@
     ]
   },
   {
-    "subject": "Espanhol",
+    "subject": "Língua Estrangeira",
     "topic": "Interpretação de Texto",
     "statement": "Lea comparativamente los dos textos y, enseguida, analice las proposiciones a continuación. 1. María Kodama apuntó inconsistencias ideológicas que explican el motivo por el cual la atribución de la autoría del poema Instantes a Borges fue un error. 2. La posibilidad de cometer errores constituye el núcleo temático compartido por los textos. 3. La noticia publicada en el periódico de la BBC busca informar al público lector un proceso de corrección de autoría. 4. El yo poético del poema defiende la idea de que las personas deberían disfrutar de cosas simples en la vida, mientras que la cita presente en la noticia se contrapone y critica esa postura. Señale la alternativa correcta.",
     "bundleId": "bundle3",
-    "bundleTitle": "Questões de Interpretação de Texto",
+    "bundleTitle": "Questões sobre o Poema Instantes",
     "source": "UFPR certoufpr2026",
     "difficulty": 3,
-    "page": 27,
+    "page": 28,
     "alternatives": [
       {
         "label": "A",
@@ -2388,18 +2207,18 @@
       },
       {
         "label": "E",
-        "text": "Las afirmativas 1,2, 3 y 4 son verdaderas.",
+        "text": "Las afirmativas 1, 2, 3 y 4 son verdaderas.",
         "isCorrect": false
       }
     ]
   },
   {
     "subject": "Inglês",
-    "topic": "Compreensão de Texto",
+    "topic": "Interpretação de Texto",
     "statement": "Mark the alternative that correctly defines an expression used in the text.",
-    "bundleId": "bundle1",
-    "bundleTitle": "Questões sobre Compreensão de Texto",
-    "bundleContext": "responda as questões 86 e 87",
+    "bundleId": "1",
+    "bundleTitle": "Questões 86 a 88",
+    "bundleContext": "Responda as questões 86 a 88.",
     "source": "UFPR certoufpr2026",
     "difficulty": 2,
     "page": 31,
@@ -2433,11 +2252,11 @@
   },
   {
     "subject": "Inglês",
-    "topic": "Compreensão de Texto",
+    "topic": "Interpretação de Texto",
     "statement": "According to the text, it is correct to say that:",
-    "bundleId": "bundle1",
-    "bundleTitle": "Questões sobre Compreensão de Texto",
-    "bundleContext": "responda as questões 86 e 87",
+    "bundleId": "1",
+    "bundleTitle": "Questões 86 a 88",
+    "bundleContext": "Responda as questões 86 a 88.",
     "source": "UFPR certoufpr2026",
     "difficulty": 2,
     "page": 31,
@@ -2471,13 +2290,51 @@
   },
   {
     "subject": "Inglês",
-    "topic": "Compreensão de Texto",
-    "statement": "Based on the information presented in the text, clutter may:",
-    "bundleId": "bundle2",
-    "bundleTitle": "Questões sobre Clutter e Estresse",
-    "bundleContext": "responda as questões 89 e 90",
+    "topic": "Interpretação de Texto",
+    "statement": "Mark the correct alternative based on the text.",
+    "bundleId": "1",
+    "bundleTitle": "Questões 86 a 88",
+    "bundleContext": "Responda as questões 86 a 88.",
     "source": "UFPR certoufpr2026",
     "difficulty": 2,
+    "page": 31,
+    "alternatives": [
+      {
+        "label": "A",
+        "text": "Doomscrolling is consuming higher-thinking and thought-provoking content online.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "People’s moods boost when they consume unchallenging contents online.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "A slang term is considered a traditional, well-established standard word.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Engaging in deeper thought or analysis and critical thinking can develop brain rot.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Low-effort and unchallenging online contents consumption can develop brain rot.",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "subject": "Inglês",
+    "topic": "Interpretação de Texto",
+    "statement": "Based on the information presented in the text, clutter may:",
+    "bundleId": "2",
+    "bundleTitle": "Questões 89 a 90",
+    "bundleContext": "Responda as questões 89 e 90.",
+    "source": "UFPR certoufpr2026",
+    "difficulty": 3,
     "page": 32,
     "alternatives": [
       {
@@ -2509,13 +2366,13 @@
   },
   {
     "subject": "Inglês",
-    "topic": "Compreensão de Texto",
-    "statement": "Analyze the following sentences: 1. Hoarding is a mental disorder that keeps people from eliminating clutter. 2. Hemingway said all people want to be in messy places. 3. Organizing the mess can help you save money and time. 4. Loosing objects and information around the house is one of the benefits of cleaning up. Mark the correct alternative, based on the text.",
-    "bundleId": "bundle2",
-    "bundleTitle": "Questões sobre Clutter e Estresse",
-    "bundleContext": "responda as questões 89 e 90",
+    "topic": "Interpretação de Texto",
+    "statement": "Analyze the following sentences: 1. Hoarding is a mental disorder that keeps people from eliminating clutter. 2. Hemingway said all people want to be in messy places. 3. Organizing the mess can help you save money and time. 4. Losing objects and information around the house is one of the benefits of cleaning up. Mark the correct alternative, based on the text.",
+    "bundleId": "2",
+    "bundleTitle": "Questões 89 a 90",
+    "bundleContext": "Responda as questões 89 e 90.",
     "source": "UFPR certoufpr2026",
-    "difficulty": 2,
+    "difficulty": 3,
     "page": 32,
     "alternatives": [
       {
@@ -2546,202 +2403,12 @@
     ]
   },
   {
-    "subject": "Italiano",
-    "topic": "Compreensão de Texto",
-    "statement": "Cosa suggerisce il titolo della locandina?",
-    "bundleId": "bundle3",
-    "bundleTitle": "Questões sobre Locandina",
-    "bundleContext": "responda as questões 83 e 84",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 2,
-    "page": 33,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "Il corso di italiano è riservato a chi parla già bene la lingua senza paura.",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "Gli insegnanti italiani devono imparare a parlare lentamente con gli stranieri.",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "Il titolo fa capire che l’italiano è una lingua molto semplice da imparare.",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "Il titolo indica che chi parla già l’italiano non ha bisogno del corso.",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "Parlare l’italiano può spaventare, ma il progetto vuole renderlo più facile.",
-        "isCorrect": true
-      }
-    ]
-  },
-  {
-    "subject": "Italiano",
-    "topic": "Compreensão de Texto",
-    "statement": "Secondo la locandina, qual è lo scopo principale dell’incontro del 17 maggio?",
-    "bundleId": "bundle3",
-    "bundleTitle": "Questões sobre Locandina",
-    "bundleContext": "responda as questões 83 e 84",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 2,
-    "page": 33,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "Presentare il progetto e offrire informazioni sui corsi di italiano.",
-        "isCorrect": true
-      },
-      {
-        "label": "B",
-        "text": "Offrire una lezione gratuita di italiano per stranieri.",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "Parlare delle difficoltà degli stranieri che vivono a Loiano.",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "Organizzare un dibattito sull’insegnamento dell’italiano.",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "Iscrivere direttamente le persone a un corso universitario di lingua.",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "Italiano",
-    "topic": "Compreensão de Texto",
-    "statement": "Quali informazioni si possono trovare leggendo tutta la locandina?",
-    "bundleId": "bundle4",
-    "bundleTitle": "Questões sobre Informazioni Locandina",
-    "bundleContext": "responda as questões 85",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 2,
-    "page": 33,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "Il corso è per stranieri e si tiene ogni sabato nella biblioteca centrale di Bologna.",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "Lo scopo dell’incontro è trovare insegnanti per corsi di lingua nella città.",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "Il progetto propone lezioni gratuite in varie lingue straniere per la comunità.",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "L’evento si svolge a Loiano e fa parte di un progetto per imparare l’italiano.",
-        "isCorrect": true
-      },
-      {
-        "label": "E",
-        "text": "Il titolo del progetto indica che bisogna avere una password per parteciparci.",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "Italiano",
-    "topic": "Compreensão de Texto",
-    "statement": "Quale delle alternative contiene una delle principali cause della crisi abitativa a Palermo?",
-    "bundleId": "bundle5",
-    "bundleTitle": "Questões sobre Crisi Abitativa",
-    "bundleContext": "responda as questioni 86 e 87",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 34,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "L’aumento della popolazione residente.",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "L’aumento dei prezzi di locazione.",
-        "isCorrect": true
-      },
-      {
-        "label": "C",
-        "text": "La diminuzione del turismo in alcuni quartieri della città.",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "La chiusura di numerosi appartamenti su Airbnb.",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "La crescita nel numero di proteste contro gli affitti brevi.",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "Italiano",
-    "topic": "Compreensão de Texto",
-    "statement": "Quale di queste informazioni è presente nel testo?",
-    "bundleId": "bundle5",
-    "bundleTitle": "Questões sobre Crisi Abitativa",
-    "bundleContext": "responda as questioni 86 e 87",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 34,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "Palermo ha più appartamenti su Airbnb rispetto a quelli in affitto tradizionale.",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "Palermo ha un’intensità di locazioni turistiche inferiore a quella di Napoli.",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "Il numero di case disponibili per affitti brevi è rimasto stabile nell’ultimo anno.",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "I proprietari saranno obbligati a registrare gli appartamenti e a rimuovere le key box.",
-        "isCorrect": true
-      },
-      {
-        "label": "E",
-        "text": "Palermo ha visto una diminuzione delle locazioni turistiche brevi nell’ultimo anno.",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
     "subject": "Língua Estrangeira",
     "topic": "Compreensão de Texto",
     "statement": "会場へのアクセスに関して、正しいものはどれですか？",
-    "bundleId": "access_info",
-    "bundleTitle": "Acesso ao Local",
-    "bundleContext": "responda as questões 89 e 90",
+    "bundleId": "access_questions",
+    "bundleTitle": "Questões sobre Acesso",
+    "bundleContext": "responda as questões 1 e 2",
     "source": "UFPR certoufpr2026",
     "difficulty": 2,
     "page": 37,
@@ -2777,9 +2444,9 @@
     "subject": "Língua Estrangeira",
     "topic": "Compreensão de Texto",
     "statement": "バブル経済が発生した背景として正しいものはどれですか？",
-    "bundleId": "bubble_economy",
-    "bundleTitle": "Economia da Bolha",
-    "bundleContext": "responda as questões 89 e 90",
+    "bundleId": "bubble_economy_questions",
+    "bundleTitle": "Questões sobre a Bolha Econômica",
+    "bundleContext": "responda as questões 3 e 4",
     "source": "UFPR certoufpr2026",
     "difficulty": 3,
     "page": 37,
@@ -2815,9 +2482,9 @@
     "subject": "Língua Estrangeira",
     "topic": "Compreensão de Texto",
     "statement": "Które z poniższych stwierdzeń oddaje główną tezę artykułu dotyczącego osób leworęcznych?",
-    "bundleId": "left_handed",
-    "bundleTitle": "Pessoas Canhotas",
-    "bundleContext": "responda as questões 83 e 84",
+    "bundleId": "left_handed_questions",
+    "bundleTitle": "Questões sobre Pessoas Leforêas",
+    "bundleContext": "responda as questões 5 e 6",
     "source": "UFPR certoufpr2026",
     "difficulty": 2,
     "page": 38,
@@ -2853,9 +2520,9 @@
     "subject": "Língua Estrangeira",
     "topic": "Compreensão de Texto",
     "statement": "Zgodnie z tekstem: Które z poniższych stwierdzeń jest prawdziwe?",
-    "bundleId": "left_handed",
-    "bundleTitle": "Pessoas Canhotas",
-    "bundleContext": "responda as questões 83 e 84",
+    "bundleId": "left_handed_questions",
+    "bundleTitle": "Questões sobre Pessoas Leforêas",
+    "bundleContext": "responda as questões 5 e 6",
     "source": "UFPR certoufpr2026",
     "difficulty": 2,
     "page": 38,

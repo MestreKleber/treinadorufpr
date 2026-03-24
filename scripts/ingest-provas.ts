@@ -1,6 +1,7 @@
 import "dotenv/config";
 
 import { mkdir, readdir, readFile, writeFile } from "fs/promises";
+import { createRequire } from "module";
 import path from "path";
 import { generateObject } from "ai";
 import { openai } from "@ai-sdk/openai";
@@ -8,6 +9,18 @@ import { DOMMatrix, ImageData, Path2D } from "@napi-rs/canvas";
 import { z } from "zod";
 import { db } from "../db";
 import { alternatives, questions } from "../db/schema";
+
+const require = createRequire(import.meta.url);
+
+if (!("getBuiltinModule" in process)) {
+  (process as unknown as { getBuiltinModule?: (moduleName: string) => unknown }).getBuiltinModule = (moduleName: string) => {
+    try {
+      return require(moduleName);
+    } catch {
+      return undefined;
+    }
+  };
+}
 
 if (!("DOMMatrix" in globalThis)) {
   // pdf-parse requires browser-like canvas globals in some Node versions.
@@ -132,6 +145,49 @@ function hasCorrectMarker(text: string) {
   return /^\s*[►▶>]+\s*/u.test(text);
 }
 
+function inferTopicFallback(subject: string, statement: string) {
+  const s = statement.toLowerCase();
+  const normalizedSubject = subject.toLowerCase();
+
+  if (normalizedSubject.includes("matem")) {
+    if (/fun[cç][aã]o|equa[cç][aã]o|reta|gr[aá]fico/.test(s)) return "Funções e Equações";
+    if (/probabilidade|combina[cç][aã]o|arranjo|permuta[cç][aã]o/.test(s)) return "Análise Combinatória e Probabilidade";
+    if (/tri[aâ]ngulo|[aá]rea|per[ií]metro|tangente|seno|cosseno/.test(s)) return "Geometria e Trigonometria";
+    return "Matemática Geral";
+  }
+
+  if (normalizedSubject.includes("f[ií]s") || normalizedSubject.includes("fis")) {
+    if (/for[cç]a|movimento|velocidade|acelera[cç][aã]o/.test(s)) return "Mecânica";
+    if (/circuito|corrente|tens[aã]o|resistor|el[eé]tric/.test(s)) return "Eletricidade";
+    if (/calor|temperatura|termo/.test(s)) return "Termologia";
+    if (/onda|luz|espelho|lente|som/.test(s)) return "Ondulatória e Óptica";
+    return "Física Geral";
+  }
+
+  if (normalizedSubject.includes("qu[ií]m") || normalizedSubject.includes("quim")) {
+    if (/org[aâ]nic|hidrocarboneto|fun[cç][aã]o org[aâ]nica/.test(s)) return "Química Orgânica";
+    if (/equil[ií]brio|ph|[aá]cido|base/.test(s)) return "Fisico-Química";
+    if (/liga[cç][aã]o|estequiometria|mol|rea[cç][aã]o/.test(s)) return "Química Geral";
+    return "Química Geral";
+  }
+
+  if (normalizedSubject.includes("biolog")) {
+    if (/gen[eê]tica|dna|rna|gene/.test(s)) return "Genética";
+    if (/ecossistema|bioma|esp[eé]cie|cadeia alimentar|biodivers/.test(s)) return "Ecologia";
+    if (/c[eé]lula|tecido|[oó]rg[aã]o|horm[oô]nio/.test(s)) return "Fisiologia";
+    return "Biologia Geral";
+  }
+
+  if (normalizedSubject.includes("hist")) return "História Geral";
+  if (normalizedSubject.includes("geograf")) return "Geografia Geral";
+  if (normalizedSubject.includes("liter")) return "Literatura Brasileira";
+  if (normalizedSubject.includes("ingl") || normalizedSubject.includes("espan") || normalizedSubject.includes("italian") || normalizedSubject.includes("l[ií]ngua")) {
+    return "Compreensão e Interpretação de Texto";
+  }
+
+  return "Conteúdo Geral";
+}
+
 async function renderPdfPagesWithParser(parser: {
   getScreenshot: (opts: { scale: number }) => Promise<{ pages: Array<{ pageNumber: number; data: Uint8Array }> }>;
 }, outputDir: string) {
@@ -168,6 +224,7 @@ async function extractQuestionsFromChunk(params: {
     "Extraia questões objetivas com 5 alternativas (A-E) e gabarito único.",
     "Regras obrigatórias:",
     "1) Classifique disciplina (subject), tópico (topic) e dificuldade (1 a 5) de cada questão.",
+    "1.1) topic é obrigatório para todas as questões e deve ser específico (nunca 'Sem tópico' ou vazio).",
     "2) Quando houver enunciado compartilhado (ex: 'responda as questões 1 e 2'), preencha sharedContext e gere bundleId/bundleTitle iguais para o mesmo bloco.",
     "3) Inclua o número da página real em 'page'.",
     "4) Ignore instruções gerais que não são questão.",
@@ -205,7 +262,7 @@ function normalizeQuestions(
 
     const normalized: ParsedQuestion = {
       subject: q.subject.trim(),
-      topic: q.topic?.trim(),
+      topic: q.topic?.trim() || inferTopicFallback(q.subject.trim(), q.statement),
       statement: q.statement.trim(),
       bundleId: q.bundleId?.trim() || undefined,
       bundleTitle: q.bundleTitle?.trim() || undefined,
@@ -248,6 +305,11 @@ async function importQuestionsToDb(parsed: ParsedQuestion[], imageUrlByPage: Map
     const insertedIds: number[] = [];
 
     for (const q of parsed) {
+      const pageImage = imageUrlByPage.get(q.page) ?? null;
+      console.log(
+        `[import] page=${q.page} subject=${q.subject} topic=${q.topic ?? "-"} bundle=${q.bundleId ?? "-"} hasImage=${pageImage ? "yes" : "no"}`,
+      );
+
       const inserted = tx
         .insert(questions)
         .values({
@@ -257,7 +319,7 @@ async function importQuestionsToDb(parsed: ParsedQuestion[], imageUrlByPage: Map
           bundleId: q.bundleId,
           bundleTitle: q.bundleTitle,
           bundleContext: q.bundleContext,
-          imageUrl: imageUrlByPage.get(q.page) ?? null,
+          imageUrl: pageImage,
           source: q.source,
           difficulty: q.difficulty,
         })
@@ -278,6 +340,9 @@ async function importQuestionsToDb(parsed: ParsedQuestion[], imageUrlByPage: Map
           })),
         )
         .run();
+
+      const correct = q.alternatives.find((item) => item.isCorrect);
+      console.log(`[import] questionId=${questionId} correct=${correct?.label ?? "-"}`);
     }
 
     return insertedIds;
@@ -470,6 +535,8 @@ async function processPdf(pdfPath: string, options: CliOptions) {
   }
 
   const normalized = normalizeQuestions(aiQuestions, { defaultSource: sourceName });
+  const missingTopics = normalized.filter((item) => !item.topic || item.topic.trim().length === 0).length;
+  console.log(`[${baseName}] questoes normalizadas: ${normalized.length}; sem topico: ${missingTopics}`);
   const analytics = buildAnalytics(normalized);
 
   const outBase = path.join(process.cwd(), "data", "processed", proofSlug);

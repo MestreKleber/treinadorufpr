@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { BarChart3, FileUp, ImageUp, PlusCircle, Trash2, Upload } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -92,11 +92,13 @@ export function AdminClient() {
   const [pdfChunkSize, setPdfChunkSize] = useState(6);
   const [pdfRenderImages, setPdfRenderImages] = useState(true);
   const [importingPdf, setImportingPdf] = useState(false);
+  const [pdfDebugLog, setPdfDebugLog] = useState("");
   const [reportMode, setReportMode] = useState<ReportMode>("geral");
   const [reportYear, setReportYear] = useState("all");
   const [reportSource, setReportSource] = useState("all");
   const [report, setReport] = useState<ReportResponse | null>(null);
   const [loadingReport, setLoadingReport] = useState(false);
+  const debugBoxRef = useRef<HTMLPreElement | null>(null);
 
   async function loadQuestions() {
     const res = await fetch("/api/admin/questions");
@@ -249,6 +251,7 @@ export function AdminClient() {
     if (!pdfFile) return;
 
     setImportingPdf(true);
+    setPdfDebugLog("");
     try {
       const formData = new FormData();
       formData.append("file", pdfFile);
@@ -256,24 +259,57 @@ export function AdminClient() {
       formData.append("chunkSize", String(pdfChunkSize));
       formData.append("renderImages", pdfRenderImages ? "true" : "false");
 
-      const res = await fetch("/api/admin/upload-pdf", {
+      const res = await fetch("/api/admin/upload-pdf/stream", {
         method: "POST",
         body: formData,
       });
 
-      const payload = (await res.json()) as {
-        error?: string;
-        details?: string;
-        extracted?: number;
-        imported?: number;
-      };
+      if (!res.ok || !res.body) {
+        const errorBody = await res.text();
+        throw new Error(errorBody || "Falha ao iniciar processamento em stream");
+      }
 
-      if (!res.ok) {
-        throw new Error(payload.error ?? payload.details ?? "Falha na importação do PDF");
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer = "";
+      let result: { ok?: boolean; error?: string; extracted?: number; imported?: number } | null = null;
+
+      while (true) {
+        const { value, done } = await reader.read();
+        if (done) break;
+
+        buffer += decoder.decode(value, { stream: true });
+        const lines = buffer.split(/\r?\n/);
+        buffer = lines.pop() ?? "";
+
+        for (const line of lines) {
+          if (!line.trim()) continue;
+          if (line.startsWith("__RESULT__")) {
+            result = JSON.parse(line.replace("__RESULT__", ""));
+          } else {
+            setPdfDebugLog((prev) => (prev ? `${prev}\n${line}` : line));
+          }
+        }
+      }
+
+      if (buffer.trim()) {
+        if (buffer.startsWith("__RESULT__")) {
+          result = JSON.parse(buffer.replace("__RESULT__", ""));
+        } else {
+          setPdfDebugLog((prev) => (prev ? `${prev}\n${buffer}` : buffer));
+        }
+      }
+
+      if (!result) {
+        throw new Error("Importação finalizou sem resultado final.");
+      }
+
+      if (!result.ok) {
+        throw new Error(result.error ?? "Falha na importação do PDF");
       }
 
       alert(
-        `PDF processado com sucesso. Questões extraídas: ${payload.extracted ?? 0}. Questões importadas: ${payload.imported ?? 0}.`,
+        `PDF processado com sucesso. Questões extraídas: ${result.extracted ?? 0}. Questões importadas: ${result.imported ?? 0}.`,
       );
       setPdfFile(null);
       await loadQuestions();
@@ -291,6 +327,12 @@ export function AdminClient() {
     if (reportYear === "all") return true;
     return item.includes(reportYear);
   });
+
+  useEffect(() => {
+    if (debugBoxRef.current) {
+      debugBoxRef.current.scrollTop = debugBoxRef.current.scrollHeight;
+    }
+  }, [pdfDebugLog]);
 
   return (
     <main className="mx-auto w-full max-w-6xl space-y-4 px-4 py-10">
@@ -351,6 +393,16 @@ export function AdminClient() {
                 <Upload className="mr-2 h-4 w-4" />
                 {importingPdf ? "Processando PDF..." : "Enviar PDF e importar"}
               </Button>
+            </div>
+
+            <div className="space-y-2 rounded-lg border bg-black p-3">
+              <p className="text-sm font-semibold text-zinc-100">Debug da importação (tempo real)</p>
+              <pre
+                ref={debugBoxRef}
+                className="max-h-56 overflow-auto whitespace-pre-wrap text-xs text-emerald-300"
+              >
+                {pdfDebugLog || "Aguardando início da importação..."}
+              </pre>
             </div>
           </div>
 
