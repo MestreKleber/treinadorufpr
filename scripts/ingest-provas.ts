@@ -46,16 +46,15 @@ const LABELS = ["A", "B", "C", "D", "E"] as const;
 const aiSchema = z.object({
   questions: z.array(
     z.object({
-      number: z.number().int().positive().optional(),
       page: z.number().int().positive(),
       subject: z.string().min(1),
-      topic: z.string().min(1).optional(),
+      topic: z.string().min(1).nullable(),
       statement: z.string().min(20),
-      source: z.string().optional(),
+      source: z.string().min(1).nullable(),
       difficulty: z.number().int().min(1).max(5),
-      bundleId: z.string().min(1).optional(),
-      bundleTitle: z.string().min(1).optional(),
-      sharedContext: z.string().optional(),
+      bundleId: z.string().min(1).nullable(),
+      bundleTitle: z.string().min(1).nullable(),
+      sharedContext: z.string().min(1).nullable(),
       alternatives: z
         .array(
           z.object({
@@ -125,6 +124,14 @@ function splitIntoChunks<T>(arr: T[], size: number) {
   return result;
 }
 
+function stripCorrectMarker(text: string) {
+  return text.replace(/^\s*[►▶>]+\s*/u, "").trim();
+}
+
+function hasCorrectMarker(text: string) {
+  return /^\s*[►▶>]+\s*/u.test(text);
+}
+
 async function renderPdfPagesWithParser(parser: {
   getScreenshot: (opts: { scale: number }) => Promise<{ pages: Array<{ pageNumber: number; data: Uint8Array }> }>;
 }, outputDir: string) {
@@ -165,6 +172,7 @@ async function extractQuestionsFromChunk(params: {
     "3) Inclua o número da página real em 'page'.",
     "4) Ignore instruções gerais que não são questão.",
     "5) Retorne apenas questões com alternativas completas A-E e correctLabel.",
+    "6) Se o gabarito vier marcado na alternativa por símbolo (ex.: '►' ou '▶'), use essa alternativa como correctLabel e remova o símbolo do texto da alternativa.",
     `Fonte padrão: ${sourceName}.`,
     "Conteúdo bruto das páginas:",
     chunkText,
@@ -187,7 +195,10 @@ function normalizeQuestions(
   const result: ParsedQuestion[] = [];
 
   for (const q of aiQuestions) {
-    const correctCount = q.alternatives.filter((alt) => alt.label === q.correctLabel).length;
+    const markerMatches = q.alternatives.filter((alt) => hasCorrectMarker(alt.text));
+    const inferredCorrectLabel = markerMatches.length === 1 ? markerMatches[0].label : q.correctLabel;
+
+    const correctCount = q.alternatives.filter((alt) => alt.label === inferredCorrectLabel).length;
     if (correctCount !== 1) {
       continue;
     }
@@ -196,16 +207,16 @@ function normalizeQuestions(
       subject: q.subject.trim(),
       topic: q.topic?.trim(),
       statement: q.statement.trim(),
-      bundleId: q.bundleId?.trim(),
-      bundleTitle: q.bundleTitle?.trim(),
-      bundleContext: q.sharedContext?.trim(),
+      bundleId: q.bundleId?.trim() || undefined,
+      bundleTitle: q.bundleTitle?.trim() || undefined,
+      bundleContext: q.sharedContext?.trim() || undefined,
       source: q.source?.trim() || opts.defaultSource,
       difficulty: q.difficulty,
       page: q.page,
       alternatives: q.alternatives.map((alt) => ({
         label: alt.label,
-        text: alt.text.trim(),
-        isCorrect: alt.label === q.correctLabel,
+        text: stripCorrectMarker(alt.text),
+        isCorrect: alt.label === inferredCorrectLabel,
       })),
     };
 
@@ -423,15 +434,20 @@ async function processPdf(pdfPath: string, options: CliOptions) {
 
   let imageFilesByPage = new Map<number, string>();
   if (options.renderImages) {
-    const publicDir = path.join(process.cwd(), "public", "questoes", "importadas", proofSlug);
-    const imageNames = await renderPdfPagesWithParser(parser, publicDir);
-    imageFilesByPage = new Map(
-      [...imageNames.entries()].map(([page, fileName]) => [
-        page,
-        `/questoes/importadas/${proofSlug}/${fileName}`,
-      ]),
-    );
-    console.log(`[${baseName}] imagens de paginas geradas: ${imageFilesByPage.size}`);
+    try {
+      const publicDir = path.join(process.cwd(), "public", "questoes", "importadas", proofSlug);
+      const imageNames = await renderPdfPagesWithParser(parser, publicDir);
+      imageFilesByPage = new Map(
+        [...imageNames.entries()].map(([page, fileName]) => [
+          page,
+          `/questoes/importadas/${proofSlug}/${fileName}`,
+        ]),
+      );
+      console.log(`[${baseName}] imagens de paginas geradas: ${imageFilesByPage.size}`);
+    } catch (error) {
+      console.warn(`[${baseName}] falha ao gerar imagens; continuando sem imagens por pagina.`);
+      console.warn(error);
+    }
   }
 
   const chunks = splitIntoChunks(pages, options.chunkSize);

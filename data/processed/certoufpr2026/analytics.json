@@ -1,0 +1,151 @@
+{
+  "totalQuestions": 15,
+  "totalBundles": 13,
+  "bySubject": [
+    {
+      "subject": "MATEMÁTICA",
+      "count": 6,
+      "percentage": 40,
+      "topics": []
+    },
+    {
+      "subject": "Filosofia",
+      "count": 4,
+      "percentage": 26.67,
+      "topics": [
+        {
+          "topic": "Crítica à Modernidade",
+          "count": 1,
+          "percentageWithinSubject": 25,
+          "percentageGlobal": 6.67
+        },
+        {
+          "topic": "Crítica à Superstição",
+          "count": 1,
+          "percentageWithinSubject": 25,
+          "percentageGlobal": 6.67
+        },
+        {
+          "topic": "Justiça em Platão",
+          "count": 1,
+          "percentageWithinSubject": 25,
+          "percentageGlobal": 6.67
+        },
+        {
+          "topic": "Método Científico",
+          "count": 1,
+          "percentageWithinSubject": 25,
+          "percentageGlobal": 6.67
+        }
+      ]
+    },
+    {
+      "subject": "Sociologia",
+      "count": 3,
+      "percentage": 20,
+      "topics": [
+        {
+          "topic": "Cultura e Classes Sociais",
+          "count": 1,
+          "percentageWithinSubject": 33.33,
+          "percentageGlobal": 6.67
+        },
+        {
+          "topic": "Crise Ambiental",
+          "count": 1,
+          "percentageWithinSubject": 33.33,
+          "percentageGlobal": 6.67
+        },
+        {
+          "topic": "Abordagem Policial",
+          "count": 1,
+          "percentageWithinSubject": 33.33,
+          "percentageGlobal": 6.67
+        }
+      ]
+    },
+    {
+      "subject": "Literatura",
+      "count": 2,
+      "percentage": 13.33,
+      "topics": [
+        {
+          "topic": "Poesia do Arcadismo",
+          "count": 1,
+          "percentageWithinSubject": 50,
+          "percentageGlobal": 6.67
+        },
+        {
+          "topic": "Literatura Brasileira",
+          "count": 1,
+          "percentageWithinSubject": 50,
+          "percentageGlobal": 6.67
+        }
+      ]
+    }
+  ],
+  "byTopic": [
+    {
+      "topic": "Poesia do Arcadismo",
+      "count": 1,
+      "percentage": 6.67
+    },
+    {
+      "topic": "Literatura Brasileira",
+      "count": 1,
+      "percentage": 6.67
+    },
+    {
+      "topic": "Crítica à Modernidade",
+      "count": 1,
+      "percentage": 6.67
+    },
+    {
+      "topic": "Crítica à Superstição",
+      "count": 1,
+      "percentage": 6.67
+    },
+    {
+      "topic": "Cultura e Classes Sociais",
+      "count": 1,
+      "percentage": 6.67
+    },
+    {
+      "topic": "Justiça em Platão",
+      "count": 1,
+      "percentage": 6.67
+    },
+    {
+      "topic": "Método Científico",
+      "count": 1,
+      "percentage": 6.67
+    },
+    {
+      "topic": "Crise Ambiental",
+      "count": 1,
+      "percentage": 6.67
+    },
+    {
+      "topic": "Abordagem Policial",
+      "count": 1,
+      "percentage": 6.67
+    }
+  ],
+  "byDifficulty": [
+    {
+      "difficulty": 2,
+      "count": 4,
+      "percentage": 26.67
+    },
+    {
+      "difficulty": 3,
+      "count": 6,
+      "percentage": 40
+    },
+    {
+      "difficulty": 4,
+      "count": 5,
+      "percentage": 33.33
+    }
+  ]
+}

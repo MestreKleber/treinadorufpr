@@ -1,0 +1,560 @@
+[
+  {
+    "subject": "MATEMÁTICA",
+    "statement": "O preço de um livro está com 15% de desconto em uma promoção. Nessa promoção, esse livro custa R$ 51,00. Assinale a alternativa que corresponde ao valor desse livro sem o desconto.",
+    "bundleId": "matematica_01",
+    "bundleTitle": "Matemática - Desconto",
+    "source": "UFPR certoufpr2026",
+    "difficulty": 2,
+    "page": 1,
+    "alternatives": [
+      {
+        "label": "A",
+        "text": "R$ 70,00",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "R$ 60,00",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "R$ 67,00",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "R$ 80,00",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "R$ 56,00",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "subject": "MATEMÁTICA",
+    "statement": "Na figura ao lado, a área do quadrado ABEF é igual a 9 cm², e o comprimento do segmento DF é igual a 5 cm. Assinale a alternativa que corresponde à área, em cm², do retângulo ABCD.",
+    "bundleId": "matematica_02",
+    "bundleTitle": "Matemática - Área de Retângulo",
+    "source": "UFPR certoufpr2026",
+    "difficulty": 2,
+    "page": 1,
+    "alternatives": [
+      {
+        "label": "A",
+        "text": "12",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "15",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "22",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "24",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "45",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "subject": "MATEMÁTICA",
+    "statement": "As retas paralelas 𝒓1 e 𝒓2 no plano 𝒙𝒚 são dadas pelas equações 𝒚 = 2𝒎 – 3 𝒙 + 4 e 𝒚 = 5𝒎 + 1 𝒙 – 2, respectivamente. Assinale a alternativa que corresponde ao valor de 𝒎.",
+    "bundleId": "matematica_03",
+    "bundleTitle": "Matemática - Retas Paralelas",
+    "source": "UFPR certoufpr2026",
+    "difficulty": 3,
+    "page": 1,
+    "alternatives": [
+      {
+        "label": "A",
+        "text": "–2/7",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "–1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "–4/3",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "–2/3",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "–3/7",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "subject": "MATEMÁTICA",
+    "statement": "O pentágono da figura ao lado tem ângulos retos A, B e C. Conhecendo as medidas dos lados AE = 15, AB = 12, BC = 7 e CD = 5, assinale a alternativa que corresponde ao valor da tangente do ângulo 𝜽 = E.",
+    "bundleId": "matematica_04",
+    "bundleTitle": "Matemática - Tangente de Ângulo",
+    "source": "UFPR certoufpr2026",
+    "difficulty": 3,
+    "page": 1,
+    "alternatives": [
+      {
+        "label": "A",
+        "text": "4/5",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "5/4",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "5/8",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "8/7",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "7/8",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "subject": "MATEMÁTICA",
+    "statement": "Considere o paralelogramo ABCD ilustrado na figura ao lado. Sejam M o ponto médio do lado CD e N o ponto comum aos segmentos AC e BM. Sabendo que a medida do segmento AN é igual a 4/3, assinale a alternativa que corresponde à medida da diagonal AC.",
+    "bundleId": "matematica_05",
+    "bundleTitle": "Matemática - Medida de Diagonal",
+    "source": "UFPR certoufpr2026",
+    "difficulty": 2,
+    "page": 1,
+    "alternatives": [
+      {
+        "label": "A",
+        "text": "2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "4",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "5/3",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "3",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "8/3",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "subject": "MATEMÁTICA",
+    "statement": "A equipe técnica de um time de futebol analisou a possibilidade de a final do campeonato ir para a disputa por pênaltis. Caso isso ocorra, a equipe precisará escolher 5 jogadores diferentes, dentre os 11 que estarão em campo, e também a ordem entre eles para a cobrança dos 5 primeiros pênaltis. A decisão tomada foi a seguinte: o principal atacante do time começará as cobranças, e o goleiro deverá ser um dos 5 cobradores. Além disso, nenhum dos 3 zagueiros em campo participará dessas primeiras cobranças. A partir dessas informações, assinale a alternativa que apresenta corretamente o número de configurações possíveis para essa escolha.",
+    "bundleId": "matematica_06",
+    "bundleTitle": "Matemática - Combinações e Permutações",
+    "source": "UFPR certoufpr2026",
+    "difficulty": 4,
+    "page": 1,
+    "alternatives": [
+      {
+        "label": "A",
+        "text": "280",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "340",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "480",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "625",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "864",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "subject": "Literatura",
+    "topic": "Poesia do Arcadismo",
+    "statement": "Um dos tópicos mais frequentes na poesia do Arcadismo é aquele conhecido como carpe diem, expressão latina que significa literalmente “colhe o dia”, e que pode ser entendida mais diretamente como “desfruta o presente”. Assinale a alternativa cujo conteúdo, explorado em Liras de Marília de Dirceu, de Tomás Antônio Gonzaga, pertence a esse tema.",
+    "bundleId": "1",
+    "bundleTitle": "Questões sobre Poesia do Arcadismo",
+    "bundleContext": "Responda as questões 71 e 72.",
+    "source": "UFPR certoufpr2026",
+    "difficulty": 2,
+    "page": 21,
+    "alternatives": [
+      {
+        "label": "A",
+        "text": "“Nem canto letra, que não seja minha” (Primeira parte, Lira I)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "“As glórias, que vêm tarde, já vêm frias” (Primeira parte, Lira XIV)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "“Eu não beijo vis tesouros” (Primeira Parte, Lira XVI)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "“Eu vejo aquela Deusa” (Segunda Parte, Lira XXXVIII)",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "“Tu não verás, Marília, cem cativos” (Terceira parte, Lira III)",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "subject": "Literatura",
+    "topic": "Literatura Brasileira",
+    "statement": "No capítulo final de Noite na taverna, de Álvares de Azevedo, quando todos já dormiam, entra na taverna “uma mulher vestida de negro” que se vinga de um dos rapazes que ali passaram a noite, assassinando-o. Quem é essa mulher?",
+    "bundleId": "1",
+    "bundleTitle": "Questões sobre Poesia do Arcadismo",
+    "bundleContext": "Responda as questões 71 e 72.",
+    "source": "UFPR certoufpr2026",
+    "difficulty": 3,
+    "page": 21,
+    "alternatives": [
+      {
+        "label": "A",
+        "text": "É a virgem que Solfieri encontra em Roma, a quem ele enterra sob uma lápide de mármore debaixo da própria cama, pois pensa que ela está morta quando, na verdade, apenas sofria de catalepsia, acordando posteriormente.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "É Ângela, a espanhola por quem Bertram se apaixona; reencontram-se depois de dois anos quando ela mata marido e filho para viver com seu antigo amor, que se recusa a viver com uma assassina.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "É Giorgia, no passado três vezes vítima de Johann em uma mesma noite: primeiro, ele matou o namorado dela, Artur; depois, tirou-lhe a virgindade; por fim, surpreendido depois do ato, assassinou o irmão da moça.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "É Laura, quem Gennaro seduz e engravida; desmoralizada, a moça é expulsa de casa pelo pai e, sofrendo um aborto, é ajudada apenas pela madrasta, Nauza, que também é amante de Gennaro.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "É a condessa Eleonora, cuja beleza faz com que Hermann a drogue com um entorpecente e a sequestre, obrigando-a a viver por três anos com ele antes de devolvê-la a Maffio, seu verdadeiro marido.",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "subject": "Filosofia",
+    "topic": "Crítica à Modernidade",
+    "statement": "No livro A vida não é útil, Ailton Krenak questiona a lógica que rege a modernidade. Essa lógica está associada:",
+    "bundleId": "2",
+    "bundleTitle": "Questões sobre Filosofia Moderna",
+    "bundleContext": "Responda as questões 73 e 74.",
+    "source": "UFPR certoufpr2026",
+    "difficulty": 3,
+    "page": 21,
+    "alternatives": [
+      {
+        "label": "A",
+        "text": "à valorização excessiva da cultura indígena em detrimento do modo de vida ocidental.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "à ideia de que tudo deve servir a um propósito econômico ou produtivo.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "à substituição das tradições religiosas e das cosmovisões autóctones por práticas laicas.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "ao desprezo pelas tecnologias e avanços científicos contemporâneos.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "ao não reconhecimento da excepcionalidade da espécie humana.",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "subject": "Filosofia",
+    "topic": "Crítica à Superstição",
+    "statement": "Em “Dos Coxos”, Montaigne reflete sobre a tendência humana de buscar causas ocultas e significados misteriosos para acontecimentos banais. Essa atitude é criticada pelo autor por:",
+    "bundleId": "2",
+    "bundleTitle": "Questões sobre Filosofia Moderna",
+    "bundleContext": "Responda as questões 73 e 74.",
+    "source": "UFPR certoufpr2026",
+    "difficulty": 3,
+    "page": 21,
+    "alternatives": [
+      {
+        "label": "A",
+        "text": "promover o uso racional da religião.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "ser essencial para o avanço do conhecimento científico.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "conduzir à superstição e à perda do juízo crítico.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "demonstrar a superioridade dos antigos sobre os modernos.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "valorizar a ignorância humana e não favorecer o alcance de verdades indubitáveis.",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "subject": "Sociologia",
+    "topic": "Cultura e Classes Sociais",
+    "statement": "De acordo com a passagem acima e com texto de que foi extraída, é correto dizer que, para Marilena Chaui:",
+    "bundleId": "3",
+    "bundleTitle": "Questões sobre Sociologia",
+    "bundleContext": "Responda as questões 75 e 76.",
+    "source": "UFPR certoufpr2026",
+    "difficulty": 4,
+    "page": 21,
+    "alternatives": [
+      {
+        "label": "A",
+        "text": "a indústria cultural torna a cultura acessível a todos, de maneira a superar a divisão cultural.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "a cultura é uma forma de lazer e entretenimento de que todos devem poder desfrutar.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "a cultura popular é aquela que expressa a verdadeira identidade de um povo.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "o Estado deve produzir e distribuir de forma igualitária bens culturais para todos.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "a cultura dominante procura legitimar a dominação de classe.",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "subject": "Filosofia",
+    "topic": "Justiça em Platão",
+    "statement": "No livro I de A República, Platão apresenta um diálogo entre Sócrates e Trasímaco acerca do que é a justiça. Com base nesse texto, é correto afirmar que Sócrates defende que:",
+    "bundleId": "4",
+    "bundleTitle": "Questões sobre Filosofia Antiga",
+    "bundleContext": "Responda as questões 76 e 77.",
+    "source": "UFPR certoufpr2026",
+    "difficulty": 3,
+    "page": 21,
+    "alternatives": [
+      {
+        "label": "A",
+        "text": "sendo a justiça uma virtude prática, não cabe defini-la.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "a justiça é dar a cada um o que lhe é devido.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "o diálogo amistoso é o meio de se buscar saber o que é a justiça.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "a justiça consiste em dizer a verdade e restituir aquilo que se tomou.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "a justiça é desvantajosa aos mais fracos.",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "subject": "Filosofia",
+    "topic": "Método Científico",
+    "statement": "No Capítulo 1 do livro A lógica da pesquisa científica, Popper apresenta a tarefa da lógica da investigação científica. Segundo o autor, essa tarefa consiste em:",
+    "bundleId": "5",
+    "bundleTitle": "Questões sobre Filosofia da Ciência",
+    "bundleContext": "Responda as questões 78 e 79.",
+    "source": "UFPR certoufpr2026",
+    "difficulty": 4,
+    "page": 22,
+    "alternatives": [
+      {
+        "label": "A",
+        "text": "encontrar o melhor método lógico para cada pesquisa científica.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "fornecer as estruturas lógicas para a descoberta de novas teorias.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "estabelecer critérios para formular hipóteses científicas.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "investigar os métodos de prova das novas ideias que serão tomadas como teorias científicas.",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "garantir a confirmação da teoria científica, pelo método dedutivo.",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "subject": "Sociologia",
+    "topic": "Crise Ambiental",
+    "statement": "Considerando a obra Ideias para adiar o fim do mundo e o excerto selecionado, que problematiza o processo de mercantilização da vida como raiz da crise econômica, assinale a alternativa correta.",
+    "bundleId": "6",
+    "bundleTitle": "Questões sobre Sociologia Contemporânea",
+    "bundleContext": "Responda as questões 80 e 81.",
+    "source": "UFPR certoufpr2026",
+    "difficulty": 4,
+    "page": 22,
+    "alternatives": [
+      {
+        "label": "A",
+        "text": "A obra sugere que a “segurança temporária” proporcionada por políticas regionais é uma forma de violência lenta, pois, ao mesmo tempo que protege comunidades, as torna cúmplices do sistema que devora a natureza.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Krenak apropria-se da fala de Kopenawa para argumentar que a mercadoria é um simulacro da experiência humana, mas que, paradoxalmente, essa mesma lógica pode ser subvertida por movimentos sociais que transformam o consumo em ato político.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "O “adiar o fim do mundo” não seria uma metáfora, mas um protocolo indígena de gestão de crise, baseado em saberes ancestrais que calculam os limites precisos de exploração da Terra, algo que a ciência ocidental ainda não conseguiu mapear.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Para Krenak, a mercantilização da vida – que transforma até mesmo experiências subjetivas em commodities – é um dos pilares da crise civilizatória, pois nos aliena da percepção de que nossa existência depende da saúde dos ecossistemas, não de sua exploração infinita.",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Krenak defende que a política moderna, ao criar zonas de segurança temporárias, é capaz de restaurar o sentido autêntico do compartilhamento comunitário, revertendo a lógica de exaustão ambiental imposta pelo capitalismo.",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "subject": "Sociologia",
+    "topic": "Abordagem Policial",
+    "statement": "Considerando a fala e a relação existente entre a abordagem policial e a personalidade autoritária, assinale a alternativa correta.",
+    "bundleId": "7",
+    "bundleTitle": "Questões sobre Sociologia e Política",
+    "bundleContext": "Responda as questões 82 e 83.",
+    "source": "UFPR certoufpr2026",
+    "difficulty": 4,
+    "page": 22,
+    "alternatives": [
+      {
+        "label": "A",
+        "text": "Para Bento, a declaração do comandante revela uma postura pragmática e técnica da polícia, que adapta sua atuação às particularidades culturais de cada região, sem intenção discriminatória, e visando eficiência operacional.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "A fala do comandante da Rota explicita o pacto da branquitude ao naturalizar uma hierarquia racial implícita: a polícia age como braço armado desse pacto, adaptando sua violência de acordo com a racialização dos territórios.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Para Bento, a declaração do comandante revela uma postura pragmática e técnica da polícia, que age com violência nas periferias por falta de treinamento.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Ao analisar a fala, Cida Bento rejeita a ideia de que o neoliberalismo tenha transformado as expressões do racismo, argumentando que a violência racial continua explícita e desvinculada de discursos de eficiência ou mérito.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "A diferença nas abordagens policiais comprova que a periferia exige linguagem mais dura, pois lá a criminalidade é maior; já nos Jardins, a delicadeza é possível porque a lei é respeitada – uma análise realista que Bento critica por negar o viés racial.",
+        "isCorrect": false
+      }
+    ]
+  }
+]

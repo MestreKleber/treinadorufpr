@@ -251,7 +251,8 @@ export function AdminClient() {
       await loadReport();
     } catch (error) {
       console.error(error);
-      alert("Não foi possível processar o PDF. Verifique o arquivo e tente novamente.");
+      const message = error instanceof Error ? error.message : "Erro desconhecido";
+      alert(`Não foi possível processar o PDF. ${message}`);
     } finally {
       setImportingPdf(false);
     }
