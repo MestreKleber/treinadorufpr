@@ -28,6 +28,11 @@ type ResultResponse = {
   }>;
 };
 
+function isPdfPageUrl(url: string | null | undefined) {
+  if (!url) return false;
+  return /\.pdf(#|\?|$)/i.test(url);
+}
+
 export function ResultadoClient() {
   const searchParams = useSearchParams();
   const runAtParam = searchParams.get("runAt");
@@ -177,13 +182,31 @@ export function ResultadoClient() {
 
                   {item.imageUrl ? (
                     <div className="mt-3 overflow-hidden rounded-md border bg-zinc-50 p-2">
-                      <Image
-                        src={item.imageUrl}
-                        alt="Imagem da questão"
-                        width={960}
-                        height={540}
-                        className="h-auto w-full rounded object-contain"
-                      />
+                      {isPdfPageUrl(item.imageUrl) ? (
+                        <div className="space-y-2">
+                          <iframe
+                            src={item.imageUrl}
+                            title="Página da prova"
+                            className="h-[520px] w-full rounded border"
+                          />
+                          <a
+                            href={item.imageUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-xs text-blue-700 underline"
+                          >
+                            Abrir página da prova em nova aba
+                          </a>
+                        </div>
+                      ) : (
+                        <Image
+                          src={item.imageUrl}
+                          alt="Imagem da questão"
+                          width={960}
+                          height={540}
+                          className="h-auto w-full rounded object-contain"
+                        />
+                      )}
                     </div>
                   ) : null}
 

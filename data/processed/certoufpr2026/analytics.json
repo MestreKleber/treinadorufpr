@@ -1,624 +1,207 @@
 {
-  "totalQuestions": 68,
-  "totalBundles": 31,
+  "totalQuestions": 15,
+  "totalBundles": 7,
   "bySubject": [
     {
-      "subject": "Língua Estrangeira",
-      "count": 13,
-      "percentage": 19.12,
-      "topics": [
-        {
-          "topic": "Interpretação de Texto",
-          "count": 9,
-          "percentageWithinSubject": 69.23,
-          "percentageGlobal": 13.24
-        },
-        {
-          "topic": "Compreensão de Texto",
-          "count": 4,
-          "percentageWithinSubject": 30.77,
-          "percentageGlobal": 5.88
-        }
-      ]
-    },
-    {
       "subject": "MATEMÁTICA",
-      "count": 9,
-      "percentage": 13.24,
+      "count": 6,
+      "percentage": 40,
       "topics": [
         {
           "topic": "Geometria",
           "count": 2,
-          "percentageWithinSubject": 22.22,
-          "percentageGlobal": 2.94
+          "percentageWithinSubject": 33.33,
+          "percentageGlobal": 13.33
         },
         {
           "topic": "Descontos e Preços",
           "count": 1,
-          "percentageWithinSubject": 11.11,
-          "percentageGlobal": 1.47
+          "percentageWithinSubject": 16.67,
+          "percentageGlobal": 6.67
         },
         {
           "topic": "Equações",
           "count": 1,
-          "percentageWithinSubject": 11.11,
-          "percentageGlobal": 1.47
+          "percentageWithinSubject": 16.67,
+          "percentageGlobal": 6.67
         },
         {
           "topic": "Trigonometria",
           "count": 1,
-          "percentageWithinSubject": 11.11,
-          "percentageGlobal": 1.47
+          "percentageWithinSubject": 16.67,
+          "percentageGlobal": 6.67
         },
         {
           "topic": "Combinatória",
           "count": 1,
-          "percentageWithinSubject": 11.11,
-          "percentageGlobal": 1.47
-        },
-        {
-          "topic": "Progressões Aritméticas",
-          "count": 1,
-          "percentageWithinSubject": 11.11,
-          "percentageGlobal": 1.47
-        },
-        {
-          "topic": "Funções Quadráticas",
-          "count": 1,
-          "percentageWithinSubject": 11.11,
-          "percentageGlobal": 1.47
-        },
-        {
-          "topic": "Logaritmos",
-          "count": 1,
-          "percentageWithinSubject": 11.11,
-          "percentageGlobal": 1.47
+          "percentageWithinSubject": 16.67,
+          "percentageGlobal": 6.67
         }
       ]
     },
     {
-      "subject": "Geografia",
-      "count": 9,
-      "percentage": 13.24,
+      "subject": "Filosofia",
+      "count": 4,
+      "percentage": 26.67,
       "topics": [
         {
-          "topic": "Fenômenos Naturais",
+          "topic": "Crítica à Modernidade",
           "count": 1,
-          "percentageWithinSubject": 11.11,
-          "percentageGlobal": 1.47
+          "percentageWithinSubject": 25,
+          "percentageGlobal": 6.67
         },
         {
-          "topic": "História do Oriente Médio",
+          "topic": "Crítica à Superstição",
           "count": 1,
-          "percentageWithinSubject": 11.11,
-          "percentageGlobal": 1.47
+          "percentageWithinSubject": 25,
+          "percentageGlobal": 6.67
         },
         {
-          "topic": "Relevo Cárstico",
+          "topic": "Justiça em Platão",
           "count": 1,
-          "percentageWithinSubject": 11.11,
-          "percentageGlobal": 1.47
+          "percentageWithinSubject": 25,
+          "percentageGlobal": 6.67
         },
         {
-          "topic": "Desmatamento no Brasil",
+          "topic": "Método Científico",
           "count": 1,
-          "percentageWithinSubject": 11.11,
-          "percentageGlobal": 1.47
-        },
-        {
-          "topic": "Migração e Trabalho",
-          "count": 1,
-          "percentageWithinSubject": 11.11,
-          "percentageGlobal": 1.47
-        },
-        {
-          "topic": "Soberania de Dados",
-          "count": 1,
-          "percentageWithinSubject": 11.11,
-          "percentageGlobal": 1.47
-        },
-        {
-          "topic": "Elementos Cartográficos",
-          "count": 1,
-          "percentageWithinSubject": 11.11,
-          "percentageGlobal": 1.47
-        },
-        {
-          "topic": "Geometria e Escalas",
-          "count": 1,
-          "percentageWithinSubject": 11.11,
-          "percentageGlobal": 1.47
-        },
-        {
-          "topic": "Mudanças Climáticas",
-          "count": 1,
-          "percentageWithinSubject": 11.11,
-          "percentageGlobal": 1.47
+          "percentageWithinSubject": 25,
+          "percentageGlobal": 6.67
         }
       ]
     },
     {
-      "subject": "FÍSICA",
-      "count": 7,
-      "percentage": 10.29,
+      "subject": "Sociologia",
+      "count": 3,
+      "percentage": 20,
       "topics": [
         {
-          "topic": "Deslocamento",
+          "topic": "Cultura e Classes Sociais",
           "count": 1,
-          "percentageWithinSubject": 14.29,
-          "percentageGlobal": 1.47
-        },
-        {
-          "topic": "Energia Cinética",
-          "count": 1,
-          "percentageWithinSubject": 14.29,
-          "percentageGlobal": 1.47
-        },
-        {
-          "topic": "Distância",
-          "count": 1,
-          "percentageWithinSubject": 14.29,
-          "percentageGlobal": 1.47
-        },
-        {
-          "topic": "Comprimento de Tubo Sonoro",
-          "count": 1,
-          "percentageWithinSubject": 14.29,
-          "percentageGlobal": 1.47
-        },
-        {
-          "topic": "Capacitores",
-          "count": 1,
-          "percentageWithinSubject": 14.29,
-          "percentageGlobal": 1.47
-        },
-        {
-          "topic": "Potência e Resistência",
-          "count": 1,
-          "percentageWithinSubject": 14.29,
-          "percentageGlobal": 1.47
-        },
-        {
-          "topic": "Termodinâmica",
-          "count": 1,
-          "percentageWithinSubject": 14.29,
-          "percentageGlobal": 1.47
-        }
-      ]
-    },
-    {
-      "subject": "QUÍMICA",
-      "count": 6,
-      "percentage": 8.82,
-      "topics": [
-        {
-          "topic": "Radioisótopos",
-          "count": 1,
-          "percentageWithinSubject": 16.67,
-          "percentageGlobal": 1.47
-        },
-        {
-          "topic": "Reações Químicas",
-          "count": 1,
-          "percentageWithinSubject": 16.67,
-          "percentageGlobal": 1.47
-        },
-        {
-          "topic": "Estruturas Químicas",
-          "count": 1,
-          "percentageWithinSubject": 16.67,
-          "percentageGlobal": 1.47
-        },
-        {
-          "topic": "Classificação de Compostos",
-          "count": 1,
-          "percentageWithinSubject": 16.67,
-          "percentageGlobal": 1.47
-        },
-        {
-          "topic": "Combustão",
-          "count": 1,
-          "percentageWithinSubject": 16.67,
-          "percentageGlobal": 1.47
-        },
-        {
-          "topic": "Estados de Oxidação",
-          "count": 1,
-          "percentageWithinSubject": 16.67,
-          "percentageGlobal": 1.47
-        }
-      ]
-    },
-    {
-      "subject": "Biologia",
-      "count": 6,
-      "percentage": 8.82,
-      "topics": [
-        {
-          "topic": "Medicamentos e Efeitos Metabólicos",
-          "count": 1,
-          "percentageWithinSubject": 16.67,
-          "percentageGlobal": 1.47
-        },
-        {
-          "topic": "Espécies Exóticas Invasoras",
-          "count": 1,
-          "percentageWithinSubject": 16.67,
-          "percentageGlobal": 1.47
-        },
-        {
-          "topic": "Histopatologia Pulmonar",
-          "count": 1,
-          "percentageWithinSubject": 16.67,
-          "percentageGlobal": 1.47
-        },
-        {
-          "topic": "Edição Gênica",
-          "count": 1,
-          "percentageWithinSubject": 16.67,
-          "percentageGlobal": 1.47
-        },
-        {
-          "topic": "Hipercolesterolemia Familiar",
-          "count": 1,
-          "percentageWithinSubject": 16.67,
-          "percentageGlobal": 1.47
-        },
-        {
-          "topic": "Extinção de Anfíbios",
-          "count": 1,
-          "percentageWithinSubject": 16.67,
-          "percentageGlobal": 1.47
-        }
-      ]
-    },
-    {
-      "subject": "História",
-      "count": 6,
-      "percentage": 8.82,
-      "topics": [
-        {
-          "topic": "História do Brasil",
-          "count": 2,
           "percentageWithinSubject": 33.33,
-          "percentageGlobal": 2.94
+          "percentageGlobal": 6.67
         },
         {
-          "topic": "Historiografia e Ideologia",
+          "topic": "Crise Ambiental",
           "count": 1,
-          "percentageWithinSubject": 16.67,
-          "percentageGlobal": 1.47
-        },
-        {
-          "topic": "Expansão Islâmica",
-          "count": 1,
-          "percentageWithinSubject": 16.67,
-          "percentageGlobal": 1.47
-        },
-        {
-          "topic": "História Moderna",
-          "count": 1,
-          "percentageWithinSubject": 16.67,
-          "percentageGlobal": 1.47
-        },
-        {
-          "topic": "Brasil Colonial",
-          "count": 1,
-          "percentageWithinSubject": 16.67,
-          "percentageGlobal": 1.47
-        }
-      ]
-    },
-    {
-      "subject": "LITERATURA BRASILEIRA",
-      "count": 6,
-      "percentage": 8.82,
-      "topics": [
-        {
-          "topic": "Análise de Texto",
-          "count": 2,
           "percentageWithinSubject": 33.33,
-          "percentageGlobal": 2.94
+          "percentageGlobal": 6.67
         },
         {
-          "topic": "Análise de Poesia",
-          "count": 2,
+          "topic": "Abordagem Policial",
+          "count": 1,
           "percentageWithinSubject": 33.33,
-          "percentageGlobal": 2.94
-        },
-        {
-          "topic": "Análise de Contos",
-          "count": 1,
-          "percentageWithinSubject": 16.67,
-          "percentageGlobal": 1.47
-        },
-        {
-          "topic": "Análise de Romance",
-          "count": 1,
-          "percentageWithinSubject": 16.67,
-          "percentageGlobal": 1.47
+          "percentageGlobal": 6.67
         }
       ]
     },
     {
-      "subject": "Inglês",
-      "count": 5,
-      "percentage": 7.35,
+      "subject": "Literatura",
+      "count": 2,
+      "percentage": 13.33,
       "topics": [
         {
-          "topic": "Interpretação de Texto",
-          "count": 5,
-          "percentageWithinSubject": 100,
-          "percentageGlobal": 7.35
-        }
-      ]
-    },
-    {
-      "subject": "Língua Portuguesa",
-      "count": 1,
-      "percentage": 1.47,
-      "topics": [
-        {
-          "topic": "Interpretação de Texto",
+          "topic": "Poesia do Arcadismo",
           "count": 1,
-          "percentageWithinSubject": 100,
-          "percentageGlobal": 1.47
+          "percentageWithinSubject": 50,
+          "percentageGlobal": 6.67
+        },
+        {
+          "topic": "Literatura Brasileira",
+          "count": 1,
+          "percentageWithinSubject": 50,
+          "percentageGlobal": 6.67
         }
       ]
     }
   ],
   "byTopic": [
     {
-      "topic": "Interpretação de Texto",
-      "count": 15,
-      "percentage": 22.06
-    },
-    {
-      "topic": "Compreensão de Texto",
-      "count": 4,
-      "percentage": 5.88
-    },
-    {
       "topic": "Geometria",
       "count": 2,
-      "percentage": 2.94
-    },
-    {
-      "topic": "História do Brasil",
-      "count": 2,
-      "percentage": 2.94
-    },
-    {
-      "topic": "Análise de Texto",
-      "count": 2,
-      "percentage": 2.94
-    },
-    {
-      "topic": "Análise de Poesia",
-      "count": 2,
-      "percentage": 2.94
+      "percentage": 13.33
     },
     {
       "topic": "Descontos e Preços",
       "count": 1,
-      "percentage": 1.47
+      "percentage": 6.67
     },
     {
       "topic": "Equações",
       "count": 1,
-      "percentage": 1.47
+      "percentage": 6.67
     },
     {
       "topic": "Trigonometria",
       "count": 1,
-      "percentage": 1.47
+      "percentage": 6.67
     },
     {
       "topic": "Combinatória",
       "count": 1,
-      "percentage": 1.47
+      "percentage": 6.67
     },
     {
-      "topic": "Progressões Aritméticas",
+      "topic": "Poesia do Arcadismo",
       "count": 1,
-      "percentage": 1.47
+      "percentage": 6.67
     },
     {
-      "topic": "Funções Quadráticas",
+      "topic": "Literatura Brasileira",
       "count": 1,
-      "percentage": 1.47
+      "percentage": 6.67
     },
     {
-      "topic": "Logaritmos",
+      "topic": "Crítica à Modernidade",
       "count": 1,
-      "percentage": 1.47
+      "percentage": 6.67
     },
     {
-      "topic": "Deslocamento",
+      "topic": "Crítica à Superstição",
       "count": 1,
-      "percentage": 1.47
+      "percentage": 6.67
     },
     {
-      "topic": "Energia Cinética",
+      "topic": "Cultura e Classes Sociais",
       "count": 1,
-      "percentage": 1.47
+      "percentage": 6.67
     },
     {
-      "topic": "Distância",
+      "topic": "Justiça em Platão",
       "count": 1,
-      "percentage": 1.47
+      "percentage": 6.67
     },
     {
-      "topic": "Comprimento de Tubo Sonoro",
+      "topic": "Método Científico",
       "count": 1,
-      "percentage": 1.47
+      "percentage": 6.67
     },
     {
-      "topic": "Capacitores",
+      "topic": "Crise Ambiental",
       "count": 1,
-      "percentage": 1.47
+      "percentage": 6.67
     },
     {
-      "topic": "Potência e Resistência",
+      "topic": "Abordagem Policial",
       "count": 1,
-      "percentage": 1.47
-    },
-    {
-      "topic": "Termodinâmica",
-      "count": 1,
-      "percentage": 1.47
-    },
-    {
-      "topic": "Radioisótopos",
-      "count": 1,
-      "percentage": 1.47
-    },
-    {
-      "topic": "Reações Químicas",
-      "count": 1,
-      "percentage": 1.47
-    },
-    {
-      "topic": "Estruturas Químicas",
-      "count": 1,
-      "percentage": 1.47
-    },
-    {
-      "topic": "Classificação de Compostos",
-      "count": 1,
-      "percentage": 1.47
-    },
-    {
-      "topic": "Combustão",
-      "count": 1,
-      "percentage": 1.47
-    },
-    {
-      "topic": "Estados de Oxidação",
-      "count": 1,
-      "percentage": 1.47
-    },
-    {
-      "topic": "Medicamentos e Efeitos Metabólicos",
-      "count": 1,
-      "percentage": 1.47
-    },
-    {
-      "topic": "Espécies Exóticas Invasoras",
-      "count": 1,
-      "percentage": 1.47
-    },
-    {
-      "topic": "Histopatologia Pulmonar",
-      "count": 1,
-      "percentage": 1.47
-    },
-    {
-      "topic": "Edição Gênica",
-      "count": 1,
-      "percentage": 1.47
-    },
-    {
-      "topic": "Hipercolesterolemia Familiar",
-      "count": 1,
-      "percentage": 1.47
-    },
-    {
-      "topic": "Extinção de Anfíbios",
-      "count": 1,
-      "percentage": 1.47
-    },
-    {
-      "topic": "Fenômenos Naturais",
-      "count": 1,
-      "percentage": 1.47
-    },
-    {
-      "topic": "História do Oriente Médio",
-      "count": 1,
-      "percentage": 1.47
-    },
-    {
-      "topic": "Relevo Cárstico",
-      "count": 1,
-      "percentage": 1.47
-    },
-    {
-      "topic": "Desmatamento no Brasil",
-      "count": 1,
-      "percentage": 1.47
-    },
-    {
-      "topic": "Migração e Trabalho",
-      "count": 1,
-      "percentage": 1.47
-    },
-    {
-      "topic": "Soberania de Dados",
-      "count": 1,
-      "percentage": 1.47
-    },
-    {
-      "topic": "Elementos Cartográficos",
-      "count": 1,
-      "percentage": 1.47
-    },
-    {
-      "topic": "Geometria e Escalas",
-      "count": 1,
-      "percentage": 1.47
-    },
-    {
-      "topic": "Mudanças Climáticas",
-      "count": 1,
-      "percentage": 1.47
-    },
-    {
-      "topic": "Historiografia e Ideologia",
-      "count": 1,
-      "percentage": 1.47
-    },
-    {
-      "topic": "Expansão Islâmica",
-      "count": 1,
-      "percentage": 1.47
-    },
-    {
-      "topic": "História Moderna",
-      "count": 1,
-      "percentage": 1.47
-    },
-    {
-      "topic": "Brasil Colonial",
-      "count": 1,
-      "percentage": 1.47
-    },
-    {
-      "topic": "Análise de Contos",
-      "count": 1,
-      "percentage": 1.47
-    },
-    {
-      "topic": "Análise de Romance",
-      "count": 1,
-      "percentage": 1.47
+      "percentage": 6.67
     }
   ],
   "byDifficulty": [
     {
       "difficulty": 2,
-      "count": 18,
-      "percentage": 26.47
+      "count": 4,
+      "percentage": 26.67
     },
     {
       "difficulty": 3,
-      "count": 34,
-      "percentage": 50
+      "count": 9,
+      "percentage": 60
     },
     {
       "difficulty": 4,
-      "count": 16,
-      "percentage": 23.53
+      "count": 2,
+      "percentage": 13.33
     }
   ]
 }

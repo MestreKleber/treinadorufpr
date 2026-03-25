@@ -39,6 +39,7 @@ type CliOptions = {
   importToDb: boolean;
   chunkSize: number;
   sourcePrefix: string;
+  pdfPublicUrl?: string;
 };
 
 type ParsedQuestion = {
@@ -88,6 +89,7 @@ function parseArgs(argv: string[]): CliOptions {
     importToDb: true,
     chunkSize: 6,
     sourcePrefix: "UFPR",
+    pdfPublicUrl: undefined,
   };
 
   for (let i = 0; i < argv.length; i += 1) {
@@ -104,6 +106,9 @@ function parseArgs(argv: string[]): CliOptions {
       i += 1;
     } else if (value === "--source-prefix" && argv[i + 1]) {
       options.sourcePrefix = argv[i + 1];
+      i += 1;
+    } else if (value === "--pdf-public-url" && argv[i + 1]) {
+      options.pdfPublicUrl = argv[i + 1];
       i += 1;
     }
   }
@@ -298,14 +303,18 @@ function normalizeQuestions(
   });
 }
 
-async function importQuestionsToDb(parsed: ParsedQuestion[], imageUrlByPage: Map<number, string>) {
+async function importQuestionsToDb(
+  parsed: ParsedQuestion[],
+  imageUrlByPage: Map<number, string>,
+  pdfPublicUrl?: string,
+) {
   if (parsed.length === 0) return [] as number[];
 
   const ids = db.transaction((tx) => {
     const insertedIds: number[] = [];
 
     for (const q of parsed) {
-      const pageImage = imageUrlByPage.get(q.page) ?? null;
+      const pageImage = imageUrlByPage.get(q.page) ?? (pdfPublicUrl ? `${pdfPublicUrl}#page=${q.page}` : null);
       console.log(
         `[import] page=${q.page} subject=${q.subject} topic=${q.topic ?? "-"} bundle=${q.bundleId ?? "-"} hasImage=${pageImage ? "yes" : "no"}`,
       );
@@ -546,7 +555,7 @@ async function processPdf(pdfPath: string, options: CliOptions) {
 
   let insertedIds: number[] = [];
   if (options.importToDb) {
-    insertedIds = await importQuestionsToDb(normalized, imageFilesByPage);
+    insertedIds = await importQuestionsToDb(normalized, imageFilesByPage, options.pdfPublicUrl);
   }
 
   await parser.destroy();

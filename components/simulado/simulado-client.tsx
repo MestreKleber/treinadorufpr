@@ -31,6 +31,11 @@ function formatClock(seconds: number) {
   return `${mm}:${ss}`;
 }
 
+function isPdfPageUrl(url: string | null | undefined) {
+  if (!url) return false;
+  return /\.pdf(#|\?|$)/i.test(url);
+}
+
 export function SimuladoClient() {
   const router = useRouter();
   const [subjects, setSubjects] = useState<string[]>([]);
@@ -299,13 +304,31 @@ export function SimuladoClient() {
 
           {currentQuestion.imageUrl ? (
             <div className="overflow-hidden rounded-lg border bg-white p-2">
-              <Image
-                src={currentQuestion.imageUrl}
-                alt="Imagem da questão"
-                width={960}
-                height={540}
-                className="h-auto w-full rounded-md object-contain"
-              />
+              {isPdfPageUrl(currentQuestion.imageUrl) ? (
+                <div className="space-y-2">
+                  <iframe
+                    src={currentQuestion.imageUrl}
+                    title="Página da prova"
+                    className="h-[600px] w-full rounded-md border"
+                  />
+                  <a
+                    href={currentQuestion.imageUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-xs text-blue-700 underline"
+                  >
+                    Abrir página da prova em nova aba
+                  </a>
+                </div>
+              ) : (
+                <Image
+                  src={currentQuestion.imageUrl}
+                  alt="Imagem da questão"
+                  width={960}
+                  height={540}
+                  className="h-auto w-full rounded-md object-contain"
+                />
+              )}
             </div>
           ) : null}
 

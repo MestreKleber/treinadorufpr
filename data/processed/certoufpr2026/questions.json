@@ -4,8 +4,7 @@
     "topic": "Descontos e Preços",
     "statement": "O preço de um livro está com 15% de desconto em uma promoção. Nessa promoção, esse livro custa R$ 51,00. Assinale a alternativa que corresponde ao valor desse livro sem o desconto.",
     "bundleId": "1",
-    "bundleTitle": "Questões 1 e 2",
-    "bundleContext": "Responda as questões 1 e 2",
+    "bundleTitle": "Questões de Matemática",
     "source": "UFPR certoufpr2026",
     "difficulty": 2,
     "page": 1,
@@ -42,8 +41,7 @@
     "topic": "Geometria",
     "statement": "Na figura ao lado, a área do quadrado ABEF é igual a 9 cm², e o comprimento do segmento DF é igual a 5 cm. Assinale a alternativa que corresponde à área, em cm², do retângulo ABCD.",
     "bundleId": "1",
-    "bundleTitle": "Questões 1 e 2",
-    "bundleContext": "Responda as questões 1 e 2",
+    "bundleTitle": "Questões de Matemática",
     "source": "UFPR certoufpr2026",
     "difficulty": 2,
     "page": 1,
@@ -79,9 +77,8 @@
     "subject": "MATEMÁTICA",
     "topic": "Equações",
     "statement": "As retas paralelas 𝒓1 e 𝒓2 no plano 𝒙𝒚 são dadas pelas equações 𝒚 = 2𝒎 – 3 𝒙 + 4 e 𝒚 = 5𝒎 + 1 𝒙 – 2, respectivamente. Assinale a alternativa que corresponde ao valor de 𝒎.",
-    "bundleId": "2",
-    "bundleTitle": "Questões 3 e 4",
-    "bundleContext": "Responda as questões 3 e 4",
+    "bundleId": "1",
+    "bundleTitle": "Questões de Matemática",
     "source": "UFPR certoufpr2026",
     "difficulty": 3,
     "page": 1,
@@ -117,9 +114,8 @@
     "subject": "MATEMÁTICA",
     "topic": "Trigonometria",
     "statement": "O pentágono da figura ao lado tem ângulos retos A, B e C. Conhecendo as medidas dos lados AE = 15, AB = 12, BC = 7 e CD = 5, assinale a alternativa que corresponde ao valor da tangente do ângulo 𝜽 = E.",
-    "bundleId": "2",
-    "bundleTitle": "Questões 3 e 4",
-    "bundleContext": "Responda as questões 3 e 4",
+    "bundleId": "1",
+    "bundleTitle": "Questões de Matemática",
     "source": "UFPR certoufpr2026",
     "difficulty": 3,
     "page": 1,
@@ -154,12 +150,11 @@
   {
     "subject": "MATEMÁTICA",
     "topic": "Geometria",
-    "statement": "Considere o paralelogramo ABCD ilustrado na figura ao lado. Sejam M o ponto médio do lado CD e N o ponto comum aos segmentos AC e BM. Sabendo que a medida do segmento AN é igual a 4√3, assinale a alternativa que corresponde à medida da diagonal AC.",
-    "bundleId": "3",
-    "bundleTitle": "Questões 5 e 6",
-    "bundleContext": "Responda as questões 5 e 6",
+    "statement": "Considere o paralelogramo ABCD ilustrado na figura ao lado. Sejam M o ponto médio do lado CD e N o ponto comum aos segmentos AC e BM. Sabendo que a medida do segmento AN é igual a 4/3, assinale a alternativa que corresponde à medida da diagonal AC.",
+    "bundleId": "1",
+    "bundleTitle": "Questões de Matemática",
     "source": "UFPR certoufpr2026",
-    "difficulty": 3,
+    "difficulty": 2,
     "page": 1,
     "alternatives": [
       {
@@ -193,11 +188,10 @@
     "subject": "MATEMÁTICA",
     "topic": "Combinatória",
     "statement": "A equipe técnica de um time de futebol analisou a possibilidade de a final do campeonato ir para a disputa por pênaltis. Caso isso ocorra, a equipe precisará escolher 5 jogadores diferentes, dentre os 11 que estarão em campo, e também a ordem entre eles para a cobrança dos 5 primeiros pênaltis. A decisão tomada foi a seguinte: o principal atacante do time começará as cobranças, e o goleiro deverá ser um dos 5 cobradores. Além disso, nenhum dos 3 zagueiros em campo participará dessas primeiras cobranças. A partir dessas informações, assinale a alternativa que apresenta corretamente o número de configurações possíveis para essa escolha.",
-    "bundleId": "3",
-    "bundleTitle": "Questões 5 e 6",
-    "bundleContext": "Responda as questões 5 e 6",
+    "bundleId": "1",
+    "bundleTitle": "Questões de Matemática",
     "source": "UFPR certoufpr2026",
-    "difficulty": 4,
+    "difficulty": 3,
     "page": 1,
     "alternatives": [
       {
@@ -228,2328 +222,343 @@
     ]
   },
   {
-    "subject": "MATEMÁTICA",
-    "topic": "Progressões Aritméticas",
-    "statement": "O caminho poligonal do ponto A ao ponto B, descrito na figura ao lado, tem medida igual a 84/5 unidades de comprimento. As medidas dos consecutivos segmentos desse caminho poligonal formam uma progressão aritmética. Assinale a alternativa que corresponde à soma das medidas dos segmentos PQ e QR.",
-    "bundleId": "4",
-    "bundleTitle": "Questões 7 e 8",
-    "bundleContext": "Responda as questões 7 e 8",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 2,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "26/5",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "24/5",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "42/5",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "28/5",
-        "isCorrect": true
-      },
-      {
-        "label": "E",
-        "text": "48/5",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "MATEMÁTICA",
-    "topic": "Funções Quadráticas",
-    "statement": "A função quadrática 𝒇𝒙 satisfaz a igualdade 𝒇(2𝒙 + 1) = 4𝒙² + 10𝒙 + 9, para todo 𝒙 ∈ 𝑹. Assinale a alternativa que corresponde ao vértice da parábola dada pelo gráfico de 𝒇𝒙.",
-    "bundleId": "4",
-    "bundleTitle": "Questões 7 e 8",
-    "bundleContext": "Responda as questões 7 e 8",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 4,
-    "page": 2,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "(3/2, 11/4)",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "(3/2, –11/4)",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "(–3/2, 11/4)",
-        "isCorrect": true
-      },
-      {
-        "label": "D",
-        "text": "(5/4, 11/4)",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "(–5/4, 11/4)",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "MATEMÁTICA",
-    "topic": "Logaritmos",
-    "statement": "Os números reais 𝒙 e 𝒚 satisfazem as equações: log₃(3𝒚 – 1) = 2 + log₃𝑥 e 2 log₂𝑦 = 2 + log₂𝑥. Assinale a alternativa que corresponde ao valor da razão 𝒚/𝒙.",
-    "bundleId": "5",
-    "bundleTitle": "Questões 9",
-    "bundleContext": "Responda a questão 9",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 2,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "3/4",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "2",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "3",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "5",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "6",
-        "isCorrect": true
-      }
-    ]
-  },
-  {
-    "subject": "FÍSICA",
-    "topic": "Deslocamento",
-    "statement": "O valor do deslocamento 𝜟𝒙 efetuado pelo objeto A, entre os instantes 𝒕₁ = 0 s e 𝒕₂ = 35 s, é:",
-    "bundleId": "6",
-    "bundleTitle": "Questões 10 a 12",
-    "bundleContext": "Responda as questões 10 a 12",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 2,
-    "page": 3,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "𝛥𝑥 = 8,0 cm",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "𝛥𝑥 = 6,0 cm",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "𝛥𝑥 = 4,0 cm",
-        "isCorrect": true
-      },
-      {
-        "label": "D",
-        "text": "𝛥𝑥 = 2,0 cm",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "𝛥𝑥 = 0,0 cm",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "FÍSICA",
-    "topic": "Energia Cinética",
-    "statement": "O valor da energia cinética 𝑲B do objeto B (de massa constante 𝒎 = 5,0 g), no instante 𝒕 = 15 s, é:",
-    "bundleId": "6",
-    "bundleTitle": "Questões 10 a 12",
-    "bundleContext": "Responda as questões 10 a 12",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 3,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "𝐾B= 10 nJ",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "𝐾B = 20 nJ",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "𝐾B = 40 nJ",
-        "isCorrect": true
-      },
-      {
-        "label": "D",
-        "text": "𝐾B= 80 nJ",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "𝐾B= 160 nJ",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "FÍSICA",
-    "topic": "Distância",
-    "statement": "O valor da distância 𝒅 entre os dois objetos no instante 𝒕 = 30 s é:",
-    "bundleId": "7",
-    "bundleTitle": "Questões 13 a 15",
-    "bundleContext": "Responda as questões 13 a 15",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 2,
-    "page": 3,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "𝑑 = 2,0 cm",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "𝑑 = 4,0 cm",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "𝑑 = 6,0 cm",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "𝑑 = 8,0 cm",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "𝑑 = 10,0 cm",
-        "isCorrect": true
-      }
-    ]
-  },
-  {
-    "subject": "FÍSICA",
-    "topic": "Comprimento de Tubo Sonoro",
-    "statement": "Num tubo sonoro aberto de comprimento 𝑳, a frequência do terceiro harmônico produzido por ele vale 𝒇₃ = 5,1 kHz. Sabe-se que a velocidade do som no local vale 𝒗ₛ = 340 m/s. O valor do comprimento 𝑳 do tubo é:",
-    "bundleId": "8",
-    "bundleTitle": "Questões 16 a 18",
-    "bundleContext": "Responda as questões 16 a 18",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 3,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "𝐿 = 5,00 cm",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "𝐿 = 10,0 cm",
-        "isCorrect": true
-      },
-      {
-        "label": "C",
-        "text": "𝐿 = 15,0 cm",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "𝐿 = 20,0 cm",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "𝐿 = 30,0 cm",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "FÍSICA",
-    "topic": "Capacitores",
-    "statement": "Dispõem-se de dois capacitores, de capacitâncias 𝑪₁ e 𝑪₂, respectivamente. O primeiro é submetido a uma tensão 𝚫𝑽₁ e o segundo, a uma tensão 𝚫𝑽₂. Sabendo que 𝑪₁ = 3𝑪₂ e 𝚫𝑽₁ = 2𝚫𝑽₂, determine a razão 𝑼₂/𝑼₁ entre as energias 𝑼₂ e 𝑼₁ armazenadas por cada capacitor.",
-    "bundleId": "8",
-    "bundleTitle": "Questões 16 a 18",
-    "bundleContext": "Responda as questões 16 a 18",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 4,
-    "page": 3,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "2/1 = 1/2",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "2/1 = 1/3",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "2/1 = 1/4",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "2/1 = 1/6",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "2/1 = 1/12",
-        "isCorrect": true
-      }
-    ]
-  },
-  {
-    "subject": "FÍSICA",
-    "topic": "Potência e Resistência",
-    "statement": "Um resistor de resistência 𝑹 dissipa uma potência 𝑷 quando submetido a uma diferença de potencial 𝚫𝑽. Assinale a alternativa que apresenta corretamente o valor da resistência 𝑹 quando 𝑷 = 5,0 W e 𝚫𝑽 = 10 V.",
-    "bundleId": "9",
-    "bundleTitle": "Questões 19 a 21",
-    "bundleContext": "Responda as questões 19 a 21",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 2,
-    "page": 4,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "𝑅 = 2,0 Ω",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "𝑅 = 5,0 Ω",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "𝑅 = 10 Ω",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "𝑅 = 20 Ω",
-        "isCorrect": true
-      },
-      {
-        "label": "E",
-        "text": "𝑅 = 50 Ω",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "FÍSICA",
-    "topic": "Termodinâmica",
-    "statement": "Uma certa quantidade de gás ideal executa um processo termodinâmico partindo de um estado em que a pressão vale 𝑷₁, a temperatura vale 𝑻₁ e o volume vale 𝑽₁, chegando a outro estado em que a pressão vale 𝑷₂, a temperatura vale 𝑻₂ e o volume vale 𝑽₂. Assinale a alternativa que apresenta corretamente o valor da razão 𝑷₂/𝑷₁ quando 𝑻₂ = 5𝑻₁/2 e 𝑽₂ = 3𝑽₁.",
-    "bundleId": "9",
-    "bundleTitle": "Questões 19 a 21",
-    "bundleContext": "Responda as questões 19 a 21",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 4,
-    "page": 4,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "2/1 = 2/15",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "2/1 = 2/5",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "2/1 = 5/6",
-        "isCorrect": true
-      },
-      {
-        "label": "D",
-        "text": "2/1 = 6/5",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "2/1 = 15/2",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "QUÍMICA",
-    "topic": "Radioisótopos",
-    "statement": "O radioisótopo sintético iodo-131 é empregado no diagnóstico e tratamento de diversas enfermidades. Para a sua síntese, um isótopo natural de um determinado elemento, representado por A', é bombardeado por nêutrons em um reator nuclear. Quando o núcleo do átomo A' absorve um nêutron, é transformado no isótopo A'', conforme a seguinte equação: A' + n → A''. Na sequência, A'' emite radiação β espontaneamente, produzindo o iodo-131, como mostrado na equação a seguir: A'' → I₅₃₁ + 𝒍 – A radiação β envolve a conversão de um nêutron do núcleo atômico para um próton, seguida da ejeção de um elétron altamente energético chamado de partícula β. Considerando as informações apresentadas, qual é o átomo representado por A'?",
-    "bundleId": "10",
-    "bundleTitle": "Questões 22 a 25",
-    "bundleContext": "Responda as questões 22 a 25",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 4,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "Te₅₂₁₃₀",
-        "isCorrect": true
-      },
-      {
-        "label": "B",
-        "text": "Te₅₂₁₃₁",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "Xe₅₄₁₃₀",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "Xe₅₄₁₃₁",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "Xe₅₄₁₃₂",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "QUÍMICA",
-    "topic": "Reações Químicas",
-    "statement": "Para a desinfeção da água destinada ao consumo doméstico, emprega-se o cloro (Cl₂), que elimina um amplo espectro de microrganismos nocivos. Entretanto, o cloro que persiste na água tratada pode prejudicar certas atividades, como a criação de peixes em aquário. O agente redutor tiossulfato (S₂O₃²⁻) é utilizado quando se quer remover rapidamente o cloro, reduzindo-o a cloreto. As semirreações de redução envolvendo o cloro e o tiossulfato são, respectivamente: Cl₂ + 2 e⁻ → 2 Cl⁻ 2 SO₄²⁻ + 5 H₂O + 8 e⁻ → S₂O₃²⁻ + 10 OH⁻ Com base nas duas equações dadas, qual é a equação química que representa a reação de redução do cloro pelo tiossulfato?",
-    "bundleId": "10",
-    "bundleTitle": "Questões 22 a 25",
-    "bundleContext": "Responda as questões 22 a 25",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 4,
-    "page": 4,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "Cl₂ + 2 SO₄²⁻ + 5 H₂O → 2 Cl⁻ + S₂O₃²⁻ + 10 OH⁻",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "4 Cl₂ + 2 SO₄²⁻ + 5 H₂O → 8 Cl⁻ + S₂O₃²⁻ + 10 OH⁻",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "Cl₂ + S₂O₃²⁻ + 10 OH⁻ → 2 Cl⁻ + 2 SO₄²⁻ + 5 H₂O",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "Cl₂ + 2 S₂O₃²⁻ + 20 OH⁻ → 2 Cl⁻ + 4 SO₄²⁻ + 10 H₂O",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "4 Cl₂ + S₂O₃²⁻ + 10 OH⁻ → 8 Cl⁻ + 2 SO₄²⁻ + 5 H₂O",
-        "isCorrect": true
-      }
-    ]
-  },
-  {
-    "subject": "QUÍMICA",
-    "topic": "Estruturas Químicas",
-    "statement": "A partir das estruturas mostradas, assinale a alternativa que apresenta as fórmulas moleculares da lactose e do antraceno, respectivamente.",
-    "bundleId": "11",
-    "bundleTitle": "Questões 26 a 30",
-    "bundleContext": "Responda as questões 26 a 30",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 5,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "C₁₀H₂₂O₁₁ e C₁₄H₁₀",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "C₁₂H₂₂O₁₁ e C₁₄H₁₄",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "C₁₂H₂₂O₁₁ e C₁₄H₁₀",
-        "isCorrect": true
-      },
-      {
-        "label": "D",
-        "text": "C₁₀H₁₂O₁₁ e C₁₄H₁₀",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "C₁₂H₂₂O₁₁ e C₁₀H₁₀",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "QUÍMICA",
-    "topic": "Classificação de Compostos",
-    "statement": "Considerando as estruturas da lactose e do antraceno, como esses compostos orgânicos são classificados, respectivamente?",
-    "bundleId": "11",
-    "bundleTitle": "Questões 26 a 30",
-    "bundleContext": "Responda as questões 26 a 30",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 2,
-    "page": 5,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "Carboidrato e fenol.",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "Hidrocarboneto e fenol.",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "Hidrocarboneto e carboidrato.",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "Carboidrato e hidrocarboneto.",
-        "isCorrect": true
-      },
-      {
-        "label": "E",
-        "text": "Hidrocarboneto e hidrocarboneto.",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "QUÍMICA",
-    "topic": "Combustão",
-    "statement": "Um dos componentes da resina de pinho, usado na produção da fumaça branca, é o ácido abiético, de fórmula molecular C₂₀H₃₀O₂. Considere a combustão completa de 1 mol desse ácido, ou seja, a reação entre ele e o gás oxigênio (O₂), produzindo apenas gás carbônico (CO₂) e água (H₂O). Quantos mols de gás carbônico e água, respectivamente, são produzidos nessa combustão?",
-    "bundleId": "12",
-    "bundleTitle": "Questões 31 a 35",
-    "bundleContext": "Responda as questões 31 a 35",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 5,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "10 e 10",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "10 e 15",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "20 e 15",
-        "isCorrect": true
-      },
-      {
-        "label": "D",
-        "text": "20 e 60",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "40 e 60",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "QUÍMICA",
-    "topic": "Estados de Oxidação",
-    "statement": "Os sais clorato e perclorato de potássio são utilizados como agentes oxidantes nas reações de combustão. Quais são os estados de oxidação do átomo de cloro nos ânions perclorato (ClO₄⁻) e clorato (ClO₃⁻), respectivamente?",
-    "bundleId": "12",
-    "bundleTitle": "Questões 31 a 35",
-    "bundleContext": "Responda as questões 31 a 35",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 5,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "–1 e –1",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "–7 e –5",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "+7 e –5",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "+7 e +5",
-        "isCorrect": true
-      },
-      {
-        "label": "E",
-        "text": "+1 e +1",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "Biologia",
-    "topic": "Medicamentos e Efeitos Metabólicos",
-    "statement": "Medicamentos injetáveis que eram utilizados exclusivamente para o tratamento de diabetes tipo II passaram a ser usados para tratamento de obesidade e sobrepeso, sendo popularmente chamados de “canetas emagrecedoras”. Esses medicamentos retardam o esvaziamento gástrico e alteram a secreção de hormônios pancreáticos, resultando em uma redução da glicemia. A esse respeito, considere as figuras a seguir: A figura que melhor representa o efeito da aplicação desses medicamentos em relação à glicemia e às concentrações plasmáticas de glucagon e insulina é a:",
-    "bundleId": "medicamentos",
-    "bundleTitle": "Medicamentos e Efeitos Metabólicos",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 7,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "I",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "II",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "III",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "IV",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "V",
-        "isCorrect": true
-      }
-    ]
-  },
-  {
-    "subject": "Biologia",
-    "topic": "Espécies Exóticas Invasoras",
-    "statement": "Com base nos exemplos mencionados, a presença de espécies exóticas invasoras nos ecossistemas costuma causar:",
-    "bundleId": "especies_exoticas",
-    "bundleTitle": "Espécies Exóticas Invasoras",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 2,
-    "page": 8,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "aumento da competição por recursos e da predação de espécies nativas.",
-        "isCorrect": true
-      },
-      {
-        "label": "B",
-        "text": "redução da incidência de doenças infecciosas e de parasitas nas espécies nativas.",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "redução da pressão seletiva sobre as espécies nativas e aumento da biodiversidade a longo prazo.",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "aumento da variabilidade genética das espécies nativas e redução do risco de extinção dessas espécies.",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "ampliação do nicho ecológico das espécies nativas e estabelecimento de relações como mutualismo, comensalismo ou inquilinismo.",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "Biologia",
-    "topic": "Histopatologia Pulmonar",
-    "statement": "De acordo com a descrição acima, os itens 1 e 2 indicam, respectivamente, a presença de representantes dos tecidos:",
-    "bundleId": "histopatologia",
-    "bundleTitle": "Histopatologia Pulmonar",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 8,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "epitelial e linfático.",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "adiposo e epitelial.",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "nervoso e conjuntivo.",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "sanguíneo e nervoso.",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "conjuntivo e sanguíneo.",
-        "isCorrect": true
-      }
-    ]
-  },
-  {
-    "subject": "Biologia",
-    "topic": "Edição Gênica",
-    "statement": "Na figura, os números de 1 a 4 representam, respectivamente:",
-    "bundleId": "edicao_genica",
-    "bundleTitle": "Edição Gênica",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 4,
-    "page": 8,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "1 = Nucléolo 2 = Ribossomo 3 = Transcrição 4 = RNA ribossomal",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "1 = Citosol 2 = Complexo de Golgi 3 = Splicing 4 = RNA transportador",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "1 = Núcleo 2 = Complexo de Golgi 3 = Transcrição 4 = RNA mensageiro",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "1 = Núcleo 2 = Retículo endoplasmático 3 = Tradução 4 = RNA mensageiro",
-        "isCorrect": true
-      },
-      {
-        "label": "E",
-        "text": "1 = Citosol 2 = Retículo endoplasmático 3 = Tradução 4 = RNA transportador",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "Biologia",
-    "topic": "Hipercolesterolemia Familiar",
-    "statement": "Considerando os fenótipos e os níveis de LDL dos indivíduos representados no heredograma, é correto afirmar que o padrão de herança observado é:",
-    "bundleId": "hipercolesterolemia",
-    "bundleTitle": "Hipercolesterolemia Familiar",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 9,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "autossômico recessivo.",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "poligênico ou quantitativo.",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "recessivo ligado ao cromossomo X.",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "autossômico dominante, com dominância completa.",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "autossômico dominante, com dominância incompleta ou codominância.",
-        "isCorrect": true
-      }
-    ]
-  },
-  {
-    "subject": "Biologia",
-    "topic": "Extinção de Anfíbios",
-    "statement": "Qual característica dos anfíbios ajuda a explicar por que esse grupo é proporcionalmente mais ameaçado de extinção?",
-    "bundleId": "extincao_anfibios",
-    "bundleTitle": "Extinção de Anfíbios",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 2,
-    "page": 9,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "Endotermia",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "Pele fina e úmida",
-        "isCorrect": true
-      },
-      {
-        "label": "C",
-        "text": "Desenvolvimento direto",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "Ovos com casca e âmnio",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "Excreção renal de ácido úrico",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "Geografia",
-    "topic": "Fenômenos Naturais",
-    "statement": "Considerando essas informações, assinale a alternativa que apresenta a principal causa do fenômeno cabeça d’água e o motivo pelo qual seus efeitos podem surpreender as pessoas.",
-    "bundleId": "fenomenos_naturais",
-    "bundleTitle": "Fenômenos Naturais",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 9,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "Formação de uma coluna de ar em rotação associada a uma nuvem de tempestade, que surpreende por se originar sobre uma superfície de água, como o mar, lagos ou grandes rios.",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "Ocorrência de chuvas intensas em áreas mais elevadas de uma bacia hidrográfica, que surpreende pelo aumento rápido e repentino do nível de um rio ou córrego, mesmo que não tenha chovido no local onde estão as pessoas.",
-        "isCorrect": true
-      },
-      {
-        "label": "C",
-        "text": "Avanço de frentes frias sobre uma determinada localidade, aumentando os riscos e a vulnerabilidade de uma determinada área, e surpreendendo por provocar ondas de frio em pleno verão.",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "Ocorrência de chuvas fortes em grandes bacias hidrográficas, que surpreendem ao provocar os eventos extremos de granizo no continente e em nível regional.",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "Registro de chuvas intensas e homogêneas em bacias hidrográficas de médio e grande porte, que surpreende por favorecer a ocorrência de erosão e deslizamentos de terra nos trechos costeiros de menor elevação.",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "Geografia",
-    "topic": "História do Oriente Médio",
-    "statement": "Considerando as informações apresentadas, assinale a alternativa que relaciona corretamente a declaração Balfour à evolução da ocupação judaica na Palestina.",
-    "bundleId": "declaracao_balfour",
-    "bundleTitle": "História do Oriente Médio",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 4,
-    "page": 10,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "A declaração Balfour simboliza o nascimento do Estado judeu na Palestina em 1917, como um gesto de aliança do governo Britânico com a comunidade judaica, com objetivo de controlar a expansão árabe no Oriente Médio durante a Primeira Guerra Mundial, o que determinou a evolução da ocupação judaica na região.",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "A expansão da ocupação israelense em território palestino, para além da área delimitada pela ONU em 1947, indica que os direitos das coletividades não judaicas existentes na Palestina não foram assegurados pelos organismos internacionais, conforme prometia a declaração Balfour emitida pelo Reino Britânico.",
-        "isCorrect": true
-      },
-      {
-        "label": "C",
-        "text": "A declaração Balfour representou apenas um gesto simbólico do Reino Britânico para angariar apoio dos judeus durante a Primeira Grande Guerra, já que a partilha da Palestina entre árabes e judeus se deu apenas em 1947, pela Resolução 181 da ONU, e a criação do Estado de Israel ocorreu oficialmente em 1948.",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "Diante da promessa não cumprida pela declaração Balfour, a ONU confiscou os poderes britânicos sobre a Palestina e realizou sua partilha entre árabes e judeus de modo desproporcional, em 1947, o que tem levado Israel a justificar sua expansão sobre o território palestino com base nas promessas britânicas.",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "A declaração Balfour registra o início do movimento sionista, como uma política de ocupação da Palestina promovida pelo Império Britânico para frear o Império Turco Otomano e a ocupação árabe na região, com um programa de expansão territorial gradual do Estado israelense.",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "Geografia",
-    "topic": "Relevo Cárstico",
-    "statement": "Considerando as informações apresentadas, são exemplos de formas típicas de relevo cárstico:",
-    "bundleId": "relevo_carstico",
-    "bundleTitle": "Relevo Cárstico",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 2,
-    "page": 10,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "leques aluviais, dunas e chapadas.",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "cascatas, morros testemunhos e rochas periglaciais.",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "ravinas, voçorocas e derrames basálticos.",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "planícies, planaltos e rios de superfície extensos.",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "dolinas, sumidouros e cavernas.",
-        "isCorrect": true
-      }
-    ]
-  },
-  {
-    "subject": "Geografia",
-    "topic": "Desmatamento no Brasil",
-    "statement": "Nos dois últimos anos, 2023 e 2024, a Amazônia deixou de ser a formação vegetal mais desmatada do país. Em 2024, a região do Matopiba concentrou aproximadamente 75% do desmatamento de um determinado bioma e 42% de toda a perda de vegetação nativa no Brasil. Predominante em cerca de 91% da área do Matopiba, o bioma em questão é chamado de:",
-    "bundleId": "desmatamento_brasil",
-    "bundleTitle": "Desmatamento no Brasil",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 11,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "pantanal.",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "pampa.",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "cerrado.",
-        "isCorrect": true
-      },
-      {
-        "label": "D",
-        "text": "mata atlântica.",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "zonas costeiras.",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "Geografia",
-    "topic": "Migração e Trabalho",
-    "statement": "Considerando as informações apresentadas e os conhecimentos dos fluxos migratórios contemporâneos, assinale a alternativa correta.",
-    "bundleId": "migracao_trabalho",
-    "bundleTitle": "Migração e Trabalho",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 4,
-    "page": 11,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "Em decorrência do acirramento das políticas anti-imigratórias de países do norte global, pós-crise de 2008, observa-se uma queda da imigração brasileira para o exterior simultaneamente ao aumento de fluxos migratórios para o Brasil, sobrecarregando o mercado de trabalho do país.",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "A deflagração da Operação Acolhida pelo Exército brasileiro, em 2018, colaborou para o aumento da entrada de imigrantes venezuelanos pelas cidades fronteiriças de Boa Vista (RR) e Pacaraima (RR), contribuindo para a saturação do mercado de trabalho e a geração de situações de informalidade.",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "A liderança do Brasil na Missão das Nações Unidas para a Estabilização do Haiti, a partir de 2004, inaugurou o protagonismo geopolítico do país na América Latina e estimulou as migrações regionais, com destaque para Venezuela, Haiti e Bolívia.",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "As políticas anti-imigratórias do Norte Global têm contribuído para o estabelecimento de fluxos latino-americanos no sentido Sul-Sul, reproduzindo a lógica de exploração do trabalho imigrante e transformando os fluxos migratórios para o Brasil, que outrora possuía predomínio de imigrações Norte-Sul.",
-        "isCorrect": true
-      },
-      {
-        "label": "E",
-        "text": "As situações de trabalho precarizado às quais os imigrantes venezuelanos têm sido submetidos no Brasil são consequência do sobrefluxo de pessoas que chegam ao país, associado a políticas de interiorização que encaminham esses imigrantes principalmente para as regiões Sudeste e Sul do país.",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "Geografia",
-    "topic": "Soberania de Dados",
-    "statement": "Considerando o contexto apontado pelo fragmento de reportagem acima, é correto afirmar sobre as relações entre soberania e meio técnico-científico-informacional:",
-    "bundleId": "soberania_dados",
-    "bundleTitle": "Soberania de Dados",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 4,
-    "page": 12,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "Os desafios impostos pelo meio técnico-científico-informacional reforçam a importância da soberania de dados para o desenvolvimento do país, compreendendo que a exploração econômica dessas informações deve se dar em território nacional, como garantia de desenvolvimento econômico de empresas brasileiras.",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "Diante dos impactos do extrativismo de dados assinalados pela matéria, compreende-se que o desenvolvimento do país nas atuais circunstâncias do meio técnico-científico-informacional requer a erradicação de plataformas e serviços digitais de empresas estrangeiras para a garantia da soberania digital.",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "No contexto do meio técnico-científico-informacional, a soberania digital passa pelo desenvolvimento de estratégias de guerra informacional, com investidas do governo contra as big techs para resgatar os dados dos brasileiros que são enviados para o exterior para serem explorados economicamente.",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "O meio técnico-científico-informacional requer uma política nacional de enfrentamento às big techs que impacta a liberdade de expressão da população brasileira, em benefício do fortalecimento da segurança nacional e do desenvolvimento econômico e social.",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "No meio técnico-científico-informacional, a soberania passa pelo controle de um país sobre os dados de sua população, condição que se vê ameaçada no Brasil pela extração e exploração informacional por parte de empresas estrangeiras, incluindo o envio desses dados para o exterior.",
-        "isCorrect": true
-      }
-    ]
-  },
-  {
-    "subject": "Geografia",
-    "topic": "Elementos Cartográficos",
-    "statement": "Considerando que as escolhas técnicas podem modificar tais representações, quais elementos cartográficos dos mapas B, C e D foram transformados em relação ao mapa A?",
-    "bundleId": "elementos_cartograficos",
-    "bundleTitle": "Elementos Cartográficos",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 12,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "Coordenadas geográficas",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "Orientação",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "Projeção cartográfica",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "Orientação Escala Projeção cartográfica",
-        "isCorrect": true
-      },
-      {
-        "label": "E",
-        "text": "Coordenadas geográficas Projeção cartográfica Orientação",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "Geografia",
-    "topic": "Geometria e Escalas",
-    "statement": "Uma pesquisa mapeou dois sítios arqueológicos A e B no estado do Paraná, nos municípios de Peabiru e Faxinal, respectivamente. Para cada local, as coordenadas UTM (Universal Transversa de Mercator) no fuso 22S são: local A (370.000,00 m E; 7.350.000,00 m S); local B (470.000,00 m E; 7.350.000,00 m S). Com base nessas informações, qual é, respectivamente, a menor distância (D) entre os locais A e B na superfície terrestre e a menor distância (d) entre os locais A e B em um documento cartográfico com escala 1:1.000.000?",
+    "subject": "Literatura",
+    "topic": "Poesia do Arcadismo",
+    "statement": "Um dos tópicos mais frequentes na poesia do Arcadismo é aquele conhecido como carpe diem, expressão latina que significa literalmente “colhe o dia”, e que pode ser entendido mais diretamente como “desfruta o presente”. Assinale a alternativa cujo conteúdo, explorado em Liras de Marília de Dirceu, de Tomás Antônio Gonzaga, pertence a esse tema.",
     "bundleId": "1",
-    "bundleTitle": "Questões de Geografia",
+    "bundleTitle": "Questões de Literatura",
+    "bundleContext": "Responda as questões 71 e 72",
     "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 13,
+    "difficulty": 2,
+    "page": 21,
     "alternatives": [
       {
         "label": "A",
-        "text": "D = 10 km e d = 1 cm.",
+        "text": "“Nem canto letra, que não seja minha” (Primeira parte, Lira I)",
         "isCorrect": false
       },
       {
         "label": "B",
-        "text": "D = 47 km e d = 4,7 cm.",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "D = 100 km e d = 10 cm.",
+        "text": "“As glórias, que vêm tarde, já vêm frias” (Primeira parte, Lira XIV)",
         "isCorrect": true
       },
       {
+        "label": "C",
+        "text": "“Eu não beijo vis tesouros” (Primeira Parte, Lira XVI)",
+        "isCorrect": false
+      },
+      {
         "label": "D",
-        "text": "D = 470 km e d = 47 cm.",
+        "text": "“Eu vejo aquela Deusa” (Segunda Parte, Lira XXXVIII)",
         "isCorrect": false
       },
       {
         "label": "E",
-        "text": "D = 7350 km e d = 73,5 cm.",
+        "text": "“Tu não verás, Marília, cem cativos” (Terceira parte, Lira III)",
         "isCorrect": false
       }
     ]
   },
   {
-    "subject": "Geografia",
-    "topic": "Mudanças Climáticas",
-    "statement": "A partir da interpretação dessas representações cartográficas, é correto afirmar que:",
+    "subject": "Literatura",
+    "topic": "Literatura Brasileira",
+    "statement": "No capítulo final de Noite na taverna, de Álvares de Azevedo, quando todos já dormiam, entra na taverna “uma mulher vestida de negro” que se vinga de um dos rapazes que ali passaram a noite, assassinando-o. Quem é essa mulher?",
+    "bundleId": "1",
+    "bundleTitle": "Questões de Literatura",
+    "bundleContext": "Responda as questões 71 e 72",
+    "source": "UFPR certoufpr2026",
+    "difficulty": 3,
+    "page": 21,
+    "alternatives": [
+      {
+        "label": "A",
+        "text": "É a virgem que Solfieri encontra em Roma, a quem ele enterra sob uma lápide de mármore debaixo da própria cama, pois pensa que ela está morta quando, na verdade, apenas sofria de catalepsia, acordando posteriormente.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "É Ângela, a espanhola por quem Bertram se apaixona; reencontram-se depois de dois anos quando ela mata marido e filho para viver com seu antigo amor, que se recusa a viver com uma assassina.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "É Giorgia, no passado três vezes vítima de Johann em uma mesma noite: primeiro, ele matou o namorado dela, Artur; depois, tirou-lhe a virgindade; por fim, surpreendido depois do ato, assassinou o irmão da moça.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "É Laura, quem Gennaro seduz e engravida; desmoralizada, a moça é expulsa de casa pelo pai e, sofrendo um aborto, é ajudada apenas pela madrasta, Nauza, que também é amante de Gennaro.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "É a condessa Eleonora, cuja beleza faz com que Hermann a drogue com um entorpecente e a sequestre, obrigando-a a viver por três anos com ele antes de devolvê-la a Maffio, seu verdadeiro marido.",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "subject": "Filosofia",
+    "topic": "Crítica à Modernidade",
+    "statement": "No livro A vida não é útil, Ailton Krenak questiona a lógica que rege a modernidade. Essa lógica está associada:",
     "bundleId": "2",
-    "bundleTitle": "Questões sobre Mudanças Climáticas",
-    "bundleContext": "responda as questões 44 e 45",
+    "bundleTitle": "Questões de Filosofia",
+    "bundleContext": "Responda as questões 73 e 74",
     "source": "UFPR certoufpr2026",
     "difficulty": 3,
-    "page": 13,
+    "page": 21,
     "alternatives": [
       {
         "label": "A",
-        "text": "os países mais vulneráveis aos efeitos das mudanças climáticas na saúde são os menos responsáveis pelas emissões de CO2.",
-        "isCorrect": true
-      },
-      {
-        "label": "B",
-        "text": "o continente africano possui maior potencial de mortalidade relacionada às mudanças climáticas devido às suas baixas emissões de CO2.",
+        "text": "à valorização excessiva da cultura indígena em detrimento do modo de vida ocidental.",
         "isCorrect": false
       },
       {
+        "label": "B",
+        "text": "à ideia de que tudo deve servir a um propósito econômico ou produtivo.",
+        "isCorrect": true
+      },
+      {
         "label": "C",
-        "text": "a Ásia possui baixa emissão de CO2, mas tem alta mortalidade devido aos efeitos das mudanças climáticas na saúde.",
+        "text": "à substituição das tradições religiosas e das cosmovisões autóctones por práticas laicas.",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "as regiões com maiores emissões de CO2 são mais afetadas pelas mudanças climáticas na saúde.",
+        "text": "ao desprezo pelas tecnologias e avanços científicos contemporâneos.",
         "isCorrect": false
       },
       {
         "label": "E",
-        "text": "os Estados Unidos apresentam emissões de CO2 superiores à média global, o que gera alta mortalidade relacionada às mudanças climáticas no continente americano.",
+        "text": "ao não reconhecimento da excepcionalidade da espécie humana.",
         "isCorrect": false
       }
     ]
   },
   {
-    "subject": "História",
-    "topic": "Historiografia e Ideologia",
-    "statement": "A escolha de um Arco Triunfal romano para a projeção do símbolo causou curiosidade e até mesmo polêmica. Isso se deve ao fato de que esse tipo de arquitetura representava, na República e no Império Romano:",
+    "subject": "Filosofia",
+    "topic": "Crítica à Superstição",
+    "statement": "Em “Dos Coxos”, Montaigne reflete sobre a tendência humana de buscar causas ocultas e significados misteriosos para acontecimentos banais. Essa atitude é criticada pelo autor por:",
+    "bundleId": "2",
+    "bundleTitle": "Questões de Filosofia",
+    "bundleContext": "Responda as questões 73 e 74",
+    "source": "UFPR certoufpr2026",
+    "difficulty": 3,
+    "page": 21,
+    "alternatives": [
+      {
+        "label": "A",
+        "text": "promover o uso racional da religião.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "ser essencial para o avanço do conhecimento científico.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "conduzir à superstição e à perda do juízo crítico.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "demonstrar a superioridade dos antigos sobre os modernos.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "valorizar a ignorância humana e não favorecer o alcance de verdades indubitáveis.",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "subject": "Sociologia",
+    "topic": "Cultura e Classes Sociais",
+    "statement": "De acordo com a passagem acima e com texto de que foi extraída, é correto dizer que, para Marilena Chaui:",
     "bundleId": "3",
-    "bundleTitle": "Questões sobre História Antiga",
+    "bundleTitle": "Questões de Sociologia",
+    "bundleContext": "Responda as questões 75 e 76",
     "source": "UFPR certoufpr2026",
     "difficulty": 3,
-    "page": 14,
+    "page": 21,
     "alternatives": [
       {
         "label": "A",
-        "text": "o triunfo e a expansão do monoteísmo abraâmico contra o politeísmo.",
+        "text": "a indústria cultural torna a cultura acessível a todos, de maneira a superar a divisão cultural.",
         "isCorrect": false
       },
       {
         "label": "B",
-        "text": "a integração de populações estrangeiras por meio da romanização.",
+        "text": "a cultura é uma forma de lazer e entretenimento de que todos devem poder desfrutar.",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "a celebração da cultura de jogos violentos entre gladiadores.",
+        "text": "a cultura popular é aquela que expressa a verdadeira identidade de um povo.",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "a vitória militar em guerras, rebeliões ou conquistas territoriais.",
-        "isCorrect": true
+        "text": "o Estado deve produzir e distribuir de forma igualitária bens culturais para todos.",
+        "isCorrect": false
       },
       {
         "label": "E",
-        "text": "a coesão social entre patrícios e plebeus a partir da criação do Tribunato da Plebe.",
-        "isCorrect": false
+        "text": "a cultura dominante procura legitimar a dominação de classe.",
+        "isCorrect": true
       }
     ]
   },
   {
-    "subject": "História",
-    "topic": "Expansão Islâmica",
-    "statement": "Com base nesse texto e nos conhecimentos sobre as sociedades africanas durante a expansão islâmica, assinale a alternativa que aponta corretamente uma característica dos estados africanos durante o período da Idade Média.",
+    "subject": "Filosofia",
+    "topic": "Justiça em Platão",
+    "statement": "No livro I de A República, Platão apresenta um diálogo entre Sócrates e Trasímaco acerca do que é a justiça. Com base nesse texto, é correto afirmar que Sócrates defende que:",
     "bundleId": "4",
-    "bundleTitle": "Questões sobre a Idade Média",
+    "bundleTitle": "Questões de Filosofia",
+    "bundleContext": "Responda as questões 76 e 77",
     "source": "UFPR certoufpr2026",
-    "difficulty": 4,
-    "page": 14,
+    "difficulty": 3,
+    "page": 21,
     "alternatives": [
       {
         "label": "A",
-        "text": "Reinos como Gana, Mali e Songai dependiam de produtos importados do Mediterrâneo, especialmente do ouro.",
+        "text": "sendo a justiça uma virtude prática, não cabe defini-la.",
         "isCorrect": false
       },
       {
         "label": "B",
-        "text": "As monarquias do oeste africano eram compostas de grupos nômades conhecidos como beduínos.",
+        "text": "a justiça é dar a cada um o que lhe é devido.",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "O cristianismo, por conta da presença islâmica na África, não era praticado no continente até o contato com europeus.",
-        "isCorrect": false
+        "text": "o diálogo amistoso é o meio de se buscar saber o que é a justiça.",
+        "isCorrect": true
       },
       {
         "label": "D",
-        "text": "Os reinos da região conhecida em árabe como Sudão tiveram seu ápice antes da chegada do Islã.",
+        "text": "a justiça consiste em dizer a verdade e restituir aquilo que se tomou.",
         "isCorrect": false
       },
       {
         "label": "E",
-        "text": "Estados como Gana, Mali e Songai se conectavam com parte da África e da Ásia por meio das rotas transaarianas.",
-        "isCorrect": true
+        "text": "a justiça é desvantajosa aos mais fracos.",
+        "isCorrect": false
       }
     ]
   },
   {
-    "subject": "História",
-    "topic": "História Moderna",
-    "statement": "Com base nessa afirmação e nos conhecimentos de História Moderna, é correto afirmar que são consequências dessa crise:",
+    "subject": "Filosofia",
+    "topic": "Método Científico",
+    "statement": "No Capítulo 1 do livro A lógica da pesquisa científica, Popper apresenta a tarefa da lógica da investigação científica. Segundo o autor, essa tarefa consiste em:",
     "bundleId": "5",
-    "bundleTitle": "Questões sobre História Moderna",
+    "bundleTitle": "Questões de Filosofia",
+    "bundleContext": "Responda as questões 78 e 79",
     "source": "UFPR certoufpr2026",
-    "difficulty": 4,
-    "page": 14,
+    "difficulty": 3,
+    "page": 22,
     "alternatives": [
       {
         "label": "A",
-        "text": "a deposição de Henrique VIII e a declaração da Magna Carta.",
+        "text": "encontrar o melhor método lógico para cada pesquisa científica.",
         "isCorrect": false
       },
       {
         "label": "B",
-        "text": "o divórcio de Henrique VIII e a fundação da Igreja Anglicana.",
-        "isCorrect": true
+        "text": "fornecer as estruturas lógicas para a descoberta de novas teorias.",
+        "isCorrect": false
       },
       {
         "label": "C",
-        "text": "o rompimento de Henrique VIII com o papado e o início do Grande Cisma.",
+        "text": "estabelecer critérios para formular hipóteses científicas.",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "a vitória de Henrique VIII sobre os franceses e o fim da Guerra dos Cem Anos.",
-        "isCorrect": false
+        "text": "investigar os métodos de prova das novas ideias que serão tomadas como teorias científicas.",
+        "isCorrect": true
       },
       {
         "label": "E",
-        "text": "o isolamento de Henrique VIII e a promulgação das Leis de Cercamento.",
+        "text": "garantir a confirmação da teoria científica, pelo método dedutivo.",
         "isCorrect": false
       }
     ]
   },
   {
-    "subject": "História",
-    "topic": "Brasil Colonial",
-    "statement": "Com base nessa reflexão, assinale a alternativa que descreve corretamente uma instância administrativa do Brasil Colonial e sua função.",
+    "subject": "Sociologia",
+    "topic": "Crise Ambiental",
+    "statement": "Considerando a obra Ideias para adiar o fim do mundo e o excerto selecionado, que problematiza o processo de mercantilização da vida como raiz da crise econômica, assinale a alternativa correta.",
     "bundleId": "6",
-    "bundleTitle": "Questões sobre o Brasil Colonial",
+    "bundleTitle": "Questões de Sociologia",
+    "bundleContext": "Responda as questões 80 e 81",
     "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 14,
+    "difficulty": 4,
+    "page": 22,
     "alternatives": [
       {
         "label": "A",
-        "text": "Capitanias Hereditárias: amplos lotes de terra, de controle administrativo público, com função de avanço da economia agrária.",
+        "text": "A obra sugere que a “segurança temporária” proporcionada por políticas regionais é uma forma de violência lenta, pois, ao mesmo tempo que protege comunidades, as torna cúmplices do sistema que devora a natureza.",
         "isCorrect": false
       },
       {
         "label": "B",
-        "text": "Padroados: instituições religiosas de direta autoridade papal, com função de conversão e treinamento burocrático de indígenas.",
+        "text": "Krenak apropria-se da fala de Kopenawa para argumentar que a mercadoria é um simulacro da experiência humana, mas que, paradoxalmente, essa mesma lógica pode ser subvertida por movimentos sociais que transformam o consumo em ato político.",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "Câmaras Municipais: fundamentadas nas Ordenações do Reino, com função de administração local e dotadas de variadas competências.",
-        "isCorrect": true
-      },
-      {
-        "label": "D",
-        "text": "Governo-Geral: órgão descentralizador, cuja função era desonerar a administração metropolitana e tornar o empreendimento colonial menos custoso.",
+        "text": "O “adiar o fim do mundo” não seria uma metáfora, mas um protocolo indígena de gestão de crise, baseado em saberes ancestrais que calculam os limites precisos de exploração da Terra, algo que a ciência ocidental ainda não conseguiu mapear.",
         "isCorrect": false
       },
       {
+        "label": "D",
+        "text": "Para Krenak, a mercantilização da vida – que transforma até mesmo experiências subjetivas em commodities – é um dos pilares da crise civilizatória, pois nos aliena da percepção de que nossa existência depende da saúde dos ecossistemas, não de sua exploração infinita.",
+        "isCorrect": true
+      },
+      {
         "label": "E",
-        "text": "Tribunal do Santo Ofício: mecanismo de cunho religioso, cuja função era a nomeação de clérigos de ordens atuantes na Colônia, como os jesuítas.",
+        "text": "Krenak defende que a política moderna, ao criar zonas de segurança temporárias, é capaz de restaurar o sentido autêntico do compartilhamento comunitário, revertendo a lógica de exaustão ambiental imposta pelo capitalismo.",
         "isCorrect": false
       }
     ]
   },
   {
-    "subject": "História",
-    "topic": "História do Brasil",
-    "statement": "Os textos representam visões divergentes sobre o passado dos indígenas da Amazônia. Com base nessas informações contrastantes e nos conhecimentos sobre sociedades indígenas no contexto da América Portuguesa, assinale a alternativa que identifica corretamente as perspectivas históricas sobre os povos originários.",
+    "subject": "Sociologia",
+    "topic": "Abordagem Policial",
+    "statement": "Considerando a fala e a relação existente entre a abordagem policial e a personalidade autoritária, assinale a alternativa correta.",
     "bundleId": "7",
-    "bundleTitle": "Questões sobre Povos Indígenas",
+    "bundleTitle": "Questões de Sociologia",
+    "bundleContext": "Responda as questões 82 e 83",
     "source": "UFPR certoufpr2026",
     "difficulty": 4,
-    "page": 15,
+    "page": 22,
     "alternatives": [
       {
         "label": "A",
-        "text": "Os projetos de nação bem como os modelos de identidade que estavam vigentes durante o período imperial e boa parte do período republicano anularam as conquistas e a agência histórica dos povos originários.",
-        "isCorrect": true
-      },
-      {
-        "label": "B",
-        "text": "Os relatos mais antigos, produzidos no início do período colonial, demonstram o desconhecimento dos portugueses e espanhóis, que atribuíram aos povos amazônicos características exageradas.",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "A arqueologia contemporânea dialoga com a historiografia do século XIX ao corroborar a antiguidade indígena na Amazônia e ao negar a existência de sociedades complexas.",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "Historiadores como von Martius acreditavam que romanos e germânicos poderiam ter colonizado a Amazônia na Antiguidade, fato esquecido pelos indígenas.",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "Tanto a historiografia brasileira do século XIX quanto a arqueologia concordam em relação à grandeza do passado amazônico, mas divergem em relação à forma de pensar as estruturas políticas das civilizações originárias.",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "História",
-    "topic": "História do Brasil",
-    "statement": "Com base nos conhecimentos sobre o período imperial da História do Brasil, essa expressão: “nada mais parecido com um conservador do que um liberal no poder”",
-    "bundleId": "8",
-    "bundleTitle": "Questões sobre o Período Imperial",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 15,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "demonstra o desprendimento ideológico dos partidos, que eram compostos das mesmas elites políticas e sociais.",
-        "isCorrect": true
-      },
-      {
-        "label": "B",
-        "text": "se refere ao sistema de “parlamentarismo às avessas”, em que a divisão partidária era apenas fachada para o exercício do poder autocrático do imperador.",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "reflete o surgimento do neoliberalismo no Brasil, que pregava políticas de austeridade econômica defendidas tipicamente por conservadores.",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "aponta para a hegemonia dos dois maiores partidos brasileiros em detrimento das outras agremiações, apelidadas de “nanicos”.",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "indica, já em período de Guerra Fria, que, assim como o mundo, o Brasil também se encontrava em divisão bipolar da política.",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "Língua Portuguesa",
-    "topic": "Interpretação de Texto",
-    "statement": "A respeito das expressões em destaque, assinale a alternativa correta quanto às relações sintático-semânticas do texto.",
-    "bundleId": "9",
-    "bundleTitle": "Questões de Interpretação de Texto",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 16,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "A conjunção mas pode ser substituída por embora mantendo sentido original do período.",
+        "text": "Para Bento, a declaração do comandante revela uma postura pragmática e técnica da polícia, que adapta sua atuação às particularidades culturais de cada região, sem intenção discriminatória, e visando eficiência operacional.",
         "isCorrect": false
       },
       {
         "label": "B",
-        "text": "A expressão Na verdade revela o ponto de vista do autor sobre a capacidade cognitiva do ser humano.",
+        "text": "A fala do comandante da Rota explicita o pacto da branquitude ao naturalizar uma hierarquia racial implícita: a polícia age como braço armado desse pacto, adaptando sua violência de acordo com a racialização dos territórios.",
         "isCorrect": true
       },
       {
         "label": "C",
-        "text": "A sequência já havia compreendido obscuramente pode ser parafraseada por já havia compreendido equivocadamente.",
+        "text": "Para Bento, a declaração do comandante revela uma postura pragmática e técnica da polícia, que age com violência nas periferias por falta de treinamento.",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "O autor emprega a conjunção embora para informar que as questões estatísticas são irrelevantes nesse caso.",
+        "text": "Ao analisar a fala, Cida Bento rejeita a ideia de que o neoliberalismo tenha transformado as expressões do racismo, argumentando que a violência racial continua explícita e desvinculada de discursos de eficiência ou mérito.",
         "isCorrect": false
       },
       {
         "label": "E",
-        "text": "A palavra troglodita indica que o autor minimiza a conquista da produção artificial do fogo, uma realização desses homens das cavernas.",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "LITERATURA BRASILEIRA",
-    "topic": "Análise de Texto",
-    "statement": "Sobre as relações de significado estabelecidas no texto, é correto afirmar:",
-    "bundleId": "1",
-    "bundleTitle": "Questões sobre Análise de Texto",
-    "bundleContext": "Responda as questões 65 e 66.",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 19,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "A expressão Bonzinho ele... expressa a opinião do autor, que demonstra admiração pelo gesto altruísta de Elias Antônio Lopes.",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "O emprego recorrente da expressão num era (“num era café, num era açúcar...”) cria uma expectativa sobre qual seria o “bem mais valioso” da época.",
-        "isCorrect": true
-      },
-      {
-        "label": "C",
-        "text": "A afirmação presente no trecho final do texto, “o Brasil é o Brasil”, é vazia de significado em relação ao que vinha sendo dito, uma vez que afirma o óbvio.",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "A frase “Daí quando a Família Real portuguesa veio pro Brasil” estabelece uma relação de causalidade entre a construção do palácio e a vinda da Família Real.",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "O autor compara o Palácio de São Cristóvão com o Palácio da Alvorada devido à origem da sua destinação para a utilização histórica.",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "LITERATURA BRASILEIRA",
-    "topic": "Análise de Texto",
-    "statement": "Sobre a linguagem utilizada no texto, assinale a alternativa correta.",
-    "bundleId": "1",
-    "bundleTitle": "Questões sobre Análise de Texto",
-    "bundleContext": "Responda as questões 65 e 66.",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 19,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "O trecho “O Elias Antônio Lopes mandava um navio lá na costa do continente africano” apresenta uma regência verbal típica dos usos escritos cultos do português brasileiro.",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "Por meio da utilização de palavras e expressões como bonzinho, juntou tanto dinheiro, todo mundo, é possível perceber o direcionamento do podcast para um público menos culto.",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "As reticências são um sinal estilístico da fala, e as vírgulas são utilizadas para marcar as pausas na respiração.",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "As palavras grotesca, mansão e traficante são exemplos de gírias, uma marca comum da oralidade, que são evitadas em registros escritos.",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "As expressões num, daí e comé que são exemplos de usos do registro oral que seriam consideradas inadequadas em um texto escrito jornalístico, a menos que sinalizassem a fala de alguém.",
-        "isCorrect": true
-      }
-    ]
-  },
-  {
-    "subject": "LITERATURA BRASILEIRA",
-    "topic": "Análise de Contos",
-    "statement": "Considerando os contos “Rolézim”, “Estação Padre Miguel” e “A história do Periquito e do Macaco”, da coletânea O sol na cabeça, de Geovani Martins, assinale a alternativa correta.",
-    "bundleId": "2",
-    "bundleTitle": "Questões sobre Análise de Contos",
-    "bundleContext": "Responda as questões 67 e 68.",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 4,
-    "page": 19,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "Em “Rolézim”, o narrador critica diretamente o sistema penal brasileiro por meio de um discurso formal e panfletário, o que difere da linguagem coloquial empregada nos outros dois contos.",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "“Estação Padre Miguel” abandona o ponto de vista jovem para narrar, de forma distanciada, as transformações urbanas na zona oeste do Rio de Janeiro ao longo de décadas, enquanto os outros dois contos são narrados da perspectiva de jovens contemporâneos.",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "No conto “A história do Periquito e do Macaco”, a violência aparece como pano de fundo, sem impacto direto sobre as personagens principais, ao contrário dos outros dois contos, em que a violência afeta drasticamente a vida das personagens.",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "Os três contos apresentam protagonistas femininas que, diante da opressão cotidiana, constroem trajetórias de emancipação política e social.",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "Os três contos exploram, a partir da perspectiva de jovens periféricos, as experiências de racismo, criminalização e insegurança, utilizando linguagem oral marcada por gírias e expressões locais.",
-        "isCorrect": true
-      }
-    ]
-  },
-  {
-    "subject": "LITERATURA BRASILEIRA",
-    "topic": "Análise de Romance",
-    "statement": "Com base no trecho dado e na leitura integral da obra, assinale a alternativa correta.",
-    "bundleId": "3",
-    "bundleTitle": "Questões sobre Análise de Romance",
-    "bundleContext": "Responda as questões 68 e 69.",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 4,
-    "page": 19,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "Francisco Teodoro é apresentado no início do romance como um português que começou sua riqueza pela combinação de diferentes atividades econômicas, como a exportação de café e a especulação financeira.",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "No trecho dado e em outras passagens de A falência, Francisco Teodoro reflete sobre a “felicidade perfeita” criada por seu trabalho em Portugal, antes de emigrar para o Brasil.",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "Associando sua riqueza às conquistas da vida republicana, Francisco Teodoro é um defensor do livre comércio e favorável aos direitos trabalhistas, em especial no trecho “criar para os seus uma felicidade perfeita”.",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "No romance de Júlia Lopes de Almeida, são tematizadas as transferências de capital típicas do fim do século XIX no Brasil, quando os ganhos com a exportação de café foram convertidos em investimentos industriais.",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "Os ideais de riqueza de Francisco Teodoro, baseados na valorização do trabalho, são contrapostos, em A falência, aos de outros membros da elite carioca do período, como é o caso dos personagens Mário, Inocêncio Braga e Gama Torres.",
-        "isCorrect": true
-      }
-    ]
-  },
-  {
-    "subject": "LITERATURA BRASILEIRA",
-    "topic": "Análise de Poesia",
-    "statement": "Considerando o fragmento transcrito e a integralidade desse poema de Ferreira Gullar, assinale a alternativa correta.",
-    "bundleId": "4",
-    "bundleTitle": "Questões sobre Análise de Poesia",
-    "bundleContext": "Responda as questões 69 e 70.",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 4,
-    "page": 20,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "No fragmento, a descrição dos traços físicos do corpo da mulher é feita com exatidão, utilizando linguagem denotativa, diferentemente da descrição idealizada das cidades em todo o poema.",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "No fragmento, todos os verbos estão no presente do indicativo, assinalando que a investigação da memória está ausente na poesia do autor e mais especificamente nesse poema.",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "A indefinição em relação ao verdadeiro nome da mulher, no fragmento citado, configura a instabilidade do amor, em concordância com o contexto histórico conturbado que o poema apresenta.",
-        "isCorrect": true
-      },
-      {
-        "label": "D",
-        "text": "O fragmento transcrito utiliza linguagem coloquial, contrastando com o vocabulário erudito e formal empregado para descrever o corpo e o espaço físico nos outros trechos do poema.",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "O emprego de rimas e de figuras de efeito sonoro aparece nesse fragmento associado à tematização do amor, tornando-se ausente nos trechos que têm a infância como tema.",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "LITERATURA BRASILEIRA",
-    "topic": "Análise de Poesia",
-    "statement": "Com base no poema e n’O livro das semelhanças, de Ana Martins Marques, no qual o poema está incluído, assinale a alternativa correta.",
-    "bundleId": "5",
-    "bundleTitle": "Questões sobre Análise de Poesia",
-    "bundleContext": "Responda as questões 70 e 71.",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 4,
-    "page": 20,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "A epígrafe de Ana Cristina Cesar, poeta da segunda metade do século XX, é a única referência a outros autores em todo o livro.",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "O terceiro verso do poema é composto de um único adjetivo, destacando a característica atribuída aos gatos.",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "O poema destoa dos procedimentos poéticos predominantes no livro, caracterizados pela regularidade na rima e na métrica.",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "O poema discorre sobre o fazer poético, sobre a dificuldade de as palavras se deixarem apreender pelo poeta.",
-        "isCorrect": true
-      },
-      {
-        "label": "E",
-        "text": "A presença de termos e expressões comparativas explícitas nos versos do poema aproxima os gatos e as palavras.",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "Língua Estrangeira",
-    "topic": "Interpretação de Texto",
-    "statement": "Das Wort „Stattdessen“ (Absatz 5) bedeutet auch:",
-    "bundleId": "bundle1",
-    "bundleTitle": "Questões de Interpretação de Texto",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 2,
-    "page": 25,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "Alternativ",
-        "isCorrect": true
-      },
-      {
-        "label": "B",
-        "text": "Nur",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "Obwohl",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "Schon",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "Zumal",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "Língua Estrangeira",
-    "topic": "Interpretação de Texto",
-    "statement": "In der Stelle „Zwar müssen wir mit dem kostbaren Trinkwasser verantwortungsvoll umgehen.“,kann den Begriff „kostbaren“ NICHT ersetzt sein von:",
-    "bundleId": "bundle1",
-    "bundleTitle": "Questões de Interpretação de Texto",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 25,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "geschätzten",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "hochwertigen",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "wertvollen",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "beschädigten",
-        "isCorrect": true
-      },
-      {
-        "label": "E",
-        "text": "qualitätsvollen",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "Língua Estrangeira",
-    "topic": "Interpretação de Texto",
-    "statement": "Das Wort “der”(Absatz 6) bezieht sich auf:",
-    "bundleId": "bundle1",
-    "bundleTitle": "Questões de Interpretação de Texto",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 2,
-    "page": 25,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "modernen Warmwassergeräten",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "ein automatischer Legionellenschutz",
-        "isCorrect": true
-      },
-      {
-        "label": "C",
-        "text": "eine regelmäßige Erhitzung",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "des Leitungswassers",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "70 Grad",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "Língua Estrangeira",
-    "topic": "Interpretação de Texto",
-    "statement": "A partir de la lectura y análisis del texto, es posible afirmar que la intención comunicativa del autor es:",
-    "bundleId": "bundle2",
-    "bundleTitle": "Questões sobre a IA",
-    "bundleContext": "responda as questões 83, 84 e 85",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 26,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "criticar el crecimiento de la exclusión tecnológica generada por el desarrollo de la IA.",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "instruir los usuarios de IA sobre los nuevos recursos tecnológicos ya disponibles en varios campos de actuación humana.",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "discutir la implementación de la IA en distintos sectores de la sociedad convenciendo sobre la necesidad de regulación.",
-        "isCorrect": true
-      },
-      {
-        "label": "D",
-        "text": "promocionar el freno de la implementación de la IA demostrando a la población los usos distorsionados de las tecnologías disruptivas.",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "exponer distintas experiencias de los usuarios de IA para instruir nuevos influencers digitales.",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "Língua Estrangeira",
-    "topic": "Interpretação de Texto",
-    "statement": "De acuerdo con el texto, un desafío en la creación de marcos legales para regular la IA en el mundo está relacionado:",
-    "bundleId": "bundle2",
-    "bundleTitle": "Questões sobre a IA",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 26,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "a los regímenes políticos, una vez que existen fragilidades democráticas.",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "a los sistemas de distribución, pues ellos son articulados globalmente.",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "a los procesos industriales, ya que la automatización disminuye el riesgo de errores humanos.",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "a la gestión, puesto que los algoritmos de IA no reconocen las fronteras nacionales.",
-        "isCorrect": true
-      },
-      {
-        "label": "E",
-        "text": "a la eficiencia, una vez que los algoritmos avanzan el aprendizaje automático.",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "Língua Estrangeira",
-    "topic": "Interpretação de Texto",
-    "statement": "Lea las proposiciones a continuación en relación a las ideas presentadas en el texto: 1. El título del texto apunta los distintos impactos existentes en relación a la implementación de la IA en la sociedad. 2. Hay una preocupación con la dificultad de identificar contenidos falsos que son producidos por esa nueva tecnología. 3. La falta de reglamentación sobre el uso de la IA contribuye a la creación de contenidos adulterados y la aparición de influencers sintéticos. 4. Los sistemas democráticos son potencializados por el uso de la IA en la distribución rápida de contenido global. Señala la alternativa correcta.",
-    "bundleId": "bundle2",
-    "bundleTitle": "Questões sobre a IA",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 26,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "Solo la afirmativa 4 es verdadera.",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "Solo las afirmativas 1 y 3 son verdaderas.",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "Solo las afirmativas 2 y 4 son verdaderas.",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "Solo las afirmativas 1, 2 y 3 son verdaderas.",
-        "isCorrect": true
-      },
-      {
-        "label": "E",
-        "text": "Las afirmativas 1, 2, 3 y 4 son verdaderas.",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "Língua Estrangeira",
-    "topic": "Interpretação de Texto",
-    "statement": "Tras la lectura del poema Instantes, es correcto afirmar que el yo poético:",
-    "bundleId": "bundle3",
-    "bundleTitle": "Questões sobre o Poema Instantes",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 27,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "hace una reflexión en tono confesional de sus arrepentimientos.",
-        "isCorrect": true
-      },
-      {
-        "label": "B",
-        "text": "critica las personas que no tienen tiempo para disfrutar de la naturaleza.",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "alaba las memorias de infancia y juventud que han construido su identidad.",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "reclama de las dificultades que han llegado junto a la vejez.",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "considera necesario mantener la seguridad para recomenzar la vida.",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "Língua Estrangeira",
-    "topic": "Interpretação de Texto",
-    "statement": "El tema del texto titulado “Polémica por el poema de Borges que nunca existió” es:",
-    "bundleId": "bundle3",
-    "bundleTitle": "Questões sobre o Poema Instantes",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 2,
-    "page": 27,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "la dificultad de la viuda del escritor argentino en aceptar la percepción de su marido sobre la vida.",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "una descripción sobre el proceso de composición de una obra poética de Borges.",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "un informe sobre un proceso de no reconocimiento de autoría literaria.",
-        "isCorrect": true
-      },
-      {
-        "label": "D",
-        "text": "la demostración de cómo se articulan las editoriales en casos de falsedad ideológica.",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "una ejemplificación del uso de seudónimos en la red literaria mexicana.",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "Língua Estrangeira",
-    "topic": "Interpretação de Texto",
-    "statement": "Lea comparativamente los dos textos y, enseguida, analice las proposiciones a continuación. 1. María Kodama apuntó inconsistencias ideológicas que explican el motivo por el cual la atribución de la autoría del poema Instantes a Borges fue un error. 2. La posibilidad de cometer errores constituye el núcleo temático compartido por los textos. 3. La noticia publicada en el periódico de la BBC busca informar al público lector un proceso de corrección de autoría. 4. El yo poético del poema defiende la idea de que las personas deberían disfrutar de cosas simples en la vida, mientras que la cita presente en la noticia se contrapone y critica esa postura. Señale la alternativa correcta.",
-    "bundleId": "bundle3",
-    "bundleTitle": "Questões sobre o Poema Instantes",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 28,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "Solo la afirmativa 1 es verdadera.",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "Solo las afirmativas 1 y 2 son verdaderas.",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "Solo las afirmativas 3 y 4 son verdaderas.",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "Solo las afirmativas 1, 3 y 4 son verdaderas.",
-        "isCorrect": true
-      },
-      {
-        "label": "E",
-        "text": "Las afirmativas 1, 2, 3 y 4 son verdaderas.",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "Inglês",
-    "topic": "Interpretação de Texto",
-    "statement": "Mark the alternative that correctly defines an expression used in the text.",
-    "bundleId": "1",
-    "bundleTitle": "Questões 86 a 88",
-    "bundleContext": "Responda as questões 86 a 88.",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 2,
-    "page": 31,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "All-night parties: parties that last 24 hours non-stop.",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "Higher costs: less expensive to maintain when compared to before.",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "The “most sober”: the one who drinks the most when compared to all others.",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "The real culprit: the real cause of the situation or problem.",
-        "isCorrect": true
-      },
-      {
-        "label": "E",
-        "text": "Die out: expand or grow.",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "Inglês",
-    "topic": "Interpretação de Texto",
-    "statement": "According to the text, it is correct to say that:",
-    "bundleId": "1",
-    "bundleTitle": "Questões 86 a 88",
-    "bundleContext": "Responda as questões 86 a 88.",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 2,
-    "page": 31,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "spending too much time consuming irrelevant online content may lead to brain rot.",
-        "isCorrect": true
-      },
-      {
-        "label": "B",
-        "text": "the term “brain rot” has been created to define this modern medical condition.",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "excessive screen time has been linked to improved memory and better attention span.",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "mental fogginess is when people focus easily and have a clear view of situations.",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "only people from Gen Z and Gen Alpha suffer from brain rot.",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "Inglês",
-    "topic": "Interpretação de Texto",
-    "statement": "Mark the correct alternative based on the text.",
-    "bundleId": "1",
-    "bundleTitle": "Questões 86 a 88",
-    "bundleContext": "Responda as questões 86 a 88.",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 2,
-    "page": 31,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "Doomscrolling is consuming higher-thinking and thought-provoking content online.",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "People’s moods boost when they consume unchallenging contents online.",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "A slang term is considered a traditional, well-established standard word.",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "Engaging in deeper thought or analysis and critical thinking can develop brain rot.",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "Low-effort and unchallenging online contents consumption can develop brain rot.",
-        "isCorrect": true
-      }
-    ]
-  },
-  {
-    "subject": "Inglês",
-    "topic": "Interpretação de Texto",
-    "statement": "Based on the information presented in the text, clutter may:",
-    "bundleId": "2",
-    "bundleTitle": "Questões 89 a 90",
-    "bundleContext": "Responda as questões 89 e 90.",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 32,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "make people feel a variety of emotions, like stress, anxiety, annoyance and fear.",
-        "isCorrect": true
-      },
-      {
-        "label": "B",
-        "text": "lead to mental disorders that have no cure.",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "transform homes into attractive environments.",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "lower stress levels because people have all their things around them.",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "help people meet their deadlines and do the things they enjoy.",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "Inglês",
-    "topic": "Interpretação de Texto",
-    "statement": "Analyze the following sentences: 1. Hoarding is a mental disorder that keeps people from eliminating clutter. 2. Hemingway said all people want to be in messy places. 3. Organizing the mess can help you save money and time. 4. Losing objects and information around the house is one of the benefits of cleaning up. Mark the correct alternative, based on the text.",
-    "bundleId": "2",
-    "bundleTitle": "Questões 89 a 90",
-    "bundleContext": "Responda as questões 89 e 90.",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 32,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "Only sentence 1 is correct.",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "Only sentences 1 and 3 are correct.",
-        "isCorrect": true
-      },
-      {
-        "label": "C",
-        "text": "Only sentences 2 and 4 are correct.",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "Only sentences 2, 3 and 4 are correct.",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "Sentences 1, 2, 3 and 4 are correct.",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "Língua Estrangeira",
-    "topic": "Compreensão de Texto",
-    "statement": "会場へのアクセスに関して、正しいものはどれですか？",
-    "bundleId": "access_questions",
-    "bundleTitle": "Questões sobre Acesso",
-    "bundleContext": "responda as questões 1 e 2",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 2,
-    "page": 37,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "シャトルバスは、すべて無料で予約なしで利⽤できる。",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "会場には地下鉄しか利⽤できない。",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "タクシーは⾼額だが、直接会場に⾏くことができて便利である。",
-        "isCorrect": true
-      },
-      {
-        "label": "D",
-        "text": "⾞での来場は禁⽌されている。",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "会場には徒歩でしか⾏けない。",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "Língua Estrangeira",
-    "topic": "Compreensão de Texto",
-    "statement": "バブル経済が発生した背景として正しいものはどれですか？",
-    "bundleId": "bubble_economy_questions",
-    "bundleTitle": "Questões sobre a Bolha Econômica",
-    "bundleContext": "responda as questões 3 e 4",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 3,
-    "page": 37,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "⽇本銀⾏が⾦利を⼤幅に引き上げたため。",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "株価が下がり始めた後に景気が良くなったため。",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "円⾼と低⾦利政策によって資産にお⾦が集中したため。",
-        "isCorrect": true
-      },
-      {
-        "label": "D",
-        "text": "インフレ対策として⼟地の価格を下げたため。",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "アメリカが⽇本に対する輸⼊制限を強化したため。",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "subject": "Língua Estrangeira",
-    "topic": "Compreensão de Texto",
-    "statement": "Które z poniższych stwierdzeń oddaje główną tezę artykułu dotyczącego osób leworęcznych?",
-    "bundleId": "left_handed_questions",
-    "bundleTitle": "Questões sobre Pessoas Leforêas",
-    "bundleContext": "responda as questões 5 e 6",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 2,
-    "page": 38,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "Wszyscy geniusze w historii byli leworęczni.",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "Leworęczni zarabiają średnio więcej niż praworęczni.",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "Leworęczność negatywnie wpływa na iloraz inteligencji dzieci.",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "Jeśli dziecko zostanie skorygowane już w dzieciństwie, nie rozwinie problemu leworęczności.",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "Osoby leworęczne wykazują szczególne uzdolnienia dzięki lepszemu wykorzystaniu prawej półkuli mózgu.",
-        "isCorrect": true
-      }
-    ]
-  },
-  {
-    "subject": "Língua Estrangeira",
-    "topic": "Compreensão de Texto",
-    "statement": "Zgodnie z tekstem: Które z poniższych stwierdzeń jest prawdziwe?",
-    "bundleId": "left_handed_questions",
-    "bundleTitle": "Questões sobre Pessoas Leforêas",
-    "bundleContext": "responda as questões 5 e 6",
-    "source": "UFPR certoufpr2026",
-    "difficulty": 2,
-    "page": 38,
-    "alternatives": [
-      {
-        "label": "A",
-        "text": "Michał Anioł był mańkutem.",
-        "isCorrect": true
-      },
-      {
-        "label": "B",
-        "text": "Autorka tekstu jest osobą leworęczną.",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "Osoby leworęczne mają wyższe IQ niż osoby praworęczne.",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "Częstość występowania leworęczności zmniejszyła się od lat 80.",
-        "isCorrect": false
-      },
-      {
-        "label": "E",
-        "text": "W calej Europie osoby leworęczne mają niższe pensje niż osoby praworęczne.",
+        "text": "A diferença nas abordagens policiais comprova que a periferia exige linguagem mais dura, pois lá a criminalidade é maior; já nos Jardins, a delicadeza é possível porque a lei é respeitada – uma análise realista que Bento critica por negar o viés racial.",
         "isCorrect": false
       }
     ]

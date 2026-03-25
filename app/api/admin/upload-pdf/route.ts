@@ -13,6 +13,15 @@ type IngestSummaryItem = {
   outputDir: string;
 };
 
+function slugify(text: string) {
+  return text
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
 function runIngestCommand(args: string[]) {
   return new Promise<{ code: number; stdout: string; stderr: string }>((resolve) => {
     const npmCmd = process.platform === "win32" ? "npm.cmd" : "npm";
@@ -73,6 +82,13 @@ export async function POST(req: NextRequest) {
     const savedPdfPath = path.join(uploadDir, fileName);
     await writeFile(savedPdfPath, Buffer.from(bytes));
 
+    const proofSlug = slugify(path.basename(fileName, path.extname(fileName)));
+    const publicPdfDir = path.join(process.cwd(), "public", "questoes", "importadas", proofSlug);
+    await mkdir(publicPdfDir, { recursive: true });
+    const publicPdfPath = path.join(publicPdfDir, "original.pdf");
+    await writeFile(publicPdfPath, Buffer.from(bytes));
+    const publicPdfUrl = `/questoes/importadas/${proofSlug}/original.pdf`;
+
     const ingestArgs = [
       "--input",
       uploadDir,
@@ -80,6 +96,8 @@ export async function POST(req: NextRequest) {
       sourcePrefix,
       "--chunk",
       String(chunkSize),
+      "--pdf-public-url",
+      publicPdfUrl,
     ];
     if (!renderImages) {
       ingestArgs.push("--no-images");
